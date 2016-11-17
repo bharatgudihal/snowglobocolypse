@@ -1,0 +1,32 @@
+{
+    "none":
+    {
+        "Root":
+        [
+            "StdAfx.cpp",
+            "StdAfx.h"
+        ]
+    },
+    "auto":
+    {
+        "Core":
+        [
+            "Core/EditorGame.cpp",
+            "Core/snowglobocolypseGame.cpp",
+            "Core/snowglobocolypseGameRules.cpp",
+            "Core/EditorGame.h",
+            "Core/snowglobocolypseGame.h",
+            "Core/snowglobocolypseGameRules.h"
+        ],
+        "Game":
+        [
+            "Game/Actor.cpp",
+            "Game/Actor.h"
+        ],
+        "System":
+        [
+            "System/GameStartup.cpp",
+            "System/GameStartup.h"
+        ]
+    }
+}
