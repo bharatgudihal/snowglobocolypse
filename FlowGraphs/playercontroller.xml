@@ -1,0 +1,32 @@
+<Graph Description="" Group="Player" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Entity:EntityId" pos="-27,583,0" flags="0" GraphEntity="0">
+   <Inputs />
+  </Node>
+  <Node Id="7" Class="Game:Start" pos="-67,413,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="11" Class="Entity:EntityId" pos="-57,223,0" flags="0" EntityGUID="{19547795-081E-42D1-84CE-D2ECF672354E}" EntityGUID_64="42D1081E19547795">
+   <Inputs />
+  </Node>
+  <Node Id="16" Class="Camera:View" pos="263,183,0" flags="0">
+   <Inputs Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+  </Node>
+  <Node Id="17" Class="Module:Call_MoveModule" pos="243,433,0" flags="0">
+   <Inputs Instanced="1" InstanceID="-1"/>
+  </Node>
+  <Node Id="18" Class="Module:Call_MoveModule" pos="243,543,0" flags="0">
+   <Inputs Instanced="1" InstanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="18" nodeOut="1" portIn="EntityId" portOut="Id" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="7" portIn="Call" portOut="output" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="7" portIn="Call" portOut="output" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="11" portIn="entityId" portOut="Id" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="11" portIn="EntityId" portOut="Id" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{D5661E75-554D-4BAC-B647-244291554412}"/>
+ <GraphTokens />
+</Graph>
