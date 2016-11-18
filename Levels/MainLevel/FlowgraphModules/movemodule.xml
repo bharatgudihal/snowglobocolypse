@@ -1,0 +1,87 @@
+<Graph isModule="1" moduleName="MoveModule" Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="EntityId" Type="3" Input="1"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_MoveModule" pos="-170,20,0" flags="0"/>
+  <Node Id="2" Class="Module:End_MoveModule" pos="-170,-30,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="3" Class="Entity:GetPos" pos="350,240,0" flags="0">
+   <Inputs CoordSys="1"/>
+  </Node>
+  <Node Id="4" Class="Time:Time" pos="110,230,0" flags="0">
+   <Inputs paused="0"/>
+  </Node>
+  <Node Id="6" Class="Input:ActionHandler" pos="360,-170,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveforward"/>
+  </Node>
+  <Node Id="8" Class="Vec3:AddVec3" pos="720,-200,0" flags="0">
+   <Inputs A="0,0,0" B="0,10,0"/>
+  </Node>
+  <Node Id="9" Class="Movement:MoveEntityTo" pos="1120,-380,0" flags="0">
+   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="1"/>
+  </Node>
+  <Node Id="10" Class="Input:ActionHandler" pos="360,-70,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveback"/>
+  </Node>
+  <Node Id="11" Class="Input:ActionHandler" pos="360,30,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveleft"/>
+  </Node>
+  <Node Id="12" Class="Input:ActionHandler" pos="360,130,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveright"/>
+  </Node>
+  <Node Id="13" Class="Movement:MoveEntityTo" pos="1120,-200,0" flags="0">
+   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="1"/>
+  </Node>
+  <Node Id="14" Class="Movement:MoveEntityTo" pos="1120,-20,0" flags="0">
+   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="1"/>
+  </Node>
+  <Node Id="15" Class="Movement:MoveEntityTo" pos="1120,160,0" flags="0">
+   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="1"/>
+  </Node>
+  <Node Id="16" Class="Vec3:AddVec3" pos="730,-70,0" flags="0">
+   <Inputs A="0,0,0" B="0,-10,0"/>
+  </Node>
+  <Node Id="17" Class="Vec3:AddVec3" pos="730,30,0" flags="0">
+   <Inputs A="0,0,0" B="-10,0,0"/>
+  </Node>
+  <Node Id="18" Class="Vec3:AddVec3" pos="750,160,0" flags="0">
+   <Inputs A="0,0,0" B="10,0,0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="3" nodeOut="1" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="1" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="1" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="1" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="1" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="3" portIn="A" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="3" portIn="A" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="3" portIn="A" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="3" portIn="A" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="3" nodeOut="4" portIn="Get" portOut="tick" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="6" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="6" portIn="Start" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="6" portIn="Stop" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="8" portIn="Destination" portOut="Out" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="10" portIn="Start" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="10" portIn="Stop" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="10" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="11" portIn="Start" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="11" portIn="Stop" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="11" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="12" portIn="Start" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="12" portIn="Stop" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="12" portIn="Activate" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="16" portIn="Destination" portOut="Out" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="17" portIn="Destination" portOut="Out" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="18" portIn="Destination" portOut="Out" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{B34C46BE-96C5-47EB-84D7-E98332D91B2C}"/>
+ <GraphTokens />
+</Graph>
