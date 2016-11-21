@@ -74,7 +74,7 @@
    <Inputs />
   </Node>
   <Node Id="872" Name="pitch router" Class="_comment" pos="210,1270,0" flags="0"/>
-  <Node Id="873" Class="Logic:Any" pos="230,1800,0" flags="1" InHideMask="1023" OutHideMask="1">
+  <Node Id="873" Class="Logic:Any" pos="230,1800,0" flags="0" InHideMask="1023" OutHideMask="1">
    <Inputs />
   </Node>
   <Node Id="874" Name="move router" Class="_comment" pos="210,1770,0" flags="0"/>
@@ -543,7 +543,7 @@
   <Node Id="1147" Class="Logic:Any" pos="1410,2470,0" flags="0" InHideMask="1021">
    <Inputs />
   </Node>
-  <Node Id="1148" Class="Input:Gestures:ClickOrTap" pos="1100,2950,0" flags="0">
+  <Node Id="1148" Class="Input:Gestures:ClickOrTap" pos="1100,2950,0" flags="1">
    <Inputs PointerIndex="0" MinClicksOrTaps="2" MaxSecondsHeld="0.5" MaxPixelsMoved="20" MaxSecondsBetweenClicksOrTaps="0.5" MaxPixelsBetweenClicksOrTaps="20"/>
   </Node>
   <Node Id="1149" Class="Logic:Any" pos="1480,2940,0" flags="0" InHideMask="1023" OutHideMask="1">
