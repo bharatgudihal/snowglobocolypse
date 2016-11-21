@@ -30,16 +30,22 @@
    <Inputs paused="0"/>
   </Node>
   <Node Id="53" Class="Vec3:ScaleVec3" pos="1190,-150,0" flags="0">
-   <Inputs vector="0,0,0" scale="10000"/>
+   <Inputs vector="0,0,0" scale="8000"/>
   </Node>
   <Node Id="58" Class="Physics:ActionImpulse" pos="1590,-100,0" flags="0">
    <Inputs Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
   </Node>
-  <Node Id="59" Class="Vec3:ScaleVec3" pos="1190,-90,0" flags="0">
-   <Inputs vector="0,0,0" scale="10000"/>
+  <Node Id="59" Class="Vec3:ScaleVec3" pos="1190,-90,0" flags="1">
+   <Inputs vector="0,0,0" scale="8000"/>
   </Node>
   <Node Id="60" Class="Vec3:AddVec3" pos="1410,-130,0" flags="0">
    <Inputs A="0,0,0" B="0,0,0"/>
+  </Node>
+  <Node Id="61" Class="Logic:CountBlocker" pos="640,310,0" flags="0">
+   <Inputs Limit="3"/>
+  </Node>
+  <Node Id="78" Class="Time:Delay" pos="840,340,0" flags="0">
+   <Inputs delay="5" resetOnInput="1"/>
   </Node>
  </Nodes>
  <Edges>
@@ -52,12 +58,15 @@
   <Edge nodeIn="26" nodeOut="9" portIn="vector" portOut="UpDir" enabled="1"/>
   <Edge nodeIn="53" nodeOut="9" portIn="vector" portOut="FwdDir" enabled="1"/>
   <Edge nodeIn="59" nodeOut="9" portIn="vector" portOut="UpDir" enabled="1"/>
-  <Edge nodeIn="58" nodeOut="33" portIn="Activate" portOut="Recognized" enabled="1"/>
-  <Edge nodeIn="60" nodeOut="33" portIn="Activate" portOut="Recognized" enabled="1"/>
+  <Edge nodeIn="61" nodeOut="33" portIn="In" portOut="Recognized" enabled="1"/>
   <Edge nodeIn="9" nodeOut="34" portIn="Get" portOut="tick" enabled="1"/>
   <Edge nodeIn="60" nodeOut="53" portIn="A" portOut="out" enabled="1"/>
   <Edge nodeIn="60" nodeOut="59" portIn="B" portOut="out" enabled="1"/>
   <Edge nodeIn="58" nodeOut="60" portIn="Impulse" portOut="Out" enabled="1"/>
+  <Edge nodeIn="58" nodeOut="61" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="60" nodeOut="61" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="78" nodeOut="61" portIn="in" portOut="Out" enabled="1"/>
+  <Edge nodeIn="61" nodeOut="78" portIn="Reset" portOut="out" enabled="1"/>
  </Edges>
  <HyperGraphId Id="{290E781C-D8F5-4CC2-8AD3-19D3BFE3872A}"/>
  <GraphTokens />
