@@ -27,6 +27,12 @@
 				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.StartingPointInput.09f4bedeee614358bc36788e77f97e51.v0.1.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
 			</Class>
 			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
+				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.HMDFramework.24a3427048184feba39ba2cf75d45c4c.v0.1.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+			</Class>
+			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
+				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.OpenVR.3b1c41404cb147fe87e25bf72e035faa.v1.0.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+			</Class>
+			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
 				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.StaticData.4a4bf593603c4f329c76c2a10779311b.v1.0.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
 			</Class>
 			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
@@ -37,6 +43,9 @@
 			</Class>
 			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
 				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.InputManagementFramework.59b1b2acc1974aae9f18faddcaddac5b.v0.1.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+			</Class>
+			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
+				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.Gestures.6056556b6088413984309c4a413593ad.v1.0.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
 			</Class>
 			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
 				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.CertificateManager.659cffff33b14a10835bafc6ea623f98.v0.0.1" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
@@ -54,7 +63,16 @@
 				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.Snow.8827e54450f040dbaed1776ba4b35b43.v0.1.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
 			</Class>
 			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
+				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.Boids.97e596870cf645e184e43d5a5ccda857.v0.1.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+			</Class>
+			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
+				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.Substance.a2f08ba9713f485a8485d7588e5b120f.v2.0.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+			</Class>
+			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
 				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.Metastream.c02d7efe05134983b5699d9ee7594c3a.v1.0.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+			</Class>
+			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
+				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.Oculus.c32178b3c4e94fbead069bd92ff9b04a.v1.0.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
 			</Class>
 			<Class name="DynamicModuleDescriptor" field="element" type="{D2932FA3-9942-4FD2-A703-2E750F57C003}">
 				<Class name="AZStd::string" field="dynamicLibraryPath" value="Gem.UserLoginDefault.c9c25313197f489a8e9e8e6037fc62eb.v0.1.0" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
@@ -83,33 +101,7 @@
 		</Class>
 		<Class name="AZStd::string" field="Name" value="SystemEntity" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
 		<Class name="bool" field="IsDependencyReady" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
-		<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
-			<Class name="AssetDatabaseComponent" field="element" value="" version="1" type="{D5A73BCC-0098-4D1E-8FE4-C86101E374AC}">
-				<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
-					<Class name="AZ::u64" field="Id" value="7826610404837490998" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
-				</Class>
-			</Class>
-			<Class name="LmbrCentralSystemComponent" field="element" value="" version="1" type="{CE249D37-C1D6-4A64-932D-C937B0EC2B8C}">
-				<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
-					<Class name="AZ::u64" field="Id" value="10633070739551539799" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
-				</Class>
-			</Class>
-			<Class name="InputManagementFrameworkSystemComponent" field="element" value="" version="1" type="{B52457FC-2DEA-4F0E-B0D0-F17786B40F02}">
-				<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
-					<Class name="AZ::u64" field="Id" value="16969692894397920237" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
-				</Class>
-			</Class>
-			<Class name="CharacterAnimationManagerComponent" field="element" value="" version="1" type="{ABD0848C-0CFC-43D3-AEFB-7EEED64AF164}">
-				<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
-					<Class name="AZ::u64" field="Id" value="5218934146672275824" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
-				</Class>
-			</Class>
-			<Class name="PhysicsSystemComponent" field="element" value="" version="1" type="{1586DBA1-F5F0-49AB-9F59-AE62C0E60AE0}">
-				<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
-					<Class name="AZ::u64" field="Id" value="6486237944051168952" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
-				</Class>
-			</Class>
-		</Class>
+		<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}"/>
 	</Class>
 </ObjectStream>
 

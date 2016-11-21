@@ -1,0 +1,173 @@
+<ObjectStream version="1">
+	<Class name="AZ::Entity" version="2" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+		<Class name="EntityId" field="Id" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+			<Class name="AZ::u64" field="id" value="14442599807986295699" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+		</Class>
+		<Class name="AZStd::string" field="Name" value="14442599807986295699" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+		<Class name="bool" field="IsDependencyReady" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+		<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+			<Class name="PrefabComponent" field="element" version="1" type="{AFD304E4-1773-47C8-855A-8B622398934F}">
+				<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+					<Class name="AZ::u64" field="Id" value="15360541542597129887" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+				</Class>
+				<Class name="AZStd::vector" field="Entities" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+					<Class name="AZ::Entity" field="element" version="2" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+						<Class name="EntityId" field="Id" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+							<Class name="AZ::u64" field="id" value="14442304112372867987" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+						</Class>
+						<Class name="AZStd::string" field="Name" value="LightFlickerTrigger" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+						<Class name="bool" field="IsDependencyReady" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+						<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+							<Class name="EditorFlowGraphComponent" field="element" version="1" type="{400972DE-DD1F-4407-8F53-7E514C5767CA}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="18232556277805576476" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="AZStd::list" field="FlowGraphs" type="{B845AD64-B5A0-4CCD-A86B-3477A36779BE}">
+									<Class name="FlowGraphWrapper" field="element" value='&lt;FlowGraph Description="" Group="LightFlickerTrigger" enabled="1" MultiPlayer="ClientServer"&gt;
+ &lt;Nodes&gt;
+  &lt;Node Id="3" Class="ComponentEntity:TriggerComponent:EnterTrigger" pos="-1030,-50,0" flags="0" ComponentEntityId="C86D5F125425E393"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="5" Name="ProjectorLight" Class="Entity:EntityId" pos="20,-390,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="7" Name="LampLight" Class="Entity:EntityId" pos="0,130,0" flags="1"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="8" Name="OnSwitch" Class="ComponentEntity:Light:Switch" pos="420,-340,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="9" Name="OnSwitch_Lamp" Class="ComponentEntity:Light:Switch" pos="460,270,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="11" Name="IdFetch" Class="Logic:Any" pos="-290,-330,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="13" Class="Game:Start" pos="-680,-430,0" flags="0"&gt;
+   &lt;Inputs InGame="1" InEditor="1"/&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="14" Name="OffSwitch" Class="ComponentEntity:Light:Switch" pos="410,-530,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="15" Name="OffSwitch_Lamp" Class="ComponentEntity:Light:Switch" pos="490,-170,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="16" Name="SwitchOnBoth" Class="Logic:Any" pos="30,-140,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="17" Name="SwitchOffBoth" Class="Logic:Any" pos="-100,-640,0" flags="0"&gt;
+   &lt;Inputs /&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="19" Class="Time:Delay" pos="-580,30,0" flags="0"&gt;
+   &lt;Inputs delay="0.1" resetOnInput="0"/&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="20" Class="Time:Delay" pos="-590,170,0" flags="0"&gt;
+   &lt;Inputs delay="0.1" resetOnInput="0"/&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="23" Class="Time:Delay" pos="-590,300,0" flags="0"&gt;
+   &lt;Inputs delay="0.1" resetOnInput="0"/&gt;
+  &lt;/Node&gt;
+  &lt;Node Id="24" Class="Time:Delay" pos="-590,430,0" flags="0"&gt;
+   &lt;Inputs delay="0.1" resetOnInput="0"/&gt;
+  &lt;/Node&gt;
+ &lt;/Nodes&gt;
+ &lt;Edges&gt;
+  &lt;Edge nodeIn="11" nodeOut="3" portIn="In0" portOut="Entered" enabled="1"/&gt;
+  &lt;Edge nodeIn="16" nodeOut="3" portIn="In0" portOut="Entered" enabled="1"/&gt;
+  &lt;Edge nodeIn="19" nodeOut="3" portIn="in" portOut="Entered" enabled="1"/&gt;
+  &lt;Edge nodeIn="8" nodeOut="5" portIn="entityId" portOut="Id" enabled="1"/&gt;
+  &lt;Edge nodeIn="14" nodeOut="5" portIn="entityId" portOut="Id" enabled="1"/&gt;
+  &lt;Edge nodeIn="9" nodeOut="7" portIn="entityId" portOut="Id" enabled="1"/&gt;
+  &lt;Edge nodeIn="15" nodeOut="7" portIn="entityId" portOut="Id" enabled="1"/&gt;
+  &lt;Edge nodeIn="5" nodeOut="11" portIn="Activate" portOut="Out" enabled="1"/&gt;
+  &lt;Edge nodeIn="7" nodeOut="11" portIn="Activate" portOut="Out" enabled="1"/&gt;
+  &lt;Edge nodeIn="11" nodeOut="13" portIn="In1" portOut="output" enabled="1"/&gt;
+  &lt;Edge nodeIn="17" nodeOut="13" portIn="In0" portOut="output" enabled="1"/&gt;
+  &lt;Edge nodeIn="8" nodeOut="16" portIn="On" portOut="Out" enabled="1"/&gt;
+  &lt;Edge nodeIn="9" nodeOut="16" portIn="On" portOut="Out" enabled="1"/&gt;
+  &lt;Edge nodeIn="14" nodeOut="17" portIn="Off" portOut="Out" enabled="1"/&gt;
+  &lt;Edge nodeIn="15" nodeOut="17" portIn="Off" portOut="Out" enabled="1"/&gt;
+  &lt;Edge nodeIn="17" nodeOut="19" portIn="In1" portOut="out" enabled="1"/&gt;
+  &lt;Edge nodeIn="20" nodeOut="19" portIn="in" portOut="out" enabled="1"/&gt;
+  &lt;Edge nodeIn="16" nodeOut="20" portIn="In1" portOut="out" enabled="1"/&gt;
+  &lt;Edge nodeIn="23" nodeOut="20" portIn="in" portOut="out" enabled="1"/&gt;
+  &lt;Edge nodeIn="17" nodeOut="23" portIn="In2" portOut="out" enabled="1"/&gt;
+  &lt;Edge nodeIn="24" nodeOut="23" portIn="in" portOut="out" enabled="1"/&gt;
+  &lt;Edge nodeIn="16" nodeOut="24" portIn="In2" portOut="out" enabled="1"/&gt;
+ &lt;/Edges&gt;
+ &lt;GraphTokens /&gt;
+&lt;/FlowGraph&gt;
+' version="1" type="{C0943E3C-0009-4BF0-9A92-821E471CFB0C}">
+										<Class name="AZStd::string" field="FlowGraphName" value="LightFlickerOn" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::unordered_map" field="NodeInfoMap" type="{18456A80-63CC-40C5-BF16-6AF94F9A9ECC}">
+											<Class name="AZStd::pair" field="element" type="{9F3F5302-3390-407A-A6F7-2E011E3BB686}">
+												<Class name="unsigned short" field="value1" value="0" type="{ECA0B403-C4F8-4B86-95FC-81688D046E40}"/>
+												<Class name="FlowGraphNodeInfo" field="value2" version="1" type="{EDC07880-4326-4E5A-A35A-D6988A52CB49}">
+													<Class name="EntityId" field="EntityId" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+														<Class name="AZ::u64" field="id" value="14442304112372867987" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													</Class>
+													<Class name="bool" field="HasGraphEntitySet" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+												</Class>
+											</Class>
+										</Class>
+										<Class name="EntityId" field="OwningEntityID" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+											<Class name="AZ::u64" field="id" value="14442304112372867987" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+										</Class>
+									</Class>
+								</Class>
+							</Class>
+							<Class name="SelectionComponent" field="element" value="" type="{73B724FC-43D1-4C75-ACF5-79AA8A3BF89D}">
+								<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+									<Class name="AZ::u64" field="Id" value="2167962423530254356" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+							</Class>
+							<Class name="TransformComponent" field="element" version="5" type="{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="17517196186571798303" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="EntityId" field="Parent Entity" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+									<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+								<Class name="EditorTransform" field="Transform Data" version="1" type="{B02B7063-D238-4F40-A724-405F7A6D68CB}">
+									<Class name="Vector3" field="Translate" value="532.2167969 643.7489624 32.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+									<Class name="Vector3" field="Rotate" value="0.0000000 0.0000000 0.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+									<Class name="Vector3" field="Scale" value="1.0000000 1.0000000 1.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+								</Class>
+							</Class>
+							<Class name="EditorTriggerAreaComponent" field="element" version="1" type="{7F983509-09FF-4990-93D0-9D52BA1C60B2}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="4232079028490126115" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="TriggerAreaComponent" field="TriggerArea" version="1" type="{E3DF5790-F0AD-43AE-9FB2-0A37F873DECB}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="0" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+									<Class name="Vector3" field="Dimensions" value="7.0000000 7.0000000 7.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+									<Class name="AZStd::vector" field="TargetEntities" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+										<Class name="EntityId" field="element" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+											<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+										</Class>
+									</Class>
+									<Class name="bool" field="TriggerOnce" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									<Class name="int" field="ActivatedBy" value="3" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+									<Class name="AZStd::vector" field="SpecificInteractEntities" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}"/>
+									<Class name="int" field="OnStartAction" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+									<Class name="int" field="OnEnterAction" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+									<Class name="int" field="OnExitAction" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+								</Class>
+							</Class>
+						</Class>
+					</Class>
+				</Class>
+				<Class name="AZStd::list" field="Prefabs" type="{B845AD64-B5A0-4CCD-A86B-3477A36779BE}"/>
+			</Class>
+		</Class>
+	</Class>
+</ObjectStream>
+

@@ -1,0 +1,35 @@
+<BehaviorTree>
+
+	<Variables>
+		<Variable name="HasTarget"/>
+	</Variables>
+
+	<SignalVariables>
+	</SignalVariables>
+
+	<Timestamps>
+	</Timestamps>
+
+	<Root>
+	
+		<Priority>
+			<Case condition="HasTarget">
+				<Sequence>
+					<Log message="Now I should fight you!"/>
+					<Loop>
+						<AnimateFragment name="Nav" />
+					</Loop>
+					<Halt/>
+				</Sequence>
+			</Case>
+			<Case>
+				<Sequence>
+					<Log message="I do not have a target. I am sad!"/>
+					<AnimateFragment name="Jump" />
+					<Halt/>
+				</Sequence>
+			</Case>
+		</Priority>
+	</Root>
+
+</BehaviorTree>

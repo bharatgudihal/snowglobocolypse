@@ -3,7 +3,7 @@
     
     "Metadata": {
         "CloudCanvas": {
-            "Id": "$Revision: #1 $"
+            "Id": "$Revision: #5 $"
         }
     },
 
@@ -37,12 +37,29 @@
     },
 
     "Resources": {
-        "EmptyDeployment": {
-            "Type": "Custom::EmptyDeployment",
+
+        "DontDieAWSConfiguration" : {
+            "Type": "Custom::ResourceGroupConfiguration",
             "Properties": {
-                "ServiceToken": { "Ref": "ProjectResourceHandler" }
+                "ServiceToken": { "Ref": "ProjectResourceHandler" },
+                "ConfigurationBucket": { "Ref": "ConfigurationBucket" },
+                "ConfigurationKey": { "Ref": "ConfigurationKey" },
+                "ResourceGroupName": "DontDieAWS"
+            }
+        },
+        
+        "DontDieAWS": {
+            "Type": "AWS::CloudFormation::Stack",
+            "Properties": {
+                "TemplateURL": { "Fn::GetAtt": [ "DontDieAWSConfiguration", "TemplateURL" ] },
+                "Parameters": {
+                    "ProjectResourceHandler": { "Ref": "ProjectResourceHandler" },
+                    "ConfigurationBucket": { "Fn::GetAtt": [ "DontDieAWSConfiguration", "ConfigurationBucket" ] },
+                    "ConfigurationKey": { "Fn::GetAtt": [ "DontDieAWSConfiguration", "ConfigurationKey" ] }
+                }
             }
         }
+
     },
 
     "Outputs": {

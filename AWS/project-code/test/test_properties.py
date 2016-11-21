@@ -1,4 +1,4 @@
-#
+﻿#
 # All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 # its licensors.
 #
@@ -8,7 +8,7 @@
 # remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
-# $Revision: #1 $
+# $Revision: #4 $
 
 import unittest
 import mock
@@ -408,156 +408,5 @@ class TestProperties(unittest.TestCase):
         self.assertEqual('Result1', props.Test1)
         self.assertEqual('Result2', props.Test2)
 
-
-class TestInteger(unittest.TestCase):
-
-
-    def test_with_int_and_no_default(self):
-        
-        target = properties.Integer()
-        value = target('Test', 10)
-
-        self.assertEqual(value, 10)
-
-
-    def test_with_int_and_default(self):
-        
-        target = properties.Integer(default=42)
-        value = target('Test', 10)
-
-        self.assertEqual(value, 10)
-
-
-    def test_with_None_and_default(self):
-        
-        target = properties.Integer(default=42)
-        value = target('Test', None)
-
-        self.assertEqual(value, 42)
-
-
-    def test_with_None_and_no_default(self):
-        
-        target = properties.Integer()
-
-        with self.assertRaises(properties.ValidationError) as e:
-            value = target('Test', None)
-
-        self.assertIn('Test', e.exception.message)
-
-
-    def test_with_non_int(self):
-        
-        target = properties.Integer()
-
-        with self.assertRaises(properties.ValidationError) as e:
-            value = target('Test', 'string')
-
-        self.assertIn('Test', e.exception.message)
-        
-
-class TestBoolean(unittest.TestCase):
-
-
-    def test_with_bool_and_no_default(self):
-        
-        target = properties.Boolean()
-        value = target('Test', True)
-
-        self.assertEqual(value, True)
-
-
-    def test_with_bool_and_default(self):
-        
-        target = properties.Boolean(default=False)
-        value = target('Test', True)
-
-        self.assertEqual(value, True)
-
-
-    def test_with_None_and_default(self):
-        
-        target = properties.Boolean(default=False)
-        value = target('Test', None)
-
-        self.assertEqual(value, False)
-
-
-    def test_with_None_and_no_default(self):
-        
-        target = properties.Boolean()
-
-        with self.assertRaises(properties.ValidationError) as e:
-            value = target('Test', None)
-
-        self.assertIn('Test', e.exception.message)
-
-
-    def test_with_bool_string(self):
-        target = properties.Boolean()
-        self.assertTrue(target('Test', 'true'))
-        self.assertTrue(target('Test', 'True'))
-        self.assertTrue(target('Test', 'TRUE'))
-        self.assertFalse(target('Test', 'false'))
-        self.assertFalse(target('Test', 'False'))
-        self.assertFalse(target('Test', 'FALSE'))
-
-
-    def test_with_non_bool(self):
-        
-        target = properties.Boolean()
-
-        with self.assertRaises(properties.ValidationError) as e:
-            value = target('Test', 'string')
-
-        self.assertIn('Test', e.exception.message)
-        
-
-class TestDictionary(unittest.TestCase):
-
-
-    def test_with_dict_and_no_default(self):
-        
-        target = properties.Dictionary()
-        value = target('Test', { 'a': 1 })
-
-        self.assertEqual(value, { 'a': 1 })
-
-
-    def test_with_dict_and_default(self):
-        
-        target = properties.Dictionary(default={ 'a': 2 })
-        value = target('Test', { 'a': 1 })
-
-        self.assertEqual(value, { 'a': 1 })
-
-
-    def test_with_None_and_default(self):
-        
-        target = properties.Dictionary(default={ 'a': 2 })
-        value = target('Test', None)
-
-        self.assertEqual(value, { 'a': 2 })
-
-
-    def test_with_None_and_no_default(self):
-        
-        target = properties.Dictionary()
-
-        with self.assertRaises(properties.ValidationError) as e:
-            value = target('Test', None)
-
-        self.assertIn('Test', e.exception.message)
-
-
-    def test_with_non_dict(self):
-        
-        target = properties.Dictionary()
-
-        with self.assertRaises(properties.ValidationError) as e:
-            value = target('Test', 'string')
-
-        self.assertIn('Test', e.exception.message)
-        
 
 

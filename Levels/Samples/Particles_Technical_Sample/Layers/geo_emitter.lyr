@@ -1,0 +1,17 @@
+<ObjectLayer>
+ <Layer Name="Geo_Emitter" GUID="{A8E8CBC0-E9C7-4AC6-B1D8-06DAF49264DE}" Exportable="1" ExportLayerPak="1" DefaultLoaded="1" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Brush" Layer="Geo_Emitter" LayerGUID="{A8E8CBC0-E9C7-4AC6-B1D8-06DAF49264DE}" Id="{474EA91D-D0C3-413B-BD1E-F8D861AC142F}" Name="GeoEmitter_001" HideOrder="0" Pos="1026.5138,1035.965,33.969139" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.74000001,0.74000001,0.74000001" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/particle_geo_emitter_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="ParticleEntity" Layer="Geo_Emitter" LayerGUID="{A8E8CBC0-E9C7-4AC6-B1D8-06DAF49264DE}" Id="{8B887B96-6984-439F-9687-2CDEA2C8D2CC}" Name="ParticleEffect_GeoEmitter_001" HideOrder="0" Pos="1026.5,1035.9529,33.970036" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles_geo_emitter.geo_emitter_001" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

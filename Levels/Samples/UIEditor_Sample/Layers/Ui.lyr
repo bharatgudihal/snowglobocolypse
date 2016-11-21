@@ -1,0 +1,178 @@
+<ObjectLayer>
+ <Layer Name="Ui" GUID="{6E773743-D07F-4DA9-B4BB-F9E290A3332F}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Ui" LayerGUID="{6E773743-D07F-4DA9-B4BB-F9E290A3332F}" Id="{D1B68448-3DCF-4445-A1D0-7C80AF3A5728}" Name="UiSampleFlowGraph" HideOrder="0" Pos="1329.9999,1887,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="UiSampleFlowGraph" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-1520,-100,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="UI:Canvas:Load" pos="-1215,-235,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/UIEditor_Sample/UI/UiSample.uicanvas" Disabled="0"/>
+      </Node>
+      <Node Id="3" Class="UI:Canvas:ActionListener" pos="75,-1095,0" flags="0">
+       <Inputs CanvasID="0" ActionName="PlayGame"/>
+      </Node>
+      <Node Id="4" Class="UI:Fader:Animation" pos="375,-1085,0" flags="0">
+       <Inputs CanvasID="0" ElementID="2" StartValue="1" TargetValue="0" Speed="1"/>
+      </Node>
+      <Node Id="5" Class="UI:Canvas:Unload" pos="660,-900,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="6" Class="Input:MouseCursor" pos="440,-760,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="9" Class="UI:Canvas:ActionListener" pos="-360,440,0" flags="0">
+       <Inputs CanvasID="0" ActionName="ShowOptions"/>
+      </Node>
+      <Node Id="11" Class="UI:Canvas:Load" pos="-985,725,0" flags="0">
+       <Inputs CanvasPathname="Levels/Samples/UIEditor_Sample/UI/UiOptionsSample.uicanvas" Disabled="1"/>
+      </Node>
+      <Node Id="14" Class="UI:Canvas:SetEnabled" pos="70,460,0" flags="0">
+       <Inputs CanvasId="0" Enabled="1"/>
+      </Node>
+      <Node Id="15" Class="UI:Canvas:SetDrawOrder" pos="-495,-235,0" flags="0">
+       <Inputs CanvasId="0" DrawOrder="0"/>
+      </Node>
+      <Node Id="17" Class="UI:Canvas:SetDrawOrder" pos="-175,765,0" flags="0">
+       <Inputs CanvasId="0" DrawOrder="1"/>
+      </Node>
+      <Node Id="19" Class="UI:Interactable:SetIsHandlingEvents" pos="55,-515,0" flags="0">
+       <Inputs CanvasID="0" ElementID="8" State="0"/>
+      </Node>
+      <Node Id="20" Class="UI:Interactable:SetIsHandlingEvents" pos="55,-415,0" flags="0">
+       <Inputs CanvasID="0" ElementID="10" State="0"/>
+      </Node>
+      <Node Id="21" Class="UI:Interactable:SetIsHandlingEvents" pos="55,-315,0" flags="0">
+       <Inputs CanvasID="0" ElementID="12" State="0"/>
+      </Node>
+      <Node Id="23" Class="UI:Fader:Animation" pos="-435,-125,0" flags="0">
+       <Inputs CanvasID="0" ElementID="17" StartValue="-1" TargetValue="0" Speed="0"/>
+      </Node>
+      <Node Id="25" Class="UI:Canvas:ActionListener" pos="305,675,0" flags="0">
+       <Inputs CanvasID="0" ActionName="ApplyOptions"/>
+      </Node>
+      <Node Id="27" Class="UI:Fader:Animation" pos="1085,555,0" flags="0">
+       <Inputs CanvasID="0" ElementID="17" StartValue="0" TargetValue="1" Speed="0.5"/>
+      </Node>
+      <Node Id="29" Class="UI:Fader:Animation" pos="1335,555,0" flags="0">
+       <Inputs CanvasID="0" ElementID="17" StartValue="-1" TargetValue="0" Speed="0.5"/>
+      </Node>
+      <Node Id="31" Class="UI:Canvas:SetEnabled" pos="885,905,0" flags="0">
+       <Inputs CanvasId="0" Enabled="0"/>
+      </Node>
+      <Node Id="32" Class="UI:Interactable:SetIsHandlingEvents" pos="995,-35,0" flags="0">
+       <Inputs CanvasID="0" ElementID="8" State="1"/>
+      </Node>
+      <Node Id="33" Class="UI:Interactable:SetIsHandlingEvents" pos="995,65,0" flags="0">
+       <Inputs CanvasID="0" ElementID="10" State="1"/>
+      </Node>
+      <Node Id="34" Class="UI:Interactable:SetIsHandlingEvents" pos="995,165,0" flags="0">
+       <Inputs CanvasID="0" ElementID="12" State="1"/>
+      </Node>
+      <Node Id="36" Name="Load Main Menu" Class="_blackbox" pos="-1260,-280,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="2" Node1="15" Node2="23"/>
+      </Node>
+      <Node Id="38" Class="Logic:Any" pos="855,25,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="39" Name="Enable Main Menu Buttons" Class="_blackbox" pos="810,-80,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="32" Node1="33" Node2="34" Node3="38"/>
+      </Node>
+      <Node Id="41" Class="UI:Canvas:ActionListener" pos="315,545,0" flags="0">
+       <Inputs CanvasID="0" ActionName="CancelOptions"/>
+      </Node>
+      <Node Id="43" Class="Logic:Any" pos="745,855,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="44" Name="Show &quot;Settings Saved&quot; message" Class="_blackbox" pos="1040,510,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="27" Node1="29"/>
+      </Node>
+      <Node Id="46" Class="UI:Canvas:Unload" pos="660,-830,0" flags="0">
+       <Inputs CanvasId="0"/>
+      </Node>
+      <Node Id="47" Name="Play Game" Class="_blackbox" pos="30,-1140,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="3" Node1="4" Node2="5" Node3="6" Node4="46"/>
+      </Node>
+      <Node Id="48" Name="Hide Options" Class="_blackbox" pos="700,810,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="31" Node1="43"/>
+      </Node>
+      <Node Id="49" Name="Load Options" Class="_blackbox" pos="-1030,680,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="11" Node1="17"/>
+      </Node>
+      <Node Id="51" Name="Show Options" Class="_blackbox" pos="-405,395,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="9" Node1="14"/>
+      </Node>
+      <Node Id="52" Name="Apply and Cancel buttons" Class="_blackbox" pos="260,500,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="25" Node1="41"/>
+      </Node>
+      <Node Id="55" Name="Disable Main Menu Buttons" Class="_blackbox" pos="10,-560,0" flags="0">
+       <Inputs TextSize="2" DisplayFilled="1" Color="1,1,1" SortPriority="16"/>
+       <BlackBoxChildren Node0="19" Node1="20" Node2="21"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="1" portIn="Show" portOut="output" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="2" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="2" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="2" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="2" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="2" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="2" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="27" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="29" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="32" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="2" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="3" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="3" portIn="Hide" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="4" portIn="Activate" portOut="OnComplete" enabled="1"/>
+      <Edge nodeIn="46" nodeOut="4" portIn="Activate" portOut="OnComplete" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="9" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="9" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="9" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="9" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="9" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="41" nodeOut="9" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="11" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="11" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="11" portIn="Activate" portOut="OnLoad" enabled="1"/>
+      <Edge nodeIn="25" nodeOut="11" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="11" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="41" nodeOut="11" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="46" nodeOut="11" portIn="CanvasId" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="27" nodeOut="25" portIn="Activate" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="25" portIn="In0" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="25" portIn="In1" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="29" nodeOut="27" portIn="Activate" portOut="OnComplete" enabled="1"/>
+      <Edge nodeIn="32" nodeOut="38" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="38" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="38" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="41" portIn="In1" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="41" portIn="In0" portOut="OnAction" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="43" portIn="Activate" portOut="Out" enabled="1"/>
+     </Edges>
+     <HyperGraphId Id="{6BA7848F-05A7-465F-BF20-42AE4CDD22E4}"/>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

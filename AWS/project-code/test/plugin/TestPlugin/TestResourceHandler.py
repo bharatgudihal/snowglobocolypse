@@ -1,4 +1,4 @@
-#
+﻿#
 # All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 # its licensors.
 #
@@ -11,18 +11,15 @@
 # $Revision: #4 $
 
 # make sure that this can be imported successfully
-
-import os
 import custom_resource_response
-import test_plugin_dependency
 
-calls_file_path = os.path.join(os.path.dirname(__file__), 'calls')
+import test_custom_resource
+
 call_count = 0
 
 def handler(event, context):
     global call_count
     call_count += 1
-    with open(calls_file_path, 'a') as file:
-        file.write('{}\n'.format(call_count))
+    test_custom_resource.test_handler_called(call_count)
 
 
