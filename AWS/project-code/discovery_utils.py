@@ -1,4 +1,4 @@
-#
+﻿#
 # All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 # its licensors.
 #
@@ -8,7 +8,7 @@
 # remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
-# $Revision: #1 $
+# $Revision: #7 $
 
 import boto3
 import os
@@ -316,7 +316,7 @@ def get_resource_arn(stack_arn, resource_type, resource_name):
     
     pattern = RESOURCE_ARN_PATTERNS.get(resource_type, None)
     if pattern is None:
-        raise ValidationError('Unsupported ARN mapping for resource type {} on resource {}. To add support for additional resource types, add an entry to RESOURCE_ARN_PATTERNS in project-code\discovery_utils.py.'.format(resource_type, resource_name))
+        raise ValidationError('Unsupported resource type {} for resource {}.'.format(resource_type, resource_name))
 
     return pattern.format(
         region=get_region_from_stack_arn(stack_arn),

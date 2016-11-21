@@ -1,0 +1,8 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level">
+   <GameToken Name="Controller_Right_One_End" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="Controller_Left_Zero" Type="Int" Value="0" LocalOnly="1"/>
+  </LevelLibrary>
+ </GameTokensLibrary>
+</GameTokens>

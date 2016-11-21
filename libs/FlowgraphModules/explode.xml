@@ -1,0 +1,57 @@
+<Graph isModule="1" moduleName="Explode" Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="Sphere" Type="3" Input="1"/>
+  <Port Name="MoveBox" Type="3" Input="1"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_Explode" pos="-140,40,0" flags="0"/>
+  <Node Id="2" Class="Module:End_Explode" pos="80,-50,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="9" Class="Entity:GetPos" pos="820,-160,0" flags="0">
+   <Inputs CoordSys="1"/>
+  </Node>
+  <Node Id="16" Class="Vec3:ScaleVec3" pos="1270,60,0" flags="0">
+   <Inputs vector="0,0,0" scale="-500"/>
+  </Node>
+  <Node Id="17" Class="Vec3:ScaleVec3" pos="1280,320,0" flags="0">
+   <Inputs vector="0,0,0" scale="-500"/>
+  </Node>
+  <Node Id="18" Class="Vec3:ScaleVec3" pos="1280,140,0" flags="0">
+   <Inputs vector="0,0,0" scale="500"/>
+  </Node>
+  <Node Id="26" Class="Vec3:ScaleVec3" pos="1240,440,0" flags="0">
+   <Inputs vector="0,0,0" scale="500"/>
+  </Node>
+  <Node Id="33" Class="Input:Gestures:ClickOrTap" pos="130,210,0" flags="0">
+   <Inputs PointerIndex="0" MinClicksOrTaps="1" MaxSecondsHeld="0.5" MaxPixelsMoved="20" MaxSecondsBetweenClicksOrTaps="5" MaxPixelsBetweenClicksOrTaps="20"/>
+  </Node>
+  <Node Id="34" Class="Time:Time" pos="414.59839,-159.34741,0" flags="0">
+   <Inputs paused="0"/>
+  </Node>
+  <Node Id="39" Class="Debug:Log" pos="2110,-40,0" flags="0">
+   <Inputs message=""/>
+  </Node>
+  <Node Id="52" Class="Physics:ActionImpulse" pos="1530,0,0" flags="0">
+   <Inputs Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+  </Node>
+  <Node Id="53" Class="Vec3:ScaleVec3" pos="1307.2255,-70.834877,0" flags="0">
+   <Inputs vector="0,0,0" scale="50000"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="9" nodeOut="1" portIn="entityId" portOut="MoveBox" enabled="1"/>
+  <Edge nodeIn="33" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="52" nodeOut="1" portIn="entityId" portOut="Sphere" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="9" portIn="vector" portOut="FwdDir" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="9" portIn="vector" portOut="RightDir" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="9" portIn="vector" portOut="RightDir" enabled="1"/>
+  <Edge nodeIn="26" nodeOut="9" portIn="vector" portOut="UpDir" enabled="1"/>
+  <Edge nodeIn="53" nodeOut="9" portIn="vector" portOut="FwdDir" enabled="1"/>
+  <Edge nodeIn="52" nodeOut="33" portIn="Activate" portOut="Recognized" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="34" portIn="Get" portOut="tick" enabled="1"/>
+  <Edge nodeIn="52" nodeOut="53" portIn="Impulse" portOut="out" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{290E781C-D8F5-4CC2-8AD3-19D3BFE3872A}"/>
+ <GraphTokens />
+</Graph>

@@ -1,0 +1,54 @@
+<Graph Description="" Group="Entity1" enabled="1" MultiPlayer="ServerOnly">
+ <Nodes>
+  <Node Id="1" Class="Time:Timer" pos="-400,-250,0" flags="0">
+   <Inputs period="0.2" min="0" max="0" paused="0"/>
+  </Node>
+  <Node Id="2" Class="ComponentEntity:TransformComponent:GetEntityPosition" pos="-220,-240,0" flags="0" GraphEntity="0">
+   <Inputs CoordSystem="1"/>
+  </Node>
+  <Node Id="5" Class="ComponentEntity:TransformComponent:GetEntityRotation" pos="-220,-130,0" flags="0" GraphEntity="0">
+   <Inputs CoordSystem="1"/>
+  </Node>
+  <Node Id="6" Class="Metastream:CacheData" pos="210,-240,0" flags="0">
+   <Inputs Table="sample" Key="chicken_position"/>
+  </Node>
+  <Node Id="8" Class="Logic:Any" pos="460,-60,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="9" Class="Metastream:CacheData" pos="210,-120,0" flags="0">
+   <Inputs Table="sample" Key="chicken_forward"/>
+  </Node>
+  <Node Id="12" Class="Time:RealTime" pos="-220,40,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="13" Class="Metastream:CacheData" pos="210,10,0" flags="0">
+   <Inputs Table="sample" Key="datetime"/>
+  </Node>
+  <Node Id="14" Class="Metastream:CacheData" pos="210,120,0" flags="0">
+   <Inputs Table="sample" Key="epoch"/>
+  </Node>
+  <Node Id="15" Class="Debug:Log" pos="470,70,0" flags="0">
+   <Inputs message="An error occured in the Metastream flow graph."/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Activate" portOut="out" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="1" portIn="Activate" portOut="out" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="1" portIn="force_update" portOut="out" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="2" portIn="Activate" portOut="CurrentPosition" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="2" portIn="Value" portOut="CurrentPosition" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="5" portIn="Activate" portOut="Forward" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="5" portIn="Value" portOut="Forward" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="6" portIn="In0" portOut="Error" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="8" portIn="input" portOut="Out" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="9" portIn="In1" portOut="Error" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="12" portIn="Activate" portOut="datetime" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="12" portIn="Value" portOut="datetime" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="12" portIn="Activate" portOut="epoch" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="12" portIn="Value" portOut="epoch" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="13" portIn="In2" portOut="Error" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="14" portIn="In3" portOut="Error" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{78F3A526-D8CF-4B82-B513-19FAC417CA8B}"/>
+ <GraphTokens />
+</Graph>

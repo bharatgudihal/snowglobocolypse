@@ -1,0 +1,6 @@
+<download name="UIEditor_Sample" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="168609" md5="ba03ec39facd148ef2c8a801c111d2fc"/>
+ </files>
+</download>

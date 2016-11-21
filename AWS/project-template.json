@@ -3,7 +3,7 @@
 
     "Metadata": {
         "CloudCanvas": {
-            "Id": "$Revision: #1 $"
+            "Id": "$Revision: #10 $"
         }
     },
 
@@ -164,8 +164,11 @@
                                         "iam:DeleteRolePolicy",
                                         "iam:PutRolePolicy"
                                     ],
-                                    "Resource": { "Fn::Join": [ "", [ "arn:aws:iam::", {"Ref": "AWS::AccountId"}, ":role/", {"Ref": "AWS::StackName"}, "/*"]] }
-								},
+                                    "Resource": [ 
+                                        { "Fn::Join": [ "", [ "arn:aws:iam::", {"Ref": "AWS::AccountId"}, ":role/", {"Ref": "AWS::StackName"}, "/*"]] },
+                                        { "Fn::Join": [ "", [ "arn:aws:iam::", {"Ref": "AWS::AccountId"}, ":role/", {"Ref": "AWS::StackName"}, "-*"]] }
+                                    ]
+                                },
                                 {
                                     "Sid": "CreateUpdateCognitoIdentity",
                                     "Effect": "Allow",
@@ -181,21 +184,6 @@
                                         "s3:GetObject"
                                     ],
                                     "Resource": { "Fn::Join": [ "", [ "arn:aws:s3:::", { "Ref": "Configuration" }, "/player-access/auth-settings.json" ]] }
-                                },
-                                {
-                                    "Sid": "ManageAPIGatewayResources",
-                                    "Action": "apigateway:*",
-                                    "Resource": [
-                                        { "Fn::Join": [ "", [ "arn:aws:apigateway:", {"Ref": "AWS::Region" }, "::/restapis/*" ] ] },
-                                        { "Fn::Join": [ "", [ "arn:aws:apigateway:", {"Ref": "AWS::Region" }, "::/restapis" ] ] }
-                                    ],
-                                    "Effect": "Allow"
-                                },
-                                {
-                                    "Sid": "PassRolesToServices",
-                                    "Action": "iam:PassRole",
-                                    "Resource": { "Fn::Join": [ "", [ "arn:aws:iam::554229317296:role/", {"Ref": "AWS::StackName"}, "/*" ] ] },
-                                    "Effect": "Allow"
                                 }
                             ]
                         }
@@ -211,7 +199,7 @@
                 "Handler": "custom_resource.handler",
                 "Role": { "Fn::GetAtt": [ "ProjectResourceHandlerExecution", "Arn" ] },                
                 "Runtime": "python2.7",               
-                "Timeout" : 90,
+                "Timeout" : 120,
                 "Code": {
                     "S3Bucket": { "Ref": "Configuration" },
                     "S3Key": { "Fn::Join": [ "/", [ { "Ref": "ConfigurationKey" }, "project-code.zip" ]] }

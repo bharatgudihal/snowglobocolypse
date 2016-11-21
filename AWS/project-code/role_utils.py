@@ -1,4 +1,4 @@
-#
+﻿#
 # All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 # its licensors.
 #
@@ -17,7 +17,6 @@ import time
 import copy
 
 from errors import ValidationError
-from botocore.exceptions import ClientError
 
 iam = boto3.client('iam')
 
@@ -147,15 +146,8 @@ def delete_role(stack_arn, logical_role_name, policy_name):
         if isinstance(e, ClientError) and e.response["Error"]["Code"] not in ["NoSuchEntity", "AccessDenied"]:
             raise e    
         
-    try:
-        res = iam.delete_role(RoleName=role_name)
-        print 'delete_role {} result: {}'.format(role_name, res)
-    except Exception as e:
-        print 'delete_role {} error: {}'.format(role_name, getattr(e, 'response', e))
-        if isinstance(e, ClientError) and e.response["Error"]["Code"] not in ["NoSuchEntity", "AccessDenied"]:
-            raise e    
-
-
+    res = iam.delete_role(RoleName=role_name)
+    print 'delete_role {} result: {}'.format(role_name, res)
 
 
 ASSUME_ROLE_POLICY_DOCUMENT = '''{
@@ -251,10 +243,7 @@ def _create_role_policy(stack_arn, policy_name, default_statements, policy_metad
         
     print 'generated policy: {}'.format(policy)
 
-    if len(policy['Statement']) == 0:
-        return None
-    else:
-        return json.dumps(policy, indent=4)
+    return json.dumps(policy, indent=4)
 
 
 def _make_resource_statement(cf, stack_arn, policy_name, logical_resource_name, policy_metadata_filter):
@@ -328,7 +317,7 @@ def _get_metadata_for_role(resource, policy_name, policy_metadata_filter):
         except ValidationError as e:
             raise ValidationError('Invalid {} metadata entry was found on resource {} in stack {}. {}'.format(
                 policy_name,
-                resource['LogicalResourceId'],
+                logical_resource_name,
                 stack_arn, 
                 e.message))
 
@@ -336,7 +325,7 @@ def _get_metadata_for_role(resource, policy_name, policy_metadata_filter):
             if entry_found is not None:
                 raise ValidationError('More than one applicable {} metadata entry was found on resource {} in stack {}.'.format(
                     policy_name,
-                    resource['LogicalResourceId'],
+                    logical_resource_name,
                     stack_arn))
             entry_found = entry
 

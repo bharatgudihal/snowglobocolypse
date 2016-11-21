@@ -1,0 +1,184 @@
+<ObjectLayer>
+ <Layer Name="Main" GUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Exportable="1" ExportLayerPak="1" DefaultLoaded="1" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{BD977509-7F5C-42DD-8D97-0AEB310EE12D}" Name="showroom_pipe_19" HideOrder="0" Pos="1033.5,1011.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Material="objects/particleassets/showroom/particle_showroom_001_mg" Prefab="Objects/particleassets/showroom/showroom_pipe_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{89208E15-9B43-4282-B038-D641A2D99283}" Name="showroom_backboard_19" HideOrder="0" Pos="1033.4999,1031.5,32" FloorNumber="-1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_backboard_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{3B1E0B2A-63BB-4D53-9FB7-A9A5501DEBCC}" Name="showroom_ticker_bg_002" HideOrder="0" Pos="1033.4999,1037.5,31.999992" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_ticker_bg_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{8E68022E-76C0-474D-A41C-95BAA5BA53A4}" Name="showroom_support_beam_11" HideOrder="0" Pos="1036.9999,1024.0615,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_support_beam_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{2B63ED33-80DB-43CE-AD1E-08356DECBE32}" Name="showroom_light_3" HideOrder="0" Pos="1033.4999,1016.5,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Material="objects/particleassets/showroom/particle_showroom_light_on_001_mg" Prefab="Objects/particleassets/showroom/showroom_light_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{23309D3E-ED72-4E8F-A907-E190CA6489D8}" Name="showroom_floor_rect_large_50" HideOrder="0" Pos="1029.9999,1026.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_rect_large_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{6B072F45-3AB9-4689-8AEF-87CD4A446BC9}" Name="showroom_floor_square_large_27" HideOrder="0" Pos="1033.4999,1016.5,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_square_large_002.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{02AD8445-CDE5-4525-AF90-CC1FDFEC14DF}" Name="showroom_beam_33" HideOrder="0" Pos="1029.9999,1016.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_beam_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{7AD25655-9955-4BB4-BD49-D82DC21368EC}" Name="showroom_number_decal_1" HideOrder="0" Pos="1031.2231,1038.5,33.183674" FloorNumber="-1" Rotate="4.3711388e-008,1.6966388e-016,-9.6361504e-008,1" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_number_decal_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{8030CF57-CB40-45E7-885B-9D99D5F0C306}" Name="showroom_beam_34" HideOrder="0" Pos="1036.9999,1031.5,32" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_beam_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{F778F25A-15A1-4026-AC5B-EFEE84C607C2}" Name="showroom_floor_square_large_28" HideOrder="0" Pos="1033.4999,1026.5,32" FloorNumber="-1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_square_large_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{9DEDAB61-7C88-4965-AA81-1EED8AC3BD8B}" Name="showroom_ticker_fire_001" HideOrder="0" Pos="1033.4999,1037.5,31.999996" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_ticker_fire_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{0B14BF64-46BF-49F2-9E93-2357E530F7C5}" Name="showroom_skylight_8" HideOrder="0" Pos="1036.4999,1024,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_skylight_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{4C2F9777-EDCD-4728-9445-AA922C84B256}" Name="showroom_floor_square_large_29" HideOrder="0" Pos="1033.4999,1026.5,31.999998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_square_large_002.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{48E33279-8649-4A3B-A58C-36308D315B64}" Name="showroom_number_decal_2" HideOrder="0" Pos="1035.6713,1009.5,33.187466" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_number_decal_002.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{5D12A87B-3A22-4576-8C91-48EDC47EC4C1}" Name="showroom_beam_35" HideOrder="0" Pos="1036.9999,1016.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_beam_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{45B8478D-1E59-4774-9B73-EF615DB66437}" Name="showroom_light_2" HideOrder="0" Pos="1033.4999,1031.5,31.999998" FloorNumber="-1" Rotate="-4.3711388e-008,-0,0,1" ColorRGB="16777215" Material="objects/particleassets/showroom/particle_showroom_light_on_001_mg" Prefab="Objects/particleassets/showroom/showroom_light_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{141FB99C-F7BF-447E-91E1-FEEB8C369CE8}" Name="showroom_beam_32" HideOrder="0" Pos="1029.9999,1031.5,32" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_beam_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{5821F29C-B294-4D90-8F0A-0127395974D8}" Name="showroom_floor_rect_large_53" HideOrder="0" Pos="1036.9999,1026.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_rect_large_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{76194FA1-7A96-4256-8625-1A4685B7AC24}" Name="showroom_floor_rect_large_55" HideOrder="0" Pos="1036.9999,1016.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_rect_large_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{7DA7C4A7-4A44-4467-9F4B-F8E202407A15}" Name="showroom_support_beam_10" HideOrder="0" Pos="1029.9999,1024.0615,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_support_beam_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{1633FCB8-6102-4B9F-8E4B-5ACF186C15F2}" Name="showroom_ticker_plasmabeam_001" HideOrder="0" Pos="1033.4999,1010.5,31.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_ticker_plasmabeam_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{0555C2CF-FBDA-4F1C-9E8E-E82AFA77F3B8}" Name="showroom_pipe_18" HideOrder="0" Pos="1033.4999,1036.5,31.999998" FloorNumber="-1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" Material="objects/particleassets/showroom/particle_showroom_001_mg" Prefab="Objects/particleassets/showroom/showroom_pipe_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{5DA78FD8-5267-4A7F-A8C4-96361B02F9BE}" Name="showroom_ticker_bg_001" HideOrder="0" Pos="1033.4999,1010.5,31.999996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_ticker_bg_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{5FD6B1E0-CF34-412E-B834-30F063904DB9}" Name="showroom_floor_rect_large_51" HideOrder="0" Pos="1029.9999,1021.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_rect_large_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{A389B6E3-7AAD-4476-9623-F9AFDF7748B2}" Name="Light12" HideOrder="0" Pos="1033.7422,1023.9601,48.250462" FloorNumber="-1" Rotate="0.70177794,0.0057773199,0.71236718,-0.0027291321" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="11" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="Light">
+    <Properties bActive="1" fAttenuationBulbSize="1" Radius="20" _nVersion="0">
+     <Color clrDiffuse="0.434154,0.637597,0.964686" fDiffuseMultiplier="100" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="0" bAffectsVolumetricFogOnly="0" bAmbient="1" bFakeLight="0" fFogRadialLobe="0" bIgnoresVisAreas="0" bVolumetricFog="0"/>
+     <Projector fProjectorFov="29.3" fProjectorNearPlane="1" texture_Texture="textures/lights/generic/rectangle_full_075.dds"/>
+     <Shadows nCastShadows="1" fShadowBias="100" fShadowBlurStrength="1" nShadowMinResPercent="4" fShadowResolutionScale="1" fShadowSlopeBias="1" fShadowUpdateMinRadius="1" fShadowUpdateRatio="1"/>
+     <Shape bAreaLight="1" fPlaneHeight="100" fPlaneWidth="1"/>
+     <Style nAnimationPhase="0" fAnimationSpeed="1" bAttachToSun="0" flare_Flare="" bFlareEnable="0" fFlareFOV="360" lightanimation_LightAnimation="" nLightStyle="0" _fTimeScrubbed="0" bTimeScrubbingInTrackView="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{4540CBE8-C95F-42D2-A1C8-6BD7864D8C17}" Name="showroom_floor_rect_large_52" HideOrder="0" Pos="1029.9999,1016.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_rect_large_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{6812CBED-89A9-421C-9C0F-1C45C91FBE62}" Name="showroom_backboard_16" HideOrder="0" Pos="1033.4999,1016.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_backboard_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Brush" Layer="Main" LayerGUID="{7A5004D8-0DF5-4CD5-8F84-F8A09DED2A47}" Id="{18C135F1-35FC-4B65-A47B-5991E00C85BB}" Name="showroom_floor_rect_large_54" HideOrder="0" Pos="1036.9999,1021.5,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/showroom_floor_rect_large_001.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

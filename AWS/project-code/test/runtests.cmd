@@ -1,6 +1,6 @@
 @ECHO OFF 
 
-REM $Revision: #1 $
+REM $Revision: #6 $
 
 SETLOCAL
 SET CMD_DIR=%~dp0

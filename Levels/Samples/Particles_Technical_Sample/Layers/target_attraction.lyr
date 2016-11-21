@@ -1,0 +1,82 @@
+<ObjectLayer>
+ <Layer Name="Target_Attraction" GUID="{E69BFBDF-59F1-42B9-AAF8-99358B53E906}" Exportable="1" ExportLayerPak="1" DefaultLoaded="1" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="AreaBox" Layer="Target_Attraction" LayerGUID="{E69BFBDF-59F1-42B9-AAF8-99358B53E906}" Id="{9CCF6A02-32CE-4964-BA44-937F04938D78}" Name="target_attractor_001" HideOrder="0" Pos="1017.5185,1014.71,32.529926" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" AreaId="-1" FadeInZone="0" Width="0.1" Length="0.1" Height="0.1" GroupId="0" Priority="0" DisplayFilled="0" DisplaySoundInfo="0" EntityClass="AreaBox" BoxMin="-0.050000001,-0.050000001,0" BoxMax="0.050000001,0.050000001,0.1">
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Target_Attraction" LayerGUID="{E69BFBDF-59F1-42B9-AAF8-99358B53E906}" Id="{CDD2FE18-7DE8-41AD-9D59-FA79C1C2100A}" Name="FlowgraphEntity2" HideOrder="0" Pos="1016.8929,1014.859,32.297428" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+    <FlowGraph Description="" Group="AttractionMovement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Movement:MoveEntityTo" pos="-580,-160,0" flags="0" EntityGUID="{9CCF6A02-32CE-4964-BA44-937F04938D78}" EntityGUID_64="496432CE9CCF6A02">
+       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="0.25" EaseInDistance="0.25" EaseOutDistance="0.25" CoordSys="0"/>
+      </Node>
+      <Node Id="2" Class="Movement:MoveEntityTo" pos="-90,-160,0" flags="0" EntityGUID="{9CCF6A02-32CE-4964-BA44-937F04938D78}" EntityGUID_64="496432CE9CCF6A02">
+       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="0.25" EaseInDistance="0.25" EaseOutDistance="0.25" CoordSys="0"/>
+      </Node>
+      <Node Id="3" Class="Game:Start" pos="-1040,-220,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="5" Class="entity:TagPoint" pos="-1000,60,0" flags="0" EntityGUID="{0AB9E759-A81A-416F-9F79-57B312396AB1}" EntityGUID_64="416FA81A0AB9E759">
+       <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="7" Class="entity:TagPoint" pos="-370,80,0" flags="0" EntityGUID="{7EA2BDDA-84E6-49A7-B301-265CD8DD58CE}" EntityGUID_64="49A784E67EA2BDDA">
+       <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="8" Class="Logic:Any" pos="-770,-130,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="9" Class="Movement:MoveEntityTo" pos="-560,280,0" flags="0" EntityGUID="{B3337290-82B4-4915-9A7A-02DD420DD1C1}" EntityGUID_64="491582B4B3337290">
+       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="0.25" EaseInDistance="0.25" EaseOutDistance="0.25" CoordSys="0"/>
+      </Node>
+      <Node Id="10" Class="Movement:MoveEntityTo" pos="-70,280,0" flags="0" EntityGUID="{B3337290-82B4-4915-9A7A-02DD420DD1C1}" EntityGUID_64="491582B4B3337290">
+       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="0.25" EaseInDistance="0.25" EaseOutDistance="0.25" CoordSys="0"/>
+      </Node>
+      <Node Id="11" Class="Game:Start" pos="-1020,310,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="12" Class="Logic:Any" pos="-780,350,0" flags="0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="13" Name="target attractor and sphere movement script" Class="_commentbox" pos="-1050,-250,0" flags="0">
+       <Inputs TextSize="1" Color="0.991102,0.791298,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1230" Height="730"/>
+       <NodeSize Width="1230" Height="730"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="1" portIn="Start" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="2" portIn="In1" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="3" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="1" nodeOut="5" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="5" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="7" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="7" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="1" nodeOut="8" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="9" portIn="Start" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="10" portIn="In1" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="11" portIn="In0" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="12" portIn="Start" portOut="Out" enabled="1"/>
+     </Edges>
+     <HyperGraphId Id="{69D9FFC9-59DA-433A-A871-50D1A94D7167}"/>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Target_Attraction" LayerGUID="{E69BFBDF-59F1-42B9-AAF8-99358B53E906}" Id="{0AB9E759-A81A-416F-9F79-57B312396AB1}" Name="TagPoint1" HideOrder="0" Pos="1021.4999,1014.5,32.499996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
+   <Object Type="GeomEntity" Layer="Target_Attraction" LayerGUID="{E69BFBDF-59F1-42B9-AAF8-99358B53E906}" Id="{B3337290-82B4-4915-9A7A-02DD420DD1C1}" Name="showroom_collision_platform_3" HideOrder="0" Pos="1017.4666,1014.6348,32.52285" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.44999999,0.44999999,0.44999999" ColorRGB="65535" Geometry="objects/particleassets/showroom/showroom_collision_platform_001.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="Target_Attraction" LayerGUID="{E69BFBDF-59F1-42B9-AAF8-99358B53E906}" Id="{7EA2BDDA-84E6-49A7-B301-265CD8DD58CE}" Name="TagPoint2" HideOrder="0" Pos="1017.4999,1014.6594,32.545242" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
+   <Object Type="ParticleEntity" Layer="Target_Attraction" LayerGUID="{E69BFBDF-59F1-42B9-AAF8-99358B53E906}" Id="{DC0EA0DF-EB4D-4B7C-9C12-92759CA99EF2}" Name="ParticleEffect_TargetAttraction_001" HideOrder="0" Pos="1019.3626,1011.9734,32.808849" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles_target_attraction.target_attraction_emitter_001" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
+    </Properties>
+    <EntityLinks>
+     <Link TargetId="{9CCF6A02-32CE-4964-BA44-937F04938D78}" Name="target" Version="1"/>
+    </EntityLinks>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

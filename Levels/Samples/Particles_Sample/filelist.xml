@@ -1,0 +1,6 @@
+<download name="showroom" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="107015" md5="90862cbcfcd4369a2d03d50a00684cf1"/>
+ </files>
+</download>

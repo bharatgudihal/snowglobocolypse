@@ -1,0 +1,6 @@
+<download name="Particles_Technical_Sample" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="543897" md5="274fc928f96105b82c87a934cd74b317"/>
+ </files>
+</download>

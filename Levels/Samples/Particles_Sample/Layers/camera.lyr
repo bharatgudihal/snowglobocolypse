@@ -1,0 +1,7 @@
+<ObjectLayer>
+ <Layer Name="Camera" GUID="{B316946D-7FDF-4BCE-A001-AA8E02A173F9}" Exportable="1" ExportLayerPak="1" DefaultLoaded="1" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Prefab" Layer="Camera" LayerGUID="{B316946D-7FDF-4BCE-A001-AA8E02A173F9}" Id="{0532ACE5-64FC-4162-BE8F-16324032D7E9}" Name="Free_Cam_Controller1" HideOrder="0" Pos="1033.4999,1024,33.499996" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{2DB8519B-E682-4C89-B96D-D5175F76FBAE}" PrefabName="Character_Controllers.Free_Cam_Controller"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,6 @@
+<download name="Dont_Die" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="259208" md5="acc25ff65b9d46db168ff8c98471818c"/>
+ </files>
+</download>

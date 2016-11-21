@@ -1,0 +1,58 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="Entity:EntityId" pos="-760,-20,0" flags="0" EntityGUID="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" EntityGUID_64="40F529B5EA1129AB">
+   <Inputs />
+  </Node>
+  <Node Id="3" Class="Entity:EntityId" pos="-760,120,0" flags="0" EntityGUID="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" EntityGUID_64="4739DEB287A95A92">
+   <Inputs />
+  </Node>
+  <Node Id="4" Class="Module:Call_Character_Controller_Robot_Completed" pos="-160,-20,0" flags="0">
+   <Inputs Instanced="1" InstanceID="-1" Controller_Ref_Box_Pitch="0" Controller_Ref_Box_Move="0" Awesome_Sphere="0" Robot_Head="0" Camera_Rig="0" Robot_Body="0" Head_Tilt_Parent="0"/>
+  </Node>
+  <Node Id="5" Class="Game:Start" pos="-770,-310,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="8" Class="Entity:EntityId" pos="-760,190,0" flags="0" EntityGUID="{18626F3D-2830-4758-B220-15E385BDFFE0}" EntityGUID_64="4758283018626F3D">
+   <Inputs />
+  </Node>
+  <Node Id="9" Class="Entity:EntityId" pos="-760,260,0" flags="0" EntityGUID="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" EntityGUID_64="4403D38C10498B71">
+   <Inputs />
+  </Node>
+  <Node Id="10" Class="Entity:EntityId" pos="-760,50,0" flags="1" EntityGUID="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" EntityGUID_64="42D19DEAA90467D9">
+   <Inputs />
+  </Node>
+  <Node Id="12" Class="Entity:EntityId" pos="-760,330,0" flags="0" EntityGUID="{4C5010C0-C1A9-4D11-940F-7744F4FC3143}" EntityGUID_64="4D11C1A94C5010C0">
+   <Inputs />
+  </Node>
+  <Node Id="13" Class="Entity:EntityId" pos="-760,400,0" flags="0" EntityGUID="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" EntityGUID_64="4B0E75A98AF897E0">
+   <Inputs />
+  </Node>
+  <Node Id="17" Class="Entity:EntityInfo" pos="-170,-230,0" flags="0" EntityGUID="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" EntityGUID_64="4403D38C10498B71">
+   <Inputs />
+  </Node>
+  <Node Id="18" Class="Mission:GameTokenSet" pos="440,-230,0" flags="0">
+   <Inputs gametoken_Token="GettingStarted_GT.3P_CameraID" TokenValue=""/>
+  </Node>
+  <Node Id="21" Class="Module:Call_Explode" pos="220,-20,0" flags="0">
+   <Inputs Instanced="1" InstanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="4" nodeOut="2" portIn="Controller_Ref_Box_Pitch" portOut="Id" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="3" portIn="Awesome_Sphere" portOut="Id" enabled="1"/>
+  <Edge nodeIn="21" nodeOut="3" portIn="Sphere" portOut="Id" enabled="1"/>
+  <Edge nodeIn="21" nodeOut="4" portIn="Call" portOut="OnCalled" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="5" portIn="Call" portOut="output" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="5" portIn="Get" portOut="output" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="8" portIn="Robot_Head" portOut="Id" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="9" portIn="Camera_Rig" portOut="Id" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="10" portIn="Controller_Ref_Box_Move" portOut="Id" enabled="1"/>
+  <Edge nodeIn="21" nodeOut="10" portIn="MoveBox" portOut="Id" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="12" portIn="Robot_Body" portOut="Id" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="13" portIn="Head_Tilt_Parent" portOut="Id" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="17" portIn="Activate" portOut="Id" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="17" portIn="TokenValue" portOut="Id" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{B7339955-E94B-4B92-9DD5-73D2433F70CA}"/>
+ <GraphTokens />
+</Graph>
