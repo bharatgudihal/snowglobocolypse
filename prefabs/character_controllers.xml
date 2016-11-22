@@ -193,6 +193,7 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="Prefab" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{E5790BE8-FE37-49C6-8D75-72271523CAA8}" Name="NeighborhoodBlock.StreetSet_A1" HideOrder="0" Pos="-89,-4,-1" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{F2EA1882-BEFF-4DE8-9F1E-DBA50C4BEEA3}" PrefabName="StyleTown.NeighborhoodBlock.StreetSet_A"/>
   </Objects>
  </Prefab>
  <Prefab Name="VR_Sphere_Controller" Id="{88C5E5CF-D14E-4810-AC08-D56219689084}" Library="Character_Controllers">
