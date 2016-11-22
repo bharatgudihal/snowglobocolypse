@@ -1,5 +1,7 @@
 <GameTokens>
  <GameTokensLibrary>
-  <LevelLibrary Name="Level"/>
+  <LevelLibrary Name="Level">
+   <GameToken Name="Explode.ExplodePower" Type="Int" Value="90" LocalOnly="0"/>
+  </LevelLibrary>
  </GameTokensLibrary>
 </GameTokens>
