@@ -1,0 +1,41 @@
+<Graph Description="" Group="Player" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Entity:EntityId" pos="-27,583,0" flags="0" GraphEntity="0">
+   <Inputs />
+  </Node>
+  <Node Id="7" Class="Game:Start" pos="-150,420,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="11" Class="Entity:EntityId" pos="-57,223,0" flags="0" EntityGUID="{A3CF3263-D3BD-4738-AA3E-8ED9E88C4B35}" EntityGUID_64="4738D3BDA3CF3263">
+   <Inputs />
+  </Node>
+  <Node Id="16" Class="Camera:View" pos="270,-190,0" flags="0">
+   <Inputs Enable="1" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="0" BlendFOVOffset="0" BlendPosSpeed="0" BlendPosOffset="0,0,0" BlendRotSpeed="0" BlendRotOffset="0,0,0"/>
+  </Node>
+  <Node Id="18" Class="Module:Call_MoveModule" pos="260,660,0" flags="0">
+   <Inputs Instanced="1" InstanceID="-1"/>
+  </Node>
+  <Node Id="20" Class="Module:Call_RotateModule" pos="260,780,0" flags="0">
+   <Inputs Instanced="1" InstanceID="-1"/>
+  </Node>
+  <Node Id="23" Class="Entity:ChildAttach" pos="270,410,0" flags="0">
+   <Inputs KeepTransform="1" DisablePhysics="1"/>
+  </Node>
+  <Node Id="25" Class="Entity:ChildDetach" pos="270,290,0" flags="0" EntityGUID="{A3CF3263-D3BD-4738-AA3E-8ED9E88C4B35}" EntityGUID_64="4738D3BDA3CF3263">
+   <Inputs KeepTransform="0" EnablePhysics="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="18" nodeOut="1" portIn="EntityId" portOut="Id" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="1" portIn="Entity" portOut="Id" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="1" portIn="entityId" portOut="Id" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="7" portIn="Call" portOut="output" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="7" portIn="Call" portOut="output" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="7" portIn="Attach" portOut="output" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="11" portIn="entityId" portOut="Id" enabled="1"/>
+  <Edge nodeIn="25" nodeOut="11" portIn="entityId" portOut="Id" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{7710BD47-69F0-4E4A-A95A-60AC08406FF0}"/>
+ <GraphTokens />
+</Graph>

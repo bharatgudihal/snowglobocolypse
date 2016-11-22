@@ -1,0 +1,37 @@
+<ObjectLayer>
+ <Layer Name="Gravity" GUID="{EF8B9115-25CC-46FE-910C-337576853275}" Exportable="1" ExportLayerPak="1" DefaultLoaded="1" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Gravity" LayerGUID="{EF8B9115-25CC-46FE-910C-337576853275}" Id="{BA254A0F-5724-4F94-87D1-8A84FB1616C2}" Name="GravitySphere_002" HideOrder="0" Parent="{4BDB80C2-98D3-41BD-A7C8-ED0A99EAB3B4}" Pos="1.2263794,1.0229397,0.80822754" FloorNumber="-1" Rotate="3.090862e-008,-3.090862e-008,0.70710677,0.70710677" Scale="0.80000013,0.80000019,0.80000007" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GravitySphere">
+    <Properties bActive="1" Damping="0" bEllipsoidal="1" FalloffInner="0" Radius="1.5" bUniform="1">
+     <Gravity x="-100" y="0" z="0"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="Gravity" LayerGUID="{EF8B9115-25CC-46FE-910C-337576853275}" Id="{B84AF32F-FAF7-4C11-BD42-F107114F0443}" Name="ParticleEffect_Gravity" HideOrder="0" Parent="{4BDB80C2-98D3-41BD-A7C8-ED0A99EAB3B4}" Pos="-0.00018310547,1.9073486e-006,6.1035156e-005" FloorNumber="-1" Rotate="3.090862e-008,-3.090862e-008,0.70710677,0.70710677" Scale="0.80000013,0.80000019,0.80000007" ColorRGB="65535" Material="objects/particleassets/marble_001_mg" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles_gravity.gravity_001" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Gravity" LayerGUID="{EF8B9115-25CC-46FE-910C-337576853275}" Id="{F7E7DD49-E486-470E-9A60-83E9487D8062}" Name="GravitySphere_003" HideOrder="0" Parent="{4BDB80C2-98D3-41BD-A7C8-ED0A99EAB3B4}" Pos="-1.3659058,1.4221802,0.59680176" FloorNumber="-1" Rotate="3.090862e-008,-3.090862e-008,0.70710677,0.70710677" Scale="0.80000013,0.80000019,0.80000007" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GravitySphere">
+    <Properties bActive="1" Damping="0" bEllipsoidal="1" FalloffInner="0" Radius="2" bUniform="1">
+     <Gravity x="100" y="100" z="10"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Gravity" LayerGUID="{EF8B9115-25CC-46FE-910C-337576853275}" Id="{4BDB80C2-98D3-41BD-A7C8-ED0A99EAB3B4}" Name="particle_geo_emitter_001" HideOrder="0" Pos="1040.5001,1035.962,32.377045" FloorNumber="-1" Rotate="-3.090862e-008,-3.090862e-008,0.70710677,0.70710677" Scale="1.25,1.25,1.25" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/particle_geo_emitter_002.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+   <Object Type="Entity" Layer="Gravity" LayerGUID="{EF8B9115-25CC-46FE-910C-337576853275}" Id="{0B7DE8C4-08BD-4372-BD17-79542D918DE5}" Name="GravitySphere_001" HideOrder="0" Parent="{4BDB80C2-98D3-41BD-A7C8-ED0A99EAB3B4}" Pos="-0.00018310547,0.94177246,6.1035156e-005" FloorNumber="-1" Rotate="3.090862e-008,-3.090862e-008,0.70710677,0.70710677" Scale="0.80000013,0.80000019,0.80000007" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GravitySphere">
+    <Properties bActive="1" Damping="0" bEllipsoidal="1" FalloffInner="0" Radius="1" bUniform="1">
+     <Gravity x="50" y="-20" z="0"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="Gravity" LayerGUID="{EF8B9115-25CC-46FE-910C-337576853275}" Id="{3A05DCD5-B4BB-4C7E-8A49-3E80977DDE01}" Name="ParticleEffect_Gravity_002" HideOrder="0" Pos="1040.5059,1035.9117,32.564442" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles_gravity.gravity_002" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

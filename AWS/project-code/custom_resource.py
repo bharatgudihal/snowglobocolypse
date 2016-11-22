@@ -1,4 +1,4 @@
-#
+﻿#
 # All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 # its licensors.
 #
@@ -8,7 +8,7 @@
 # remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
-# $Revision: #1 $
+# $Revision: #7 $
 
 import custom_resource_response
 import traceback
@@ -76,25 +76,15 @@ def handler(event, context):
 
 def __load_module(name, path):
 
-    imp.acquire_lock()
+    print 'Loading module {} from {}.'.format(name, path)
+
+    path = [ path ]
+
+    fp, pathname, description = imp.find_module(name, path)
+
     try:
-
-        print 'Loading module {} from {}.'.format(name, path)
-
-        sys.path.append(path)
-        try:
-
-            fp, pathname, description = imp.find_module(name, [ path ])
-
-            try:
-                module = imp.load_module(name, fp, pathname, description)
-                return module
-            finally:
-                if fp:
-                    fp.close()
-
-        finally:
-            sys.path.remove(path)
-
+        module = imp.load_module(name, fp, pathname, description)
+        return module
     finally:
-        imp.release_lock()
+        if fp:
+            fp.close()

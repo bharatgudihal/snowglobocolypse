@@ -1,4 +1,4 @@
-#
+﻿#
 # All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 # its licensors.
 #
@@ -8,13 +8,12 @@
 # remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
-# $Revision: #1 $
+# $Revision: #7 $
 
 import unittest
 import mock
 import os
 import sys
-import copy
 
 import custom_resource
 
@@ -97,19 +96,11 @@ class TestCustomResource(unittest.TestCase):
             custom_resource.handler(event, context)
             mock_handler.assert_called_with(event, context)
 
-
     def test_handler_dispatches_resource_group_provided_resource_handler(self):
 
         test_resource_group_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), 'plugin'))
 
         with mock.patch.object(custom_resource, 'PLUGIN_DIRECTORY_PATH', new = test_resource_group_dir):
-
-            calls_file_path = os.path.join(os.path.dirname(__file__), 'plugin', 'TestPlugin', 'calls')
-
-            path_before = copy.copy(sys.path)
-
-            if os.path.exists(calls_file_path):
-                os.remove(calls_file_path)
 
             event = {
                 'ResourceType': 'Custom::Test'
@@ -118,15 +109,20 @@ class TestCustomResource(unittest.TestCase):
             context = {
             }
 
+            # We don't load the TestPlugin module so as to not interfere with
+            # the loading process we are testing. Instead that module will load this
+            # test module and call the test_handler_called method, which we will verify.
+            #
             # We call it twice so we can verify that the module is not being reloaded on
             # every request.
 
             custom_resource.handler(event, context)
             custom_resource.handler(event, context)
 
-            with open(calls_file_path, 'r') as file:
-                test_handler_calls = file.read()
-                self.assertEqual(test_handler_calls, "1\n2\n")
+            global test_handler_calls
+            self.assertEqual(test_handler_calls, [ 1, 2 ])
 
-            self.assertEquals(path_before, sys.path)
+def test_handler_called(call_count):
+    global test_handler_calls
+    test_handler_calls.append(call_count)
 
