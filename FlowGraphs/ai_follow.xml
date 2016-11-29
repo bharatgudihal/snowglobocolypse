@@ -1,0 +1,53 @@
+<Graph Description="" Group="AI_Follow" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="38" Class="Movement:MoveEntityTo" pos="350,40,0" flags="0" GraphEntity="0">
+   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="10" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+  </Node>
+  <Node Id="40" Class="Entity:FindEntityByName" pos="-160,40,0" flags="0">
+   <Inputs Name="robot_body"/>
+  </Node>
+  <Node Id="41" Class="Game:Start" pos="-340,60,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="42" Class="Entity:GetPos" pos="110,30,0" flags="0" GraphEntity="0">
+   <Inputs CoordSys="1"/>
+  </Node>
+  <Node Id="43" Class="Time:Time" pos="-130,120,0" flags="0">
+   <Inputs paused="0"/>
+  </Node>
+  <Node Id="54" Class="Physics:CollisionListener" pos="-200,260,0" flags="0">
+   <Inputs IgnoreSameNode="0"/>
+  </Node>
+  <Node Id="56" Class="Logic:IfCondition" pos="220,370,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="60" Class="Math:Equal" pos="190,520,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="61" Class="Debug:Log" pos="380,530,0" flags="0">
+   <Inputs message=""/>
+  </Node>
+  <Node Id="67" Class="Entity:EntityId" pos="-370,200,0" flags="0" GraphEntity="0">
+   <Inputs />
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="42" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="60" nodeOut="40" portIn="B" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="67" nodeOut="40" portIn="Activate" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="40" nodeOut="41" portIn="Set" portOut="output" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="42" portIn="Destination" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="42" portIn="Start" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="43" portIn="Get" portOut="tick" enabled="1"/>
+  <Edge nodeIn="56" nodeOut="54" portIn="Activate" portOut="IdB" enabled="1"/>
+  <Edge nodeIn="60" nodeOut="54" portIn="A" portOut="IdB" enabled="1"/>
+  <Edge nodeIn="60" nodeOut="54" portIn="Activate" portOut="IdB" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="56" portIn="Stop" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="56" nodeOut="60" portIn="Condition" portOut="Out" enabled="1"/>
+  <Edge nodeIn="61" nodeOut="60" portIn="input" portOut="Out" enabled="1"/>
+  <Edge nodeIn="61" nodeOut="60" portIn="message" portOut="Out" enabled="1"/>
+  <Edge nodeIn="54" nodeOut="67" portIn="AddListener" portOut="Id" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{95EE8BB4-F6BB-4A45-9518-BDB6F25A912D}"/>
+ <GraphTokens />
+</Graph>
