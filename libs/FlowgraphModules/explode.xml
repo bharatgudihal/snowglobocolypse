@@ -11,18 +11,6 @@
   <Node Id="9" Class="Entity:GetPos" pos="820,-160,0" flags="0">
    <Inputs CoordSys="1"/>
   </Node>
-  <Node Id="16" Class="Vec3:ScaleVec3" pos="1270,60,0" flags="0">
-   <Inputs vector="0,0,0" scale="-500"/>
-  </Node>
-  <Node Id="17" Class="Vec3:ScaleVec3" pos="1280,320,0" flags="0">
-   <Inputs vector="0,0,0" scale="-500"/>
-  </Node>
-  <Node Id="18" Class="Vec3:ScaleVec3" pos="1280,140,0" flags="0">
-   <Inputs vector="0,0,0" scale="500"/>
-  </Node>
-  <Node Id="26" Class="Vec3:ScaleVec3" pos="1240,440,0" flags="0">
-   <Inputs vector="0,0,0" scale="500"/>
-  </Node>
   <Node Id="33" Class="Input:Gestures:ClickOrTap" pos="130,210,0" flags="0">
    <Inputs PointerIndex="0" MinClicksOrTaps="1" MaxSecondsHeld="0.5" MaxPixelsMoved="20" MaxSecondsBetweenClicksOrTaps="5" MaxPixelsBetweenClicksOrTaps="20"/>
   </Node>
@@ -35,7 +23,7 @@
   <Node Id="58" Class="Physics:ActionImpulse" pos="1590,-100,0" flags="0">
    <Inputs Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
   </Node>
-  <Node Id="59" Class="Vec3:ScaleVec3" pos="1190,-90,0" flags="1">
+  <Node Id="59" Class="Vec3:ScaleVec3" pos="1190,-90,0" flags="0">
    <Inputs vector="0,0,0" scale="8000"/>
   </Node>
   <Node Id="60" Class="Vec3:AddVec3" pos="1410,-130,0" flags="0">
@@ -44,18 +32,54 @@
   <Node Id="61" Class="Logic:CountBlocker" pos="640,310,0" flags="0">
    <Inputs Limit="3"/>
   </Node>
-  <Node Id="78" Class="Time:Delay" pos="840,340,0" flags="0">
-   <Inputs delay="5" resetOnInput="1"/>
+  <Node Id="82" Class="Time:Time" pos="-220,380,0" flags="0">
+   <Inputs paused="0"/>
+  </Node>
+  <Node Id="84" Class="Entity:GetPos" pos="100,560,0" flags="0">
+   <Inputs CoordSys="1"/>
+  </Node>
+  <Node Id="86" Class="Vec3:FromVec3" pos="340,580,0" flags="0">
+   <Inputs vec3="0,0,0"/>
+  </Node>
+  <Node Id="89" Class="Math:Less" pos="490,600,0" flags="0">
+   <Inputs A="0" B="34"/>
+  </Node>
+  <Node Id="90" Class="Mission:GameTokenGet" pos="670,610,0" flags="0">
+   <Inputs gametoken_Token="Level.Explode.ExplodePower"/>
+  </Node>
+  <Node Id="91" Class="Math:Add" pos="1080,580,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="92" Class="Math:Less" pos="1270,530,0" flags="0">
+   <Inputs A="0" B="91"/>
+  </Node>
+  <Node Id="93" Class="Mission:GameTokenSet" pos="1520,580,0" flags="1">
+   <Inputs gametoken_Token="Level.Explode.ExplodePower" TokenValue=""/>
+  </Node>
+  <Node Id="94" Class="Mission:GameTokenGet" pos="920,360,0" flags="0">
+   <Inputs gametoken_Token="Level.Explode.ExplodePower"/>
+  </Node>
+  <Node Id="96" Class="Math:Sub" pos="1260,360,0" flags="0">
+   <Inputs A="0" B="30"/>
+  </Node>
+  <Node Id="98" Class="Math:Less" pos="1460,300,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="99" Class="Mission:GameTokenSet" pos="1634.0792,382.71191,0" flags="0">
+   <Inputs gametoken_Token="Level.Explode.ExplodePower" TokenValue=""/>
+  </Node>
+  <Node Id="105" Class="Mission:GameTokenGet" pos="50,400,0" flags="0">
+   <Inputs gametoken_Token="Level.Explode.ExplodePower"/>
+  </Node>
+  <Node Id="106" Class="Math:Equal" pos="380,400,0" flags="0">
+   <Inputs A="0" B="90"/>
   </Node>
  </Nodes>
  <Edges>
   <Edge nodeIn="9" nodeOut="1" portIn="entityId" portOut="MoveBox" enabled="1"/>
   <Edge nodeIn="33" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
   <Edge nodeIn="58" nodeOut="1" portIn="entityId" portOut="Sphere" enabled="1"/>
-  <Edge nodeIn="16" nodeOut="9" portIn="vector" portOut="FwdDir" enabled="1"/>
-  <Edge nodeIn="17" nodeOut="9" portIn="vector" portOut="RightDir" enabled="1"/>
-  <Edge nodeIn="18" nodeOut="9" portIn="vector" portOut="RightDir" enabled="1"/>
-  <Edge nodeIn="26" nodeOut="9" portIn="vector" portOut="UpDir" enabled="1"/>
+  <Edge nodeIn="84" nodeOut="1" portIn="entityId" portOut="MoveBox" enabled="1"/>
   <Edge nodeIn="53" nodeOut="9" portIn="vector" portOut="FwdDir" enabled="1"/>
   <Edge nodeIn="59" nodeOut="9" portIn="vector" portOut="UpDir" enabled="1"/>
   <Edge nodeIn="61" nodeOut="33" portIn="In" portOut="Recognized" enabled="1"/>
@@ -65,8 +89,28 @@
   <Edge nodeIn="58" nodeOut="60" portIn="Impulse" portOut="Out" enabled="1"/>
   <Edge nodeIn="58" nodeOut="61" portIn="Activate" portOut="Out" enabled="1"/>
   <Edge nodeIn="60" nodeOut="61" portIn="Activate" portOut="Out" enabled="1"/>
-  <Edge nodeIn="78" nodeOut="61" portIn="in" portOut="Out" enabled="1"/>
-  <Edge nodeIn="61" nodeOut="78" portIn="Reset" portOut="out" enabled="1"/>
+  <Edge nodeIn="94" nodeOut="61" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="84" nodeOut="82" portIn="Get" portOut="tick" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="84" portIn="vec3" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="89" nodeOut="86" portIn="A" portOut="z" enabled="1"/>
+  <Edge nodeIn="89" nodeOut="86" portIn="Activate" portOut="z" enabled="1"/>
+  <Edge nodeIn="90" nodeOut="89" portIn="Activate" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="91" nodeOut="90" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="91" nodeOut="90" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="92" nodeOut="91" portIn="A" portOut="Out" enabled="1"/>
+  <Edge nodeIn="92" nodeOut="91" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="93" nodeOut="91" portIn="TokenValue" portOut="Out" enabled="1"/>
+  <Edge nodeIn="93" nodeOut="92" portIn="Activate" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="105" nodeOut="93" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="96" nodeOut="94" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="96" nodeOut="94" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="98" nodeOut="96" portIn="A" portOut="Out" enabled="1"/>
+  <Edge nodeIn="98" nodeOut="96" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="99" nodeOut="96" portIn="TokenValue" portOut="Out" enabled="1"/>
+  <Edge nodeIn="99" nodeOut="98" portIn="Activate" portOut="OnFalse" enabled="1"/>
+  <Edge nodeIn="106" nodeOut="105" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="106" nodeOut="105" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="61" nodeOut="106" portIn="Reset" portOut="OnTrue" enabled="1"/>
  </Edges>
  <HyperGraphId Id="{290E781C-D8F5-4CC2-8AD3-19D3BFE3872A}"/>
  <GraphTokens />
