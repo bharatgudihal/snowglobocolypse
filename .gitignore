@@ -6,9 +6,8 @@
 # Ignore Editor's backup files
 *.bak*
 
-# Ignore source assets
-_source
-
-# Visual Studio files
-*.sdf
-ipch
+# Pak files are exported from level files in the editor.
+# These should eventually be served from a build machine,
+# for now we should avoid checking them in because it is
+# really easy for them to get out of sync with changes to the level.
+*.pak

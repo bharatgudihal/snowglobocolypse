@@ -1,0 +1,106 @@
+<Graph Description="" Group="SpawnAI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="4" Class="Game:Start" pos="-1270,-500,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="5" Class="Entity:EntityPos" pos="-1060,-320,0" flags="0" GraphEntity="0">
+   <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+  </Node>
+  <Node Id="6" Class="Entity:SpawnArchetype" pos="-450,-470,0" flags="0">
+   <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+  </Node>
+  <Node Id="7" Class="String:SetString" pos="-840,-440,0" flags="0">
+   <Inputs In="Level.Enemy.EnemyType_1"/>
+  </Node>
+  <Node Id="10" Class="Vec3:FromVec3" pos="-770,-220,0" flags="0">
+   <Inputs vec3="0,0,0"/>
+  </Node>
+  <Node Id="11" Class="Vec3:ToVec3" pos="-440,-260,0" flags="0">
+   <Inputs x="0" y="0" z="0"/>
+  </Node>
+  <Node Id="12" Class="Math:Add" pos="-550,-170,0" flags="0">
+   <Inputs A="0" B="1.5"/>
+  </Node>
+  <Node Id="16" Class="Debug:InputKey" pos="-860,-580,0" flags="0">
+   <Inputs Key="q" NonDevMode="0" KeyboardOnly="0"/>
+  </Node>
+  <Node Id="17" Class="AISequence:Start" pos="-90,-470,0" flags="0">
+   <Inputs Interruptible="0" ResumeAfterInterruption="0"/>
+  </Node>
+  <Node Id="18" Class="AISequence:Move" pos="180,-480,0" flags="0">
+   <Inputs Speed="0" Stance="0" Position="0,0,0" Direction="0,0,0" EndDistance="0"/>
+  </Node>
+  <Node Id="20" Class="AISequence:End" pos="540,-490,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="25" Class="Entity:FindEntityByName" pos="-20,-270,0" flags="0">
+   <Inputs Name=""/>
+  </Node>
+  <Node Id="26" Class="String:SetString" pos="-220,-180,0" flags="0">
+   <Inputs In="robot_body"/>
+  </Node>
+  <Node Id="28" Class="String:Concat" pos="-210,-760,0" flags="0">
+   <Inputs String1="EnemyType_1_" String2=""/>
+  </Node>
+  <Node Id="31" Class="Mission:GameTokenSet" pos="-1180,-660,0" flags="0">
+   <Inputs gametoken_Token="Enemy1_ctr" TokenValue="0"/>
+  </Node>
+  <Node Id="32" Class="Mission:GameTokenGet" pos="-830,-740,0" flags="0">
+   <Inputs gametoken_Token="Enemy1_ctr"/>
+  </Node>
+  <Node Id="33" Class="Math:Add" pos="-570,-760,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="34" Class="Entity:FindEntityByName" pos="0,-640,0" flags="0">
+   <Inputs Name=""/>
+  </Node>
+  <Node Id="35" Class="Mission:GameTokenSet" pos="-440,-850,0" flags="0">
+   <Inputs gametoken_Token="Enemy1_ctr" TokenValue=""/>
+  </Node>
+  <Node Id="36" Class="Entity:GetPos" pos="230,-210,0" flags="0">
+   <Inputs CoordSys="1"/>
+  </Node>
+  <Node Id="38" Class="AI:ActionStart" pos="334.98254,-845.1012,0" flags="0"/>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="12" nodeOut="4" portIn="Activate" portOut="output" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="4" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="31" nodeOut="4" portIn="Activate" portOut="output" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="5" portIn="Rot" portOut="rotate" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="5" portIn="Scale" portOut="scale" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="5" portIn="vec3" portOut="pos" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="6" portIn="Start" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="25" nodeOut="6" portIn="Set" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="26" nodeOut="6" portIn="Set" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="6" portIn="Set" portOut="Done" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="7" portIn="Archetype" portOut="Out" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="10" portIn="x" portOut="x" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="10" portIn="y" portOut="y" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="10" portIn="A" portOut="z" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="11" portIn="Pos" portOut="Result" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="12" portIn="z" portOut="Out" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="16" portIn="Spawn" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="16" portIn="Set" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="32" nodeOut="16" portIn="Activate" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="17" portIn="Start" portOut="Link" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="18" portIn="End" portOut="Done" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="25" portIn="Get" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="25" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="25" nodeOut="26" portIn="Name" portOut="Out" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
+  <Edge nodeIn="33" nodeOut="32" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="33" nodeOut="32" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="33" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="33" portIn="TokenValue" portOut="Out" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="34" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="34" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="34" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="35" portIn="String2" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="36" portIn="Position" portOut="Pos" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{19715A6D-F696-49E6-AE27-A2184A530A3E}"/>
+ <GraphTokens>
+  <Token Name="Enemy1_ctr" Type="1"/>
+ </GraphTokens>
+</Graph>
