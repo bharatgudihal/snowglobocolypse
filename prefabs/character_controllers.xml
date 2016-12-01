@@ -160,14 +160,7 @@
      <GraphTokens />
     </FlowGraph>
    </Object>
-   <Object Type="GeomEntity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{4C5010C0-C1A9-4D11-940F-7744F4FC3143}" Name="robot_body" HideOrder="0" Pos="1.0239868,3.8677979,2.0925255" FloorNumber="-1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="65535" Geometry="Objects/CharacterModels/R0-B/robot_body.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
-    <Properties esFaction="">
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
-    </Properties>
-   </Object>
    <Object Type="CameraTarget" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" Name="Controller_Ref_Box_Move" HideOrder="0" Pos="1.0239868,3.8677979,3.0925255" FloorNumber="-1" Rotate="0.70710683,0,0,0.70710677" ColorRGB="65535" EntityClass="CameraTarget"/>
-   <Object Type="CameraTarget" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" Name="Head_Tilt_Parent" HideOrder="0" Parent="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" Pos="0,0,-1" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" EntityClass="CameraTarget"/>
    <Object Type="GeomEntity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{18626F3D-2830-4758-B220-15E385BDFFE0}" Name="robot_head1" HideOrder="0" Parent="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" Pos="0,0,1.5" FloorNumber="-1" Rotate="2.9802322e-008,0,0,1" ColorRGB="65535" Geometry="Objects/CharacterModels/R0-B/robot_head.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
     <Properties esFaction="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -175,7 +168,14 @@
     </Properties>
    </Object>
    <Object Type="CameraTarget" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" Name="Controller_Ref_Box_Pitch" HideOrder="0" Parent="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" Pos="-0.00030517578,0.00036621094,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" EntityClass="CameraTarget"/>
-   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" Name="Awesome_Sphere" HideOrder="0" Pos="1.0239868,3.8677979,1.8925247" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="65535" Material="objects/charactermodels/r0-b/robot" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="RigidBodyEx">
+   <Object Type="CameraTarget" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" Name="Head_Tilt_Parent" HideOrder="0" Parent="{A90467D9-9DEA-42D1-949C-4DCF68711DE3}" Pos="0,0,-1" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" EntityClass="CameraTarget"/>
+   <Object Type="GeomEntity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{4C5010C0-C1A9-4D11-940F-7744F4FC3143}" Name="robot_body" HideOrder="0" Pos="0.023986816,3.8677979,2.0925255" FloorNumber="-1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16776960" Geometry="Objects/CharacterModels/R0-B/robot_body.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" Name="Awesome_Sphere" HideOrder="0" Pos="2.0239868,3.8677979,1.8925247" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="16776960" Material="objects/charactermodels/r0-b/robot" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="RigidBodyEx">
     <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <AI bUsedAsDynamicObstacle="1"/>
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>

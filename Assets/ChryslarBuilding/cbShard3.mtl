@@ -1,0 +1,16 @@
+<Material MtlFlags="524544">
+	<SubMaterials>
+		<Material Name="PhysicsNoDraw" Shininess="10" Opacity="1" MtlFlags="1152" Shader="Nodraw" GenMask="0" Diffuse="1,1,1" Specular="0,0,0">
+			<Textures/>
+		</Material>
+		<Material Name="shatterInteriorS6" Shininess="10" Opacity="1" MtlFlags="524416" Shader="Illum" GenMask="100000000" Diffuse="1,1,1" Specular="0,0,0">
+			<Textures/>
+		</Material>
+		<Material Name="chryslarUV" Shininess="10" Opacity="1" MtlFlags="524416" Shader="Illum" GenMask="100000000" Diffuse="1,1,1" Specular="0,0,0">
+			<Textures>
+				<Texture Map="Diffuse" File="assets/chryslarbuilding/cbshard3.fbm/chryslaruv.png"/>
+			</Textures>
+		</Material>
+	</SubMaterials>
+</Material>
+
