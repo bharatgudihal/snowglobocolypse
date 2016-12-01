@@ -1,0 +1,19 @@
+<Graph Description="" Group="MetFlowGraph" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="Game:Start" pos="-230,-190,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="14" Class="entity:ProximityTrigger" pos="-40,-220,0" flags="0" EntityGUID="{2A0A715A-BD6A-49A8-8EC5-1BA2FC4E816B}" EntityGUID_64="49A8BD6A2A0A715A">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="16" Class="entity:BasicEntity" pos="230,-250,0" flags="0" EntityGUID="{BA402006-CA0A-429E-9546-94E59CF02B15}" EntityGUID_64="429ECA0ABA402006">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="14" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="14" portIn="Remove" portOut="Enter" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{C23A771D-7A99-4579-9094-36AE899327F7}"/>
+ <GraphTokens />
+</Graph>

@@ -180,7 +180,7 @@
      <AI bUsedAsDynamicObstacle="1"/>
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <MultiplayerOptions bNetworked="1"/>
-     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="1000" Mass="300" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="5000" Mass="300" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
       <Buoyancy water_damping="0.8" water_density="2000" water_resistance="1000"/>
       <CGFPropsOverride player_can_break="">
        <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
