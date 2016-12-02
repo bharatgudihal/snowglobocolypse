@@ -30,6 +30,12 @@
   <Node Id="67" Class="Entity:EntityId" pos="-370,200,0" flags="0" GraphEntity="0">
    <Inputs />
   </Node>
+  <Node Id="69" Class="Prefab:Instance" pos="-130,-230,0" flags="0" InHideMask="1048572">
+   <Inputs PrefabName="Level.Enemy.EnemyType_1" InstanceName="Enemy.EnemyType_5" Event1Id="0" Event1Name="" Event2Id="0" Event2Name="" Event3Id="0" Event3Name="" Event4Id="0" Event4Name="" Event5Id="0" Event5Name="" Event6Id="0" Event6Name=""/>
+  </Node>
+  <Node Id="77" Class="entity:BasicEntity" pos="-450,-250,0" flags="0" GraphEntity="0">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
  </Nodes>
  <Edges>
   <Edge nodeIn="42" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
@@ -42,7 +48,6 @@
   <Edge nodeIn="56" nodeOut="54" portIn="Activate" portOut="IdB" enabled="1"/>
   <Edge nodeIn="60" nodeOut="54" portIn="A" portOut="IdB" enabled="1"/>
   <Edge nodeIn="60" nodeOut="54" portIn="Activate" portOut="IdB" enabled="1"/>
-  <Edge nodeIn="38" nodeOut="56" portIn="Stop" portOut="OnTrue" enabled="1"/>
   <Edge nodeIn="56" nodeOut="60" portIn="Condition" portOut="Out" enabled="1"/>
   <Edge nodeIn="61" nodeOut="60" portIn="input" portOut="Out" enabled="1"/>
   <Edge nodeIn="61" nodeOut="60" portIn="message" portOut="Out" enabled="1"/>
