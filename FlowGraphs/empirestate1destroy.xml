@@ -1,0 +1,19 @@
+<Graph Description="" Group="empirestate1destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="entity:ProximityTrigger" pos="-138,-126,0" flags="0" EntityGUID="{F7DEB874-F7DA-448E-ADEF-99E2700369D0}" EntityGUID_64="448EF7DAF7DEB874">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="4" Class="entity:BasicEntity" pos="100,-140,0" flags="0" EntityGUID="{394A49EC-CE82-4C9F-9072-607E283FB52A}" EntityGUID_64="4C9FCE82394A49EC">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+  <Node Id="5" Class="Game:Start" pos="-310,-120,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="4" nodeOut="2" portIn="Remove" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="5" portIn="Enable" portOut="output" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{634F66FD-9E25-4DB9-A780-17D75B7E9AA4}"/>
+ <GraphTokens />
+</Graph>
