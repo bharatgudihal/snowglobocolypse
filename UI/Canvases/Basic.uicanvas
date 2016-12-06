@@ -53,10 +53,17 @@
 												<Class name="float" field="bottom" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 											</Class>
 											<Class name="Offsets" field="Offsets" type="{F681BA9D-245C-4630-B20E-05DD752FAD57}">
+<<<<<<< HEAD
+												<Class name="float" field="left" value="-0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<Class name="float" field="top" value="-0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<Class name="float" field="right" value="150.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+												<Class name="float" field="bottom" value="50.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+=======
 												<Class name="float" field="left" value="113.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 												<Class name="float" field="top" value="11.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 												<Class name="float" field="right" value="263.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 												<Class name="float" field="bottom" value="61.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+>>>>>>> refs/remotes/origin/abhinandan
 											</Class>
 											<Class name="Vec2" field="Pivot" type="{844131BA-9565-42F3-8482-6F65A6D5FC59}">
 												<Class name="float" field="x" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
@@ -73,7 +80,11 @@
 											<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
 												<Class name="AZ::u64" field="Id" value="3068610810953516373" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
 											</Class>
+<<<<<<< HEAD
+											<Class name="AZStd::string" field="Text" value="Testing!!!" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+=======
 											<Class name="AZStd::string" field="Text" value="Explode Power" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+>>>>>>> refs/remotes/origin/abhinandan
 											<Class name="Vector3" field="Color" value="0.6666667 0.0000000 0.4980392" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
 											<Class name="float" field="Alpha" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
 											<Class name="AzFramework::SimpleAssetReference&lt;LyShine::FontAsset&gt;" field="FontFileName" version="1" type="{D6342379-A5FA-4B18-B890-702C2FE99A5A}">
