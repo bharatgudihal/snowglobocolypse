@@ -17,7 +17,7 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{2108170B-1E0C-483B-9722-4400F8D087DF}" Name="tree_9" HideOrder="0" Pos="128.46196,143.74174,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.14000005,0.14000005,0.14000005" ColorRGB="16777215" FlattenArea="0.02" Prefab="Objects/styletown/natural/vegetation/tree_06.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="GeomEntity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{B887A20D-A61D-466A-AF0C-7F97AE72D169}" Name="PlayerModel" HideOrder="0" Pos="50.797569,67.120468,34.334972" FloorNumber="-1" Rotate="0.90630776,0,0,-0.4226183" Scale="50,50,50" ColorRGB="16776960" Geometry="ishun.cdf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+   <Object Type="GeomEntity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{B887A20D-A61D-466A-AF0C-7F97AE72D169}" Name="PlayerModel" HideOrder="0" Pos="50.797569,67.120468,34.334972" FloorNumber="-1" Rotate="0.90630776,0,0,-0.4226183" Scale="50,50,50" ColorRGB="65535" Geometry="ishun.cdf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
     <Properties esFaction="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <RenderProxyOptions bAnimateOffScreenShadow="0"/>
@@ -212,7 +212,7 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{EDDCA783-60B5-47FB-907F-E054F26C83F2}" Name="tree_23" HideOrder="0" Pos="148.98552,103.49821,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.13,0.13,0.13" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_05.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{A9102185-1DBC-4643-89A3-F483480E1D1D}" Name="Building.Rockefeller10" HideOrder="0" Pos="131.13,47.96957,38.138142" FloorNumber="-1" Rotate="0.087155715,0,0,0.99619472" ColorRGB="56575" PrefabGUID="{1DC51BA5-5A13-4248-AED6-6ED4F69CF9CC}" PrefabName="Level.Building.Rockefeller1"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{A9102185-1DBC-4643-89A3-F483480E1D1D}" Name="Building.Rockefeller10" HideOrder="0" Pos="131.13,47.96957,38.138142" FloorNumber="-1" Rotate="0.087155715,0,0,0.99619472" ColorRGB="16768000" PrefabGUID="{1DC51BA5-5A13-4248-AED6-6ED4F69CF9CC}" PrefabName="Level.Building.Rockefeller1"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{6949D886-C541-4999-950C-9822B4547ADD}" Name="tree_65" HideOrder="0" Pos="80.474373,137.44804,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.34000003,0.34000003,0.34000003" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_08.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
@@ -261,6 +261,15 @@
    <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{4054E0A7-34B2-4BAC-ABEA-942626A8CFAE}" Name="Building.BankOfAmerica6" HideOrder="0" Pos="59.731152,125.92263,31.965256" FloorNumber="-1" Rotate="0.67559016,0,0,-0.73727745" ColorRGB="56575" PrefabGUID="{42E83DAA-3A36-40EE-9797-DA868A55FD4B}" PrefabName="Level.Building.BankOfAmerica"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{218BF8A9-F92B-44F6-996F-AA670EBF0D25}" Name="pine_6" HideOrder="0" Pos="116.96155,128.59496,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.35700002,0.35700002,0.35700002" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/pine_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
+   </Object>
+   <Object Type="Entity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{A096CEAA-9EBE-4DCF-93D3-514FD327C83D}" Name="BasicEntity1" HideOrder="0" Pos="54.764309,61.119774,34.844864" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/test/truckdone.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="50000" Mass="500000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
    </Object>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{D51FCEAD-E168-4B77-BA4D-2D136604EB8A}" Name="tree_26" HideOrder="0" Pos="151.83878,114.82789,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.22000003,0.22000003,0.22000003" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
@@ -317,7 +326,7 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{79CE28DF-C582-43D3-A40C-8C26244983CC}" Name="tree_66" HideOrder="0" Pos="52.623665,141.33755,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.13,0.13,0.13" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_05.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{2EC835E0-2E98-4351-8B90-688870EF9496}" Name="Building.Rockefeller9" HideOrder="0" Pos="65.335251,83.765762,38.138142" FloorNumber="-1" Rotate="0.90630782,0,0,-0.42261824" ColorRGB="56575" PrefabGUID="{1DC51BA5-5A13-4248-AED6-6ED4F69CF9CC}" PrefabName="Level.Building.Rockefeller1"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{2EC835E0-2E98-4351-8B90-688870EF9496}" Name="Building.Rockefeller9" HideOrder="0" Pos="65.335251,83.765762,38.138142" FloorNumber="-1" Rotate="0.90630782,0,0,-0.42261824" ColorRGB="16768000" PrefabGUID="{1DC51BA5-5A13-4248-AED6-6ED4F69CF9CC}" PrefabName="Level.Building.Rockefeller1"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{2EF7BFE1-C5CC-47E2-9964-108EF0A008D6}" Name="tree_49" HideOrder="0" Pos="118.76987,72.733284,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.14000005,0.14000005,0.14000005" ColorRGB="16777215" FlattenArea="0.02" Prefab="Objects/styletown/natural/vegetation/tree_06.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
@@ -410,11 +419,8 @@
       <Node Id="44" Class="System:Container:Edit" pos="2810,-300,0" flags="0">
        <Inputs Id="0"/>
       </Node>
-      <Node Id="81" Class="System:Container:Iterate" pos="990,-350,0" flags="0">
+      <Node Id="81" Class="System:Container:Iterate" pos="990,-340,0" flags="0">
        <Inputs Id="0"/>
-      </Node>
-      <Node Id="108" Class="Logic:Once" pos="1380,-480,0" flags="0">
-       <Inputs />
       </Node>
       <Node Id="112" Class="Logic:IfCondition" pos="2250,-460,0" flags="0">
        <Inputs Condition="1"/>
@@ -423,9 +429,9 @@
        <Inputs A="0" B="30"/>
       </Node>
       <Node Id="116" Class="Mission:GameTokenSet" pos="-300,330,0" flags="0">
-       <Inputs gametoken_Token="Enemy_1_Speed" TokenValue="15"/>
+       <Inputs gametoken_Token="Enemy_1_Speed" TokenValue="10"/>
       </Node>
-      <Node Id="117" Class="Mission:GameTokenGet" pos="2700,170,0" flags="0">
+      <Node Id="117" Class="Mission:GameTokenGet" pos="2430,300,0" flags="0">
        <Inputs gametoken_Token="Enemy_1_Speed"/>
       </Node>
       <Node Id="118" Class="Math:Equal" pos="1990,-460,0" flags="0">
@@ -476,6 +482,45 @@
       <Node Id="137" Class="Debug:DisplayMessage" pos="-320,-490,0" flags="0">
        <Inputs message="say &apos;spawn&apos; to spawn" DisplayTime="0" posX="50" posY="50" fontSize="3" clr_Color="1,1,1" centered="0"/>
       </Node>
+      <Node Id="139" Class="Debug:InputKey" pos="290,-380,0" flags="0">
+       <Inputs Key="q" NonDevMode="0" KeyboardOnly="0"/>
+      </Node>
+      <Node Id="142" Class="Logic:Any" pos="1070,-170,0" flags="0" InHideMask="1008">
+       <Inputs />
+      </Node>
+      <Node Id="264" Class="Game:Start" pos="-140,50,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="283" Class="Logic:Once" pos="1380,-480,0" flags="0" InHideMask="240">
+       <Inputs />
+      </Node>
+      <Node Id="304" Class="Entity:CheckDistance" pos="2800,200,0" flags="0" InHideMask="1048544">
+       <Inputs MinDistance="0" MaxDistance="100"/>
+      </Node>
+      <Node Id="307" Class="Physics:ActionImpulse" pos="4350,-50,0" flags="0">
+       <Inputs Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
+      </Node>
+      <Node Id="308" Class="Entity:GetPos" pos="3510,-340,0" flags="0">
+       <Inputs CoordSys="1"/>
+      </Node>
+      <Node Id="311" Class="Vec3:FromVec3" pos="3740,-360,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="312" Class="Vec3:ToVec3" pos="4380,-310,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="313" Class="Math:Add" pos="4110,-420,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="314" Class="Math:Add" pos="4110,-350,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="316" Class="Math:Random" pos="3890,-260,0" flags="0">
+       <Inputs Min="-25" Max="25"/>
+      </Node>
+      <Node Id="317" Class="Math:Random" pos="3890,-180,0" flags="0">
+       <Inputs Min="-25" Max="25"/>
+      </Node>
      </Nodes>
      <Edges>
       <Edge nodeIn="6" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
@@ -485,11 +530,9 @@
       <Edge nodeIn="127" nodeOut="1" portIn="Connect" portOut="output" enabled="1"/>
       <Edge nodeIn="136" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
       <Edge nodeIn="34" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
-      <Edge nodeIn="38" nodeOut="2" portIn="Start" portOut="Succeeded" enabled="1"/>
       <Edge nodeIn="40" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
       <Edge nodeIn="117" nodeOut="2" portIn="Activate" portOut="Succeeded" enabled="1"/>
       <Edge nodeIn="2" nodeOut="3" portIn="Rot" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="3" portIn="Scale" portOut="scale" enabled="1"/>
       <Edge nodeIn="7" nodeOut="3" portIn="vec3" portOut="pos" enabled="1"/>
       <Edge nodeIn="2" nodeOut="6" portIn="Archetype" portOut="Out" enabled="1"/>
       <Edge nodeIn="8" nodeOut="7" portIn="x" portOut="x" enabled="1"/>
@@ -503,22 +546,30 @@
       <Edge nodeIn="33" nodeOut="32" portIn="Activate" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="35" nodeOut="33" portIn="Activate" portOut="Out" enabled="1"/>
       <Edge nodeIn="35" nodeOut="33" portIn="TokenValue" portOut="Out" enabled="1"/>
-      <Edge nodeIn="44" nodeOut="34" portIn="Add" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="44" nodeOut="34" portIn="AddUnique" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="28" nodeOut="35" portIn="Set" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="28" nodeOut="35" portIn="String2" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="115" nodeOut="35" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="307" nodeOut="38" portIn="Activate" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="308" nodeOut="38" portIn="Get" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="313" nodeOut="38" portIn="Activate" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="314" nodeOut="38" portIn="Activate" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="316" nodeOut="38" portIn="Generate" portOut="OnStop" enabled="1"/>
+      <Edge nodeIn="317" nodeOut="38" portIn="Generate" portOut="OnStop" enabled="1"/>
       <Edge nodeIn="38" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
       <Edge nodeIn="39" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="304" nodeOut="40" portIn="Entity1" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="44" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
       <Edge nodeIn="81" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
       <Edge nodeIn="38" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
-      <Edge nodeIn="108" nodeOut="81" portIn="In0" portOut="Done" enabled="1"/>
-      <Edge nodeIn="108" nodeOut="81" portIn="Reset" portOut="Out" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="108" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="283" nodeOut="81" portIn="In0" portOut="Done" enabled="1"/>
+      <Edge nodeIn="283" nodeOut="81" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="304" nodeOut="81" portIn="Check" portOut="Out" enabled="1"/>
+      <Edge nodeIn="304" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
+      <Edge nodeIn="307" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
+      <Edge nodeIn="308" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
       <Edge nodeIn="120" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
       <Edge nodeIn="121" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
-      <Edge nodeIn="118" nodeOut="115" portIn="A" portOut="Result" enabled="1"/>
-      <Edge nodeIn="118" nodeOut="115" portIn="Activate" portOut="Result" enabled="1"/>
       <Edge nodeIn="38" nodeOut="117" portIn="Value" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="112" nodeOut="118" portIn="Activate" portOut="OnTrue" enabled="1"/>
       <Edge nodeIn="119" nodeOut="120" portIn="Activate" portOut="Out" enabled="1"/>
@@ -532,13 +583,27 @@
       <Edge nodeIn="133" nodeOut="127" portIn="input" portOut="Connected" enabled="1"/>
       <Edge nodeIn="134" nodeOut="127" portIn="input" portOut="Error" enabled="1"/>
       <Edge nodeIn="129" nodeOut="128" portIn="DisconnectAll" portOut="Output" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="135" portIn="Spawn" portOut="Signal" enabled="1"/>
-      <Edge nodeIn="9" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
-      <Edge nodeIn="32" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
-      <Edge nodeIn="108" nodeOut="135" portIn="In1" portOut="Signal" enabled="1"/>
-      <Edge nodeIn="115" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="135" portIn="In1" portOut="Signal" enabled="1"/>
       <Edge nodeIn="127" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
       <Edge nodeIn="135" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="139" portIn="In0" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="142" portIn="Spawn" portOut="Out" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="142" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="32" nodeOut="142" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="283" nodeOut="142" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="264" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="81" nodeOut="283" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="304" portIn="Start" portOut="NearEntity" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="304" portIn="Stop" portOut="NoEntInRange" enabled="1"/>
+      <Edge nodeIn="311" nodeOut="308" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="312" nodeOut="311" portIn="z" portOut="z" enabled="1"/>
+      <Edge nodeIn="313" nodeOut="311" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="314" nodeOut="311" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="307" nodeOut="312" portIn="Impulse" portOut="Result" enabled="1"/>
+      <Edge nodeIn="312" nodeOut="313" portIn="x" portOut="Out" enabled="1"/>
+      <Edge nodeIn="312" nodeOut="314" portIn="y" portOut="Out" enabled="1"/>
+      <Edge nodeIn="313" nodeOut="316" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="314" nodeOut="317" portIn="B" portOut="Out" enabled="1"/>
      </Edges>
      <HyperGraphId Id="{468DBCEC-45BE-4BF8-A998-12D0ED58EBCB}"/>
      <GraphTokens>
