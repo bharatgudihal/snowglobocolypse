@@ -5,7 +5,7 @@
  </ModuleInputsOutputs>
  <Nodes>
   <Node Id="1" Class="Module:Start_Explode" pos="-140,40,0" flags="0"/>
-  <Node Id="2" Class="Module:End_Explode" pos="-140,-20,0" flags="1">
+  <Node Id="2" Class="Module:End_Explode" pos="-140,-20,0" flags="0">
    <Inputs />
   </Node>
   <Node Id="9" Class="Entity:GetPos" pos="820,-160,0" flags="0">
