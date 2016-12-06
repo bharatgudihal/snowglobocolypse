@@ -4,7 +4,7 @@
    <Inputs InGame="1" InEditor="1"/>
   </Node>
   <Node Id="2" Class="Entity:SpawnArchetype" pos="2020,250,0" flags="0">
-   <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+   <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="0.75,0.75,0.75"/>
   </Node>
   <Node Id="3" Class="Entity:EntityPos" pos="1150,380,0" flags="0" GraphEntity="0">
    <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
@@ -65,9 +65,6 @@
   </Node>
   <Node Id="116" Class="Mission:GameTokenSet" pos="-300,330,0" flags="0">
    <Inputs gametoken_Token="Enemy_1_Speed" TokenValue="10"/>
-  </Node>
-  <Node Id="117" Class="Mission:GameTokenGet" pos="2430,300,0" flags="0">
-   <Inputs gametoken_Token="Enemy_1_Speed"/>
   </Node>
   <Node Id="118" Class="Math:Equal" pos="1990,-460,0" flags="0">
    <Inputs A="0" B="0"/>
@@ -130,7 +127,7 @@
    <Inputs />
   </Node>
   <Node Id="304" Class="Entity:CheckDistance" pos="2800,200,0" flags="0" InHideMask="1048544">
-   <Inputs MinDistance="0" MaxDistance="60"/>
+   <Inputs MinDistance="0" MaxDistance="10000"/>
   </Node>
   <Node Id="307" Class="Physics:ActionImpulse" pos="4350,-50,0" flags="0">
    <Inputs Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
@@ -207,7 +204,7 @@
   <Node Id="335" Class="Logic:Any" pos="1130,290,0" flags="0" InHideMask="1016">
    <Inputs />
   </Node>
-  <Node Id="336" Class="Logic:Any" pos="2300,380,0" flags="0" InHideMask="1016">
+  <Node Id="336" Class="Logic:Any" pos="2400,400,0" flags="0" InHideMask="1016">
    <Inputs />
   </Node>
   <Node Id="337" Class="Entity:CheckDistance" pos="2690,560,0" flags="0" InHideMask="1048544">
@@ -219,6 +216,27 @@
   <Node Id="340" Class="Mission:GameTokenGet" pos="2380,830,0" flags="0">
    <Inputs gametoken_Token="Enemy_2_Speed"/>
   </Node>
+  <Node Id="417" Class="Logic:Once" pos="3250,280,0" flags="0" InHideMask="240">
+   <Inputs />
+  </Node>
+  <Node Id="419" Class="Vec3:FromVec3" pos="3470,290,0" flags="0">
+   <Inputs vec3="0,0,0"/>
+  </Node>
+  <Node Id="420" Class="Vec3:FromVec3" pos="3500,-70,0" flags="0">
+   <Inputs vec3="0,0,0"/>
+  </Node>
+  <Node Id="421" Class="Math:Less" pos="3820,10,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="422" Class="Logic:Any" pos="3320,140,0" flags="0" InHideMask="1016">
+   <Inputs />
+  </Node>
+  <Node Id="423" Class="Math:Add" pos="3790,180,0" flags="0">
+   <Inputs A="0" B="10"/>
+  </Node>
+  <Node Id="424" Class="Logic:Blocker" pos="2920,80,0" flags="0">
+   <Inputs Block="0"/>
+  </Node>
  </Nodes>
  <Edges>
   <Edge nodeIn="6" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
@@ -228,10 +246,8 @@
   <Edge nodeIn="127" nodeOut="1" portIn="Connect" portOut="output" enabled="1"/>
   <Edge nodeIn="136" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
   <Edge nodeIn="34" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
-  <Edge nodeIn="117" nodeOut="2" portIn="Activate" portOut="Succeeded" enabled="1"/>
   <Edge nodeIn="336" nodeOut="2" portIn="In0" portOut="Succeeded" enabled="1"/>
   <Edge nodeIn="2" nodeOut="3" portIn="Rot" portOut="rotate" enabled="1"/>
-  <Edge nodeIn="2" nodeOut="3" portIn="Scale" portOut="scale" enabled="1"/>
   <Edge nodeIn="7" nodeOut="3" portIn="vec3" portOut="pos" enabled="1"/>
   <Edge nodeIn="330" nodeOut="3" portIn="Rot" portOut="rotate" enabled="1"/>
   <Edge nodeIn="330" nodeOut="3" portIn="Scale" portOut="scale" enabled="1"/>
@@ -252,14 +268,10 @@
   <Edge nodeIn="28" nodeOut="35" portIn="Set" portOut="OutValue" enabled="1"/>
   <Edge nodeIn="28" nodeOut="35" portIn="String2" portOut="OutValue" enabled="1"/>
   <Edge nodeIn="115" nodeOut="35" portIn="A" portOut="OutValue" enabled="1"/>
-  <Edge nodeIn="307" nodeOut="38" portIn="Activate" portOut="OnStop" enabled="1"/>
-  <Edge nodeIn="308" nodeOut="38" portIn="Get" portOut="OnStop" enabled="1"/>
-  <Edge nodeIn="313" nodeOut="38" portIn="Activate" portOut="OnStop" enabled="1"/>
   <Edge nodeIn="314" nodeOut="38" portIn="Activate" portOut="OnStart" enabled="1"/>
-  <Edge nodeIn="316" nodeOut="38" portIn="Generate" portOut="OnStop" enabled="1"/>
-  <Edge nodeIn="317" nodeOut="38" portIn="Generate" portOut="OnStop" enabled="1"/>
   <Edge nodeIn="38" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
   <Edge nodeIn="339" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
+  <Edge nodeIn="419" nodeOut="39" portIn="vec3" portOut="pos" enabled="1"/>
   <Edge nodeIn="39" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
   <Edge nodeIn="304" nodeOut="40" portIn="Entity1" portOut="EntityId" enabled="1"/>
   <Edge nodeIn="337" nodeOut="40" portIn="Entity1" portOut="EntityId" enabled="1"/>
@@ -274,7 +286,6 @@
   <Edge nodeIn="308" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
   <Edge nodeIn="120" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
   <Edge nodeIn="121" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
-  <Edge nodeIn="38" nodeOut="117" portIn="Value" portOut="OutValue" enabled="1"/>
   <Edge nodeIn="112" nodeOut="118" portIn="Activate" portOut="OnTrue" enabled="1"/>
   <Edge nodeIn="119" nodeOut="120" portIn="Activate" portOut="Out" enabled="1"/>
   <Edge nodeIn="119" nodeOut="120" portIn="TokenValue" portOut="Out" enabled="1"/>
@@ -304,9 +315,13 @@
   <Edge nodeIn="329" nodeOut="264" portIn="Activate" portOut="output" enabled="1"/>
   <Edge nodeIn="333" nodeOut="264" portIn="Set" portOut="output" enabled="1"/>
   <Edge nodeIn="81" nodeOut="283" portIn="Start" portOut="Out" enabled="1"/>
-  <Edge nodeIn="38" nodeOut="304" portIn="Start" portOut="NearEntity" enabled="1"/>
-  <Edge nodeIn="38" nodeOut="304" portIn="Stop" portOut="NoEntInRange" enabled="1"/>
+  <Edge nodeIn="417" nodeOut="304" portIn="Reset" portOut="NearEntity" enabled="1"/>
+  <Edge nodeIn="417" nodeOut="304" portIn="In0" portOut="NoEntInRange" enabled="1"/>
+  <Edge nodeIn="422" nodeOut="304" portIn="In1" portOut="NearEntity" enabled="1"/>
+  <Edge nodeIn="422" nodeOut="304" portIn="In0" portOut="NoEntInRange" enabled="1"/>
+  <Edge nodeIn="424" nodeOut="304" portIn="In" portOut="NearEntity" enabled="1"/>
   <Edge nodeIn="311" nodeOut="308" portIn="vec3" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="420" nodeOut="308" portIn="vec3" portOut="Pos" enabled="1"/>
   <Edge nodeIn="312" nodeOut="311" portIn="z" portOut="z" enabled="1"/>
   <Edge nodeIn="313" nodeOut="311" portIn="A" portOut="x" enabled="1"/>
   <Edge nodeIn="314" nodeOut="311" portIn="A" portOut="y" enabled="1"/>
@@ -347,12 +362,22 @@
   <Edge nodeIn="339" nodeOut="337" portIn="Start" portOut="NearEntity" enabled="1"/>
   <Edge nodeIn="339" nodeOut="337" portIn="Stop" portOut="NoEntInRange" enabled="1"/>
   <Edge nodeIn="339" nodeOut="340" portIn="Value" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="417" portIn="Stop" portOut="Out" enabled="1"/>
+  <Edge nodeIn="423" nodeOut="419" portIn="A" portOut="z" enabled="1"/>
+  <Edge nodeIn="421" nodeOut="420" portIn="B" portOut="z" enabled="1"/>
+  <Edge nodeIn="417" nodeOut="421" portIn="In1" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="424" nodeOut="421" portIn="Block" portOut="Out" enabled="1"/>
+  <Edge nodeIn="308" nodeOut="422" portIn="Get" portOut="Out" enabled="1"/>
+  <Edge nodeIn="421" nodeOut="422" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="423" nodeOut="422" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="421" nodeOut="423" portIn="A" portOut="Out" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="424" portIn="Start" portOut="Out" enabled="1"/>
  </Edges>
  <HyperGraphId Id="{468DBCEC-45BE-4BF8-A998-12D0ED58EBCB}"/>
  <GraphTokens>
   <Token Name="Enemy1_ctr" Type="1"/>
   <Token Name="Enemy2_ctr" Type="1"/>
   <Token Name="Enemy_1_Speed" Type="1"/>
-  <Token Name="Enemy_2_speed" Type="1"/>
+  <Token Name="Enemy_2_Speed" Type="1"/>
  </GraphTokens>
 </Graph>
