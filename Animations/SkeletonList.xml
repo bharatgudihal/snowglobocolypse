@@ -1,3 +1,4 @@
 <SkeletonList>
  <Skeleton name="polysurface1_skel" file="assets/test/polysurface1_skel.chr"/>
+ <Skeleton name="ishun" file="assets/ruffles/root_skel.chr"/>
 </SkeletonList>
