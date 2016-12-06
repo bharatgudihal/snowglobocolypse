@@ -1,7 +1,11 @@
 <GameTokens>
  <GameTokensLibrary>
   <LevelLibrary Name="Level">
+<<<<<<< HEAD
    <GameToken Name="Explode.ExplodePower" Type="Int" Value="90" LocalOnly="0"/>
+=======
+   <GameToken Name="Explode.ExplodePower" Type="Int" Value="90" LocalOnly="1"/>
+>>>>>>> refs/remotes/origin/abhinandan
   </LevelLibrary>
  </GameTokensLibrary>
 </GameTokens>

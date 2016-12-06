@@ -1,0 +1,19 @@
+<Graph Description="" Group="metlife1destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="entity:ProximityTrigger" pos="-121,-102,0" flags="0" EntityGUID="{91AC95E3-1AF5-47B3-A544-C273708DC161}" EntityGUID_64="47B31AF591AC95E3">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="4" Class="entity:BasicEntity" pos="100,-150,0" flags="0" EntityGUID="{BA402006-CA0A-429E-9546-94E59CF02B15}" EntityGUID_64="429ECA0ABA402006">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+  <Node Id="5" Class="Game:Start" pos="-290,-90,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="4" nodeOut="2" portIn="Remove" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="5" portIn="Enable" portOut="output" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{90419BF6-97F8-453D-A07E-5C3D6C07385D}"/>
+ <GraphTokens />
+</Graph>

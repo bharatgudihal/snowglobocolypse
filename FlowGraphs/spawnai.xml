@@ -1,0 +1,192 @@
+<Graph Description="" Group="archetypeAI" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-140,50,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="2" Class="Entity:SpawnArchetype" pos="2020,250,0" flags="0">
+   <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+  </Node>
+  <Node Id="3" Class="Entity:EntityPos" pos="590,440,0" flags="0" GraphEntity="0">
+   <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+  </Node>
+  <Node Id="6" Class="String:SetString" pos="40,150,0" flags="0">
+   <Inputs In="Level.Enemy.EnemyType_1"/>
+  </Node>
+  <Node Id="7" Class="Vec3:FromVec3" pos="840,370,0" flags="0">
+   <Inputs vec3="0,0,0"/>
+  </Node>
+  <Node Id="8" Class="Vec3:ToVec3" pos="1370,300,0" flags="0">
+   <Inputs x="0" y="0" z="0"/>
+  </Node>
+  <Node Id="9" Class="Math:Add" pos="1170,270,0" flags="0">
+   <Inputs A="0" B="1.5"/>
+  </Node>
+  <Node Id="28" Class="String:Concat" pos="1760,70,0" flags="0">
+   <Inputs String1="EnemyType_1_" String2=""/>
+  </Node>
+  <Node Id="31" Class="Mission:GameTokenSet" pos="-180,260,0" flags="0">
+   <Inputs gametoken_Token="Enemy1_ctr" TokenValue="0"/>
+  </Node>
+  <Node Id="32" Class="Mission:GameTokenGet" pos="1060,-10,0" flags="0">
+   <Inputs gametoken_Token="Enemy1_ctr"/>
+  </Node>
+  <Node Id="33" Class="Math:Add" pos="1330,-20,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="34" Class="Entity:FindEntityByName" pos="2440,-120,0" flags="0">
+   <Inputs Name=""/>
+  </Node>
+  <Node Id="35" Class="Mission:GameTokenSet" pos="1480,-10,0" flags="0">
+   <Inputs gametoken_Token="Enemy1_ctr" TokenValue=""/>
+  </Node>
+  <Node Id="38" Class="Movement:MoveEntityTo" pos="3070,-140,0" flags="0">
+   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+  </Node>
+  <Node Id="39" Class="Entity:EntityPos" pos="2750,-90,0" flags="0">
+   <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+  </Node>
+  <Node Id="40" Class="Entity:FindEntityByName" pos="2450,90,0" flags="0">
+   <Inputs Name="robot_body"/>
+  </Node>
+  <Node Id="43" Class="System:Container:Create" pos="-20,-260,0" flags="0">
+   <Inputs Id="1"/>
+  </Node>
+  <Node Id="44" Class="System:Container:Edit" pos="2810,-300,0" flags="0">
+   <Inputs Id="0"/>
+  </Node>
+  <Node Id="81" Class="System:Container:Iterate" pos="990,-350,0" flags="0">
+   <Inputs Id="0"/>
+  </Node>
+  <Node Id="108" Class="Logic:Once" pos="1380,-480,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="112" Class="Logic:IfCondition" pos="2250,-460,0" flags="0">
+   <Inputs Condition="1"/>
+  </Node>
+  <Node Id="115" Class="Math:Mod" pos="1780,-450,0" flags="0">
+   <Inputs A="0" B="30"/>
+  </Node>
+  <Node Id="116" Class="Mission:GameTokenSet" pos="-300,330,0" flags="0">
+   <Inputs gametoken_Token="Enemy_1_Speed" TokenValue="15"/>
+  </Node>
+  <Node Id="117" Class="Mission:GameTokenGet" pos="2700,170,0" flags="0">
+   <Inputs gametoken_Token="Enemy_1_Speed"/>
+  </Node>
+  <Node Id="118" Class="Math:Equal" pos="1990,-460,0" flags="0">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="119" Class="Mission:GameTokenSet" pos="3000,-470,0" flags="0">
+   <Inputs gametoken_Token="Enemy_1_Speed" TokenValue=""/>
+  </Node>
+  <Node Id="120" Class="Math:Add" pos="2840,-460,0" flags="0">
+   <Inputs A="0" B="3"/>
+  </Node>
+  <Node Id="121" Class="Mission:GameTokenGet" pos="2500,-400,0" flags="0">
+   <Inputs gametoken_Token="Enemy_1_Speed"/>
+  </Node>
+  <Node Id="122" Class="Twitch:ChatPlay:Available" pos="540,60,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="123" Class="Debug:Log" pos="800,-80,0" flags="0">
+   <Inputs message="Stream unavailable"/>
+  </Node>
+  <Node Id="124" Class="Debug:Log" pos="800,-140,0" flags="0">
+   <Inputs message="Stream available"/>
+  </Node>
+  <Node Id="127" Class="Twitch:ChatPlay:Channel" pos="230,80,0" flags="0">
+   <Inputs Channel="The_Zephyrus"/>
+  </Node>
+  <Node Id="128" Class="Game:Stop" pos="-430,-30,0" flags="0">
+   <Inputs TriggerInGame="1" TriggerInEditor="1"/>
+  </Node>
+  <Node Id="129" Class="Twitch:ChatPlay:DisconnectAll" pos="-230,-20,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="132" Class="Debug:Log" pos="440,-140,0" flags="0">
+   <Inputs message="Connecting to channel..."/>
+  </Node>
+  <Node Id="133" Class="Debug:Log" pos="370,-200,0" flags="0">
+   <Inputs message="Connected to channel"/>
+  </Node>
+  <Node Id="134" Class="Debug:Log" pos="480,-80,0" flags="0">
+   <Inputs message="ERROR in connecting!"/>
+  </Node>
+  <Node Id="135" Class="Twitch:ChatPlay:Keyword" pos="770,10,0" flags="0">
+   <Inputs Channel="" Keyword="spawn" Reset="0"/>
+  </Node>
+  <Node Id="136" Class="String:SetString" pos="20,0,0" flags="0">
+   <Inputs In="The_Zephyrus"/>
+  </Node>
+  <Node Id="137" Class="Debug:DisplayMessage" pos="-320,-490,0" flags="0">
+   <Inputs message="say &apos;spawn&apos; to spawn" DisplayTime="0" posX="50" posY="50" fontSize="3" clr_Color="1,1,1" centered="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="6" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+  <Edge nodeIn="31" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
+  <Edge nodeIn="43" nodeOut="1" portIn="Create" portOut="output" enabled="1"/>
+  <Edge nodeIn="116" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
+  <Edge nodeIn="127" nodeOut="1" portIn="Connect" portOut="output" enabled="1"/>
+  <Edge nodeIn="136" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="2" portIn="Start" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="40" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="117" nodeOut="2" portIn="Activate" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="3" portIn="Rot" portOut="rotate" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="3" portIn="Scale" portOut="scale" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="3" portIn="vec3" portOut="pos" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="6" portIn="Archetype" portOut="Out" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="7" portIn="x" portOut="x" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="7" portIn="y" portOut="y" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="7" portIn="A" portOut="z" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="8" portIn="Pos" portOut="Result" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="9" portIn="z" portOut="Out" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
+  <Edge nodeIn="33" nodeOut="32" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="33" nodeOut="32" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="33" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="33" portIn="TokenValue" portOut="Out" enabled="1"/>
+  <Edge nodeIn="44" nodeOut="34" portIn="Add" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="35" portIn="Set" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="35" portIn="String2" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="35" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
+  <Edge nodeIn="39" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
+  <Edge nodeIn="44" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
+  <Edge nodeIn="81" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
+  <Edge nodeIn="108" nodeOut="81" portIn="In0" portOut="Done" enabled="1"/>
+  <Edge nodeIn="108" nodeOut="81" portIn="Reset" portOut="Out" enabled="1"/>
+  <Edge nodeIn="81" nodeOut="108" portIn="Start" portOut="Out" enabled="1"/>
+  <Edge nodeIn="120" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="118" nodeOut="115" portIn="A" portOut="Result" enabled="1"/>
+  <Edge nodeIn="118" nodeOut="115" portIn="Activate" portOut="Result" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="117" portIn="Value" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="112" nodeOut="118" portIn="Activate" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="119" nodeOut="120" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="119" nodeOut="120" portIn="TokenValue" portOut="Out" enabled="1"/>
+  <Edge nodeIn="120" nodeOut="121" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="123" nodeOut="122" portIn="input" portOut="Unavailable" enabled="1"/>
+  <Edge nodeIn="124" nodeOut="122" portIn="input" portOut="Available" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="122" portIn="Start" portOut="Available" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="127" portIn="Activate" portOut="Connected" enabled="1"/>
+  <Edge nodeIn="132" nodeOut="127" portIn="input" portOut="Connecting" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="127" portIn="input" portOut="Connected" enabled="1"/>
+  <Edge nodeIn="134" nodeOut="127" portIn="input" portOut="Error" enabled="1"/>
+  <Edge nodeIn="129" nodeOut="128" portIn="DisconnectAll" portOut="Output" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="135" portIn="Spawn" portOut="Signal" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
+  <Edge nodeIn="32" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
+  <Edge nodeIn="108" nodeOut="135" portIn="In1" portOut="Signal" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
+  <Edge nodeIn="127" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{468DBCEC-45BE-4BF8-A998-12D0ED58EBCB}"/>
+ <GraphTokens>
+  <Token Name="Enemy1_ctr" Type="1"/>
+  <Token Name="Enemy_1_Speed" Type="1"/>
+ </GraphTokens>
+</Graph>
