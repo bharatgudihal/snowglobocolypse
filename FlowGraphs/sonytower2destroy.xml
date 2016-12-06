@@ -1,0 +1,19 @@
+<Graph Description="" Group="sonytower2destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-73,-255,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="3" Class="entity:ProximityTrigger" pos="130,-290,0" flags="0" EntityGUID="{B188B47E-BF55-420E-861E-01DFEAC05994}" EntityGUID_64="420EBF55B188B47E">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="5" Class="entity:BasicEntity" pos="400,-320,0" flags="0" EntityGUID="{AF9FD77D-EEF9-46D7-8D5F-3752317131F8}" EntityGUID_64="46D7EEF9AF9FD77D">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="3" portIn="Remove" portOut="Enter" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{9DAFCD35-1882-4090-A526-5A8DEB08F820}"/>
+ <GraphTokens />
+</Graph>

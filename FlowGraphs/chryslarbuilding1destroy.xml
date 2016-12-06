@@ -1,0 +1,19 @@
+<Graph Description="" Group="chryslarbuilding1destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-300,-109,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="3" Class="entity:ProximityTrigger" pos="-76,-103,0" flags="0" EntityGUID="{AB65B1DE-AF14-43B1-9603-4E82B23606CE}" EntityGUID_64="43B1AF14AB65B1DE">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="5" Class="entity:BasicEntity" pos="192.40703,-98.140495,0" flags="0" EntityGUID="{C28F40AA-F6F7-4BCC-AB33-3145A791D8ED}" EntityGUID_64="4BCCF6F7C28F40AA">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="3" nodeOut="1" portIn="Enter" portOut="output" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="3" portIn="Remove" portOut="Enter" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{05495084-394F-43FC-B7C5-AC80F95D8226}"/>
+ <GraphTokens />
+</Graph>

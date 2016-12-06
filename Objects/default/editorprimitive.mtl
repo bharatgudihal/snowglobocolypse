@@ -1,6 +1,8 @@
-<Material MtlFlags="524288" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1" Specular="0.03189604,0.03189604,0.03189604" Opacity="1" Shininess="150" vertModifType="0" LayerAct="1">
+<Material MtlFlags="524288" Shader="Illum" GenMask="40000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_rock" Diffuse="1,1,1" Specular="0.03189604,0.03189604,0.03189604" Opacity="1" Shininess="155" vertModifType="0" LayerAct="1">
  <Textures>
-  <Texture Map="Diffuse" File="textures/defaults/grey.dds"/>
+  <Texture Map="Diffuse" File="textures/defaults/grey.dds">
+   <TexMod TexMod_RotateType="2" TexMod_TexGenType="0" TexMod_bTexGenProjected="0"/>
+  </Texture>
  </Textures>
- <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+ <PublicParams EmittanceMapGamma="1" DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
 </Material>
