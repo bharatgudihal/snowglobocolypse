@@ -39,7 +39,11 @@
   <Node Id="35" Class="Mission:GameTokenSet" pos="1480,-10,0" flags="0">
    <Inputs gametoken_Token="Enemy1_ctr" TokenValue=""/>
   </Node>
+<<<<<<< HEAD
+  <Node Id="38" Class="Movement:MoveEntityTo" pos="3070,-140,0" flags="1">
+=======
   <Node Id="38" Class="Movement:MoveEntityTo" pos="3070,-140,0" flags="0">
+>>>>>>> df265c01789f946d9bf885d6d3fad495e397b41b
    <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
   </Node>
   <Node Id="39" Class="Entity:EntityPos" pos="2750,-90,0" flags="0">
@@ -184,9 +188,17 @@
   <Edge nodeIn="127" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
   <Edge nodeIn="135" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
  </Edges>
+<<<<<<< HEAD
+ <HyperGraphId Id="{E16100B3-F97E-4849-89EE-A15D5A2AFD5A}"/>
+ <GraphTokens>
+  <Token Name="Enemy1_ctr" Type="1"/>
+  <Token Name="Enemy_1_Speed" Type="2"/>
+  <Token Name="TwitchStreamName" Type="6"/>
+=======
  <HyperGraphId Id="{468DBCEC-45BE-4BF8-A998-12D0ED58EBCB}"/>
  <GraphTokens>
   <Token Name="Enemy1_ctr" Type="1"/>
   <Token Name="Enemy_1_Speed" Type="1"/>
+>>>>>>> df265c01789f946d9bf885d6d3fad495e397b41b
  </GraphTokens>
 </Graph>
