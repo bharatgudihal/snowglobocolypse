@@ -1,0 +1,340 @@
+<ObjectLayer>
+ <Layer Name="Player_run" GUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="GeomEntity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{B887A20D-A61D-466A-AF0C-7F97AE72D169}" Name="root_skel1" HideOrder="0" Pos="57.320957,52.43071,34.247509" FloorNumber="-1" Rotate="1,0,0,0" Scale="100,100,100" ColorRGB="16776960" Geometry="assets/ruffles/group2_extract8.skin" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="ishun" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="4" Class="Animations:PlayAnimation" pos="949,50,0" flags="0" GraphEntity="0">
+       <Inputs anim_Animation="run" BlendInTime="0.2" Layer="0" Loop="1" ForceUpdate="0" PauseAnimGraph="0" ControlMovement="0"/>
+      </Node>
+      <Node Id="6" Class="Input:ActionHandler" pos="109,20,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveforward"/>
+      </Node>
+      <Node Id="7" Class="Game:Start" pos="-121,30,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="8" Class="Input:ActionHandler" pos="109,130,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveback"/>
+      </Node>
+      <Node Id="9" Class="Input:ActionHandler" pos="109,240,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveleft"/>
+      </Node>
+      <Node Id="10" Class="Input:ActionHandler" pos="109,340,0" flags="0">
+       <Inputs ActionMapName="player" ActionName="moveright"/>
+      </Node>
+      <Node Id="18" Class="Logic:Any" pos="579,10,0" flags="0" InHideMask="1008">
+       <Inputs />
+      </Node>
+      <Node Id="23" Class="Logic:Any" pos="620.36365,199.69551,0" flags="0" InHideMask="1008">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="18" nodeOut="6" portIn="In0" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="6" portIn="In0" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="8" portIn="In1" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="8" portIn="In1" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="9" portIn="In2" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="9" portIn="In2" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="10" portIn="In3" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="10" portIn="In3" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="18" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="23" portIn="Stop" portOut="Out" enabled="1"/>
+     </Edges>
+     <HyperGraphId Id="{14576E1C-2AD5-44EE-8B70-83D0CD42784A}"/>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{AB7E1311-EFBD-4E23-B6AE-BDB3DA1A37EA}" Name="Building.BankOfAmerica1" HideOrder="0" Pos="153.20375,152.80505,33.418488" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{42E83DAA-3A36-40EE-9797-DA868A55FD4B}" PrefabName="Level.Building.BankOfAmerica"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{B42C621A-6884-48FA-BAFB-239088B3CBFB}" Name="Building.EmpireState1" HideOrder="0" Pos="118.91695,187.58075,32.935215" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{074FCED4-EE9B-40FE-B578-E56216C04954}" PrefabName="Level.Building.EmpireState"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{DA29C71F-E823-4F02-9BED-FF33E28F7DA0}" Name="Building.ChryslarBuilding2" HideOrder="0" Pos="99.033783,163.29214,33.379135" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{0499D1AE-1C8B-4D7B-BD11-0D889B281D2D}" PrefabName="Level.Building.ChryslarBuilding1"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{F0B78D2E-04A1-4FEB-8D01-F4A044173731}" Name="Building.Rockefeller1" HideOrder="0" Pos="79.782707,129.1214,39.616287" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{1DC51BA5-5A13-4248-AED6-6ED4F69CF9CC}" PrefabName="Level.Building.Rockefeller1"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{3AA4E456-9B6D-45F8-B6B1-F7E01169138F}" Name="Building.Citigroup2" HideOrder="0" Pos="88.202583,227.82056,47.843227" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{A44A2A7A-DF04-429E-9145-DA24C1054FDC}" PrefabName="Level.Building.Citigroup1"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{258C0F59-E0EE-4DEF-AA36-8D060284B602}" Name="Building.ChryslarBuilding1" HideOrder="0" Pos="72.475014,184.29927,33.409889" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{CC382D16-B836-4DF8-8F4E-73489650658C}" PrefabName="Level.Building.ChryslarBuilding"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{8E9FFD7A-92F3-4784-AF85-ABAFFF7BEC19}" Name="Building.SonyTower4" HideOrder="0" Pos="145.4054,91.268356,31.976551" FloorNumber="-1" Rotate="0.64278764,0,0,-0.76604444" ColorRGB="16768000" PrefabGUID="{8702C8C4-4CB0-41D3-A446-8C9FE3E97AAC}" PrefabName="Level.Building.SonyTower3"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{A86A9E90-70D2-40CC-BF8D-6125FA5C8F29}" Name="Building.SonyTower3" HideOrder="0" Pos="98.119041,135.68015,32.009151" FloorNumber="-1" Rotate="0.99904823,0,0,-0.043619383" ColorRGB="16768000" PrefabGUID="{C5F3C557-98B4-4158-A4EF-DF940A321BD8}" PrefabName="Level.Building.SonyTower2"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{2A438E9D-EE14-4CCC-A69D-07B33786787B}" Name="Building.SonyTower2" HideOrder="0" Pos="128.69093,172.13043,33.513916" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{94A8CEEE-11D7-43D8-827A-31239E00E999}" PrefabName="Level.Building.SonyTower1"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{09192DA2-3BC3-4136-9BD4-522985894385}" Name="Building.Rockefeller2" HideOrder="0" Pos="66.36422,127.24829,33.013599" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{FFBAA33E-5591-43CA-B2EB-7FC5625A160A}" PrefabName="Level.Building.Rockefeller2"/>
+   <Object Type="SequenceObject" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{AF4748A7-999A-4F96-81B4-D5A9BE230EC8}" Name="Player_run" HideOrder="0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="3" Name="Player_run" Flags="0" StartTime="0" EndTime="10" ID="1">
+     <Nodes>
+      <Node Id="1" Type="Entity" Name="MannequinObject1" Flags="4" paramIdVersion="9" EntityGUID="43BEF9463D88B928">
+       <Track paramType="Position" Type="4" Flags="0" HasCustomColor="0" ValueType="1">
+        <NewSubTrack Flags="0" defaultValue="0,185.99998" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,36.000057" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,48" HasCustomColor="0"/>
+       </Track>
+       <Track paramType="Rotation" Type="4" Flags="0" HasCustomColor="0" ValueType="2">
+        <NewSubTrack Flags="0" defaultValue="0,0" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,-0" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,0" HasCustomColor="0"/>
+       </Track>
+       <Track paramType="Event" Type="-1" Flags="0" StartTime="0" EndTime="10" HasCustomColor="0" ValueType="-1"/>
+       <Track paramType="Animation" Type="-1" AnimationLayer="-1" Flags="0" StartTime="0" EndTime="10" HasCustomColor="0" ValueType="21"/>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ZoomScrollSettings dopeSheetZoom="100" dopeSheetHScroll="0" nodesListVScroll="0" curveEditorZoom="200,100" curveEditorScroll="0,0"/>
+    <ID value="1"/>
+   </Object>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{D780F7B7-B428-4483-89B2-6FD6B92E6EE4}" Name="Building.Citigroup3" HideOrder="0" Pos="55.543755,194.12444,33.03022" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{F41D5FDA-4D32-4CEA-96C6-82959BE14DBB}" PrefabName="Level.Building.Citigroup2"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{294091CE-726B-4B3B-8609-CE603AE93A45}" Name="Building.ParkAvenue1" HideOrder="0" Pos="91.048576,201.60335,51.334145" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{CA827E0F-06E1-46B8-8513-4D2CFAFAD2D1}" PrefabName="Level.Building.ParkAvenue"/>
+   <Object Type="GeomEntity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{F4B845ED-1ADF-4204-9441-59382DDFBBF6}" Name="test_player1" HideOrder="0" Pos="61.999992,56.000008,34" FloorNumber="-1" Rotate="1,0,0,0" Scale="100,100,100" ColorRGB="65535" Geometry="assets/test/test_player.cdf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="PLayer_run" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="4" Class="Animations:PlayAnimation" pos="430,10,0" flags="1" GraphEntity="0">
+       <Inputs anim_Animation="run" BlendInTime="0.2" Layer="0" Loop="1" ForceUpdate="0" PauseAnimGraph="0" ControlMovement="0"/>
+      </Node>
+      <Node Id="6" Class="Input:ActionHandler" pos="-410,-20,0" flags="1">
+       <Inputs ActionMapName="player" ActionName="moveforward"/>
+      </Node>
+      <Node Id="7" Class="Game:Start" pos="-640,-10,0" flags="1">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="8" Class="Input:ActionHandler" pos="-410,90,0" flags="1">
+       <Inputs ActionMapName="player" ActionName="moveback"/>
+      </Node>
+      <Node Id="9" Class="Input:ActionHandler" pos="-410,200,0" flags="1">
+       <Inputs ActionMapName="player" ActionName="moveleft"/>
+      </Node>
+      <Node Id="10" Class="Input:ActionHandler" pos="-410,300,0" flags="1">
+       <Inputs ActionMapName="player" ActionName="moveright"/>
+      </Node>
+      <Node Id="18" Class="Logic:Any" pos="60,-30,0" flags="1" InHideMask="1008">
+       <Inputs />
+      </Node>
+      <Node Id="23" Class="Logic:Any" pos="101.36362,159.69551,0" flags="1" InHideMask="1008">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="18" nodeOut="6" portIn="In0" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="6" portIn="In0" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="8" portIn="In1" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="8" portIn="In1" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="9" portIn="In2" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="9" portIn="In2" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="10" portIn="In3" portOut="ActionHeld" enabled="1"/>
+      <Edge nodeIn="23" nodeOut="10" portIn="In3" portOut="ActionReleased" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="18" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="23" portIn="Stop" portOut="Out" enabled="1"/>
+     </Edges>
+     <HyperGraphId Id="{068870F7-67E1-43C8-A238-43F7D8735708}"/>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{3A0A02F0-E20F-46FA-987F-29B5E5E190C8}" Name="Building.Citigroup1" HideOrder="0" Pos="146.51936,175.93791,33.289391" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{7B48EA9A-E5FD-4D84-BC6B-B095F49B8F1A}" PrefabName="Level.Building.Citigroup"/>
+   <Object Type="TagPoint" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{BFFDF2F9-8743-451C-973A-C2736C3C6CC6}" Name="TagPoint1" HideOrder="0" Pos="78.557785,58.428028,33" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint">
+    <FlowGraph Description="" Group="archetypeAI" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-140,50,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Entity:SpawnArchetype" pos="2020,250,0" flags="0">
+       <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+      </Node>
+      <Node Id="3" Class="Entity:EntityPos" pos="590,440,0" flags="0" GraphEntity="0">
+       <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="6" Class="String:SetString" pos="40,150,0" flags="0">
+       <Inputs In="Level.Enemy.EnemyType_1"/>
+      </Node>
+      <Node Id="7" Class="Vec3:FromVec3" pos="840,370,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="8" Class="Vec3:ToVec3" pos="1370,300,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="9" Class="Math:Add" pos="1170,270,0" flags="0">
+       <Inputs A="0" B="1.5"/>
+      </Node>
+      <Node Id="28" Class="String:Concat" pos="1760,70,0" flags="0">
+       <Inputs String1="EnemyType_1_" String2=""/>
+      </Node>
+      <Node Id="31" Class="Mission:GameTokenSet" pos="-180,260,0" flags="0">
+       <Inputs gametoken_Token="Enemy1_ctr" TokenValue="0"/>
+      </Node>
+      <Node Id="32" Class="Mission:GameTokenGet" pos="1060,-10,0" flags="0">
+       <Inputs gametoken_Token="Enemy1_ctr"/>
+      </Node>
+      <Node Id="33" Class="Math:Add" pos="1330,-20,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="34" Class="Entity:FindEntityByName" pos="2440,-120,0" flags="0">
+       <Inputs Name=""/>
+      </Node>
+      <Node Id="35" Class="Mission:GameTokenSet" pos="1480,-10,0" flags="0">
+       <Inputs gametoken_Token="Enemy1_ctr" TokenValue=""/>
+      </Node>
+      <Node Id="38" Class="Movement:MoveEntityTo" pos="3070,-140,0" flags="0">
+       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="39" Class="Entity:EntityPos" pos="2750,-90,0" flags="0">
+       <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="40" Class="Entity:FindEntityByName" pos="2450,90,0" flags="0">
+       <Inputs Name="robot_body"/>
+      </Node>
+      <Node Id="43" Class="System:Container:Create" pos="-20,-260,0" flags="0">
+       <Inputs Id="1"/>
+      </Node>
+      <Node Id="44" Class="System:Container:Edit" pos="2810,-300,0" flags="0">
+       <Inputs Id="0"/>
+      </Node>
+      <Node Id="81" Class="System:Container:Iterate" pos="990,-350,0" flags="0">
+       <Inputs Id="0"/>
+      </Node>
+      <Node Id="108" Class="Logic:Once" pos="1380,-480,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="112" Class="Logic:IfCondition" pos="2250,-460,0" flags="0">
+       <Inputs Condition="1"/>
+      </Node>
+      <Node Id="115" Class="Math:Mod" pos="1780,-450,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="116" Class="Mission:GameTokenSet" pos="-300,330,0" flags="0">
+       <Inputs gametoken_Token="Enemy_1_Speed" TokenValue="15"/>
+      </Node>
+      <Node Id="117" Class="Mission:GameTokenGet" pos="2700,170,0" flags="0">
+       <Inputs gametoken_Token="Enemy_1_Speed"/>
+      </Node>
+      <Node Id="118" Class="Math:Equal" pos="1990,-460,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="119" Class="Mission:GameTokenSet" pos="3000,-470,0" flags="0">
+       <Inputs gametoken_Token="Enemy_1_Speed" TokenValue=""/>
+      </Node>
+      <Node Id="120" Class="Math:Add" pos="2840,-460,0" flags="0">
+       <Inputs A="0" B="3"/>
+      </Node>
+      <Node Id="121" Class="Mission:GameTokenGet" pos="2500,-400,0" flags="0">
+       <Inputs gametoken_Token="Enemy_1_Speed"/>
+      </Node>
+      <Node Id="122" Class="Twitch:ChatPlay:Available" pos="540,60,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="123" Class="Debug:Log" pos="800,-80,0" flags="0">
+       <Inputs message="Stream unavailable"/>
+      </Node>
+      <Node Id="124" Class="Debug:Log" pos="800,-140,0" flags="0">
+       <Inputs message="Stream available"/>
+      </Node>
+      <Node Id="127" Class="Twitch:ChatPlay:Channel" pos="230,80,0" flags="0">
+       <Inputs Channel="The_Zephyrus"/>
+      </Node>
+      <Node Id="128" Class="Game:Stop" pos="-430,-30,0" flags="0">
+       <Inputs TriggerInGame="1" TriggerInEditor="1"/>
+      </Node>
+      <Node Id="129" Class="Twitch:ChatPlay:DisconnectAll" pos="-230,-20,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="132" Class="Debug:Log" pos="440,-140,0" flags="0">
+       <Inputs message="Connecting to channel..."/>
+      </Node>
+      <Node Id="133" Class="Debug:Log" pos="370,-200,0" flags="0">
+       <Inputs message="Connected to channel"/>
+      </Node>
+      <Node Id="134" Class="Debug:Log" pos="480,-80,0" flags="0">
+       <Inputs message="ERROR in connecting!"/>
+      </Node>
+      <Node Id="135" Class="Twitch:ChatPlay:Keyword" pos="770,10,0" flags="0">
+       <Inputs Channel="" Keyword="spawn" Reset="0"/>
+      </Node>
+      <Node Id="136" Class="String:SetString" pos="20,0,0" flags="0">
+       <Inputs In="The_Zephyrus"/>
+      </Node>
+      <Node Id="137" Class="Debug:DisplayMessage" pos="-320,-490,0" flags="0">
+       <Inputs message="say &apos;spawn&apos; to spawn" DisplayTime="0" posX="50" posY="50" fontSize="3" clr_Color="1,1,1" centered="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="6" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="31" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="1" portIn="Create" portOut="output" enabled="1"/>
+      <Edge nodeIn="116" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="127" nodeOut="1" portIn="Connect" portOut="output" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="2" portIn="Start" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="40" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="117" nodeOut="2" portIn="Activate" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="3" portIn="Rot" portOut="rotate" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="3" portIn="Scale" portOut="scale" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="3" portIn="vec3" portOut="pos" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="6" portIn="Archetype" portOut="Out" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="7" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="7" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="7" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="8" portIn="Pos" portOut="Result" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="9" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="32" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="33" nodeOut="32" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="35" nodeOut="33" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="35" nodeOut="33" portIn="TokenValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="44" nodeOut="34" portIn="Add" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="28" nodeOut="35" portIn="Set" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="28" nodeOut="35" portIn="String2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="115" nodeOut="35" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="44" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
+      <Edge nodeIn="81" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
+      <Edge nodeIn="108" nodeOut="81" portIn="In0" portOut="Done" enabled="1"/>
+      <Edge nodeIn="108" nodeOut="81" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="81" nodeOut="108" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="120" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="121" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="118" nodeOut="115" portIn="A" portOut="Result" enabled="1"/>
+      <Edge nodeIn="118" nodeOut="115" portIn="Activate" portOut="Result" enabled="1"/>
+      <Edge nodeIn="38" nodeOut="117" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="112" nodeOut="118" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="119" nodeOut="120" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="119" nodeOut="120" portIn="TokenValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="120" nodeOut="121" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="123" nodeOut="122" portIn="input" portOut="Unavailable" enabled="1"/>
+      <Edge nodeIn="124" nodeOut="122" portIn="input" portOut="Available" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="122" portIn="Start" portOut="Available" enabled="1"/>
+      <Edge nodeIn="122" nodeOut="127" portIn="Activate" portOut="Connected" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="127" portIn="input" portOut="Connecting" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="127" portIn="input" portOut="Connected" enabled="1"/>
+      <Edge nodeIn="134" nodeOut="127" portIn="input" portOut="Error" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="128" portIn="DisconnectAll" portOut="Output" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="135" portIn="Spawn" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="32" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="108" nodeOut="135" portIn="In1" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="115" nodeOut="135" portIn="Activate" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="127" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
+     </Edges>
+     <HyperGraphId Id="{468DBCEC-45BE-4BF8-A998-12D0ED58EBCB}"/>
+     <GraphTokens>
+      <Token Name="Enemy1_ctr" Type="1"/>
+      <Token Name="Enemy_1_Speed" Type="1"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
