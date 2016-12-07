@@ -1,4 +1,5 @@
 <SkeletonList>
+ <Skeleton name="dude" file="assets/dude/dude_root_skel.chr"/>
  <Skeleton name="monster_truck" file="assets/monstertruck/car1_skel.chr"/>
  <Skeleton name="polysurface1_skel" file="assets/test/polysurface1_skel.chr"/>
  <Skeleton name="ishun" file="assets/ruffles/root_skel.chr"/>
