@@ -1,0 +1,109 @@
+<ObjectLayer>
+ <Layer Name="Test" GUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{30124105-791C-49DB-B9F6-48AD35525795}" Name="TagTrain" HideOrder="0" Pos="134.63696,127.09657,637.87402" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{B3AD4623-411E-4E23-B64C-4270537752A9}" Name="TagTruck_2" HideOrder="0" Pos="211.96657,76.93129,32.990002" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
+   <Object Type="EnvironmentProbe" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{BFAF4541-9926-4948-A085-092288AFD5CD}" Name="EnvironmentProbe1" HideOrder="0" Pos="127.77054,126.80277,28.643936" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="EnvironmentLight">
+    <Properties bActive="1" BoxSizeX="500" BoxSizeY="500" BoxSizeZ="500" _nVersion="0">
+     <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
+     <Options bAffectsThisAreaOnly="1" bAffectsVolumetricFogOnly="0" fAttenuationFalloffMax="0.3" _texture_deferred_cubemap="" bDeferredClipBounds="0" bIgnoresVisAreas="0" SortPriority="0" bVolumetricFog="1"/>
+     <OptionsAdvanced texture_deferred_cubemap="Textures/cubemaps/my-first-level/environmentprobe1_cm.dds"/>
+     <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
+    </Properties>
+   </Object>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{878C6651-50EF-440E-9409-EA81AD991613}" Name="TagTruck_3" HideOrder="0" Pos="35.944725,100.07007,33" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{CE129457-4DA0-4BA8-8070-D0704252DA08}" Name="TagTruck_1" HideOrder="0" Pos="146.61214,224.53244,32.989998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{6A8D6DB1-A790-4FDF-9DA1-54377C01068F}" Name="Pickup.GluePickup1" HideOrder="0" Pos="44.981949,95.99501,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{AD81826E-2EFD-4ECE-8A0C-93A578966A28}" PrefabName="Level.Pickup.GluePickup"/>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{6786ACBC-75BB-4415-AE47-D3E361F1514A}" Name="Twitch" HideOrder="0" Pos="134.20142,125.66438,32.81493" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint">
+    <FlowGraph Description="" Group="archetypeAI" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-140,50,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="122" Class="Twitch:ChatPlay:Available" pos="500,190,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="123" Class="Debug:Log" pos="740,370,0" flags="0">
+       <Inputs message="Stream unavailable"/>
+      </Node>
+      <Node Id="124" Class="Debug:Log" pos="740,310,0" flags="0">
+       <Inputs message="Stream available"/>
+      </Node>
+      <Node Id="127" Class="Twitch:ChatPlay:Channel" pos="190,160,0" flags="0">
+       <Inputs Channel="The_Zephyrus"/>
+      </Node>
+      <Node Id="128" Class="Game:Stop" pos="-120,-130,0" flags="0">
+       <Inputs TriggerInGame="1" TriggerInEditor="1"/>
+      </Node>
+      <Node Id="129" Class="Twitch:ChatPlay:DisconnectAll" pos="80,-120,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="132" Class="Debug:Log" pos="460,390,0" flags="0">
+       <Inputs message="Connecting to channel..."/>
+      </Node>
+      <Node Id="133" Class="Debug:Log" pos="470,310,0" flags="0">
+       <Inputs message="Connected to channel"/>
+      </Node>
+      <Node Id="134" Class="Debug:Log" pos="360,450,0" flags="0">
+       <Inputs message="ERROR in connecting!"/>
+      </Node>
+      <Node Id="136" Class="String:SetString" pos="20,0,0" flags="0">
+       <Inputs In="The_Zephyrus"/>
+      </Node>
+      <Node Id="264" Class="Game:Start" pos="-140,50,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="426" Class="Mission:GameTokenSet" pos="770,150,0" flags="0">
+       <Inputs gametoken_Token="Level.Twitch.isAvailable" TokenValue="true"/>
+      </Node>
+      <Node Id="430" Class="Debug:Log" pos="1180,110,0" flags="0">
+       <Inputs message="true"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="127" nodeOut="1" portIn="Connect" portOut="output" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="123" nodeOut="122" portIn="input" portOut="Unavailable" enabled="1"/>
+      <Edge nodeIn="124" nodeOut="122" portIn="input" portOut="Available" enabled="1"/>
+      <Edge nodeIn="426" nodeOut="122" portIn="Activate" portOut="Available" enabled="1"/>
+      <Edge nodeIn="122" nodeOut="127" portIn="Activate" portOut="Connected" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="127" portIn="input" portOut="Connecting" enabled="1"/>
+      <Edge nodeIn="133" nodeOut="127" portIn="input" portOut="Connected" enabled="1"/>
+      <Edge nodeIn="134" nodeOut="127" portIn="input" portOut="Error" enabled="1"/>
+      <Edge nodeIn="129" nodeOut="128" portIn="DisconnectAll" portOut="Output" enabled="1"/>
+      <Edge nodeIn="127" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
+     </Edges>
+     <HyperGraphId Id="{F5B482ED-7ABF-4127-B559-CCECD404B90B}"/>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="SequenceObject" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{8DEE30D7-622D-471E-9029-2A4FB5549919}" Name="Test" HideOrder="0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
+    <Sequence SequenceVersion="3" Name="Test" Flags="0" StartTime="0" EndTime="10" ID="1">
+     <Nodes>
+      <Node Id="1" Type="Entity" Name="BasicEntity2" Flags="4" paramIdVersion="9" EntityGUID="4A8147954354E84A">
+       <Track paramType="Position" Type="4" Flags="0" HasCustomColor="0" ValueType="1">
+        <NewSubTrack Flags="0" defaultValue="0,41.391327" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,85.765915" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,32.989998" HasCustomColor="0"/>
+       </Track>
+       <Track paramType="Rotation" Type="4" Flags="0" HasCustomColor="0" ValueType="2">
+        <NewSubTrack Flags="0" defaultValue="0,0" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,-0" HasCustomColor="0"/>
+        <NewSubTrack Flags="0" defaultValue="0,0" HasCustomColor="0"/>
+       </Track>
+       <Track paramType="Event" Type="-1" Flags="0" StartTime="0" EndTime="10" HasCustomColor="0" ValueType="-1"/>
+      </Node>
+     </Nodes>
+     <Events />
+    </Sequence>
+    <ZoomScrollSettings dopeSheetZoom="100" dopeSheetHScroll="0" nodesListVScroll="0" curveEditorZoom="200,100" curveEditorScroll="0,0"/>
+    <ID value="1"/>
+   </Object>
+   <Object Type="ParticleEntity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{FDA49BF2-456D-45D5-AC5E-27449ED9E9D0}" Name="Level.Hearts1" HideOrder="0" Pos="52.814175,106.4132,45.968513" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="Level.Hearts" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
