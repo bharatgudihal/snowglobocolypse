@@ -1,16 +1,19 @@
-<Material MtlFlags="524544">
-	<SubMaterials>
-		<Material Name="PhysicsNoDraw" Shininess="10" Opacity="1" MtlFlags="1152" Shader="Nodraw" GenMask="0" Diffuse="1,1,1" Specular="0,0,0">
-			<Textures/>
-		</Material>
-		<Material Name="shatterInteriorS11" Shininess="10" Opacity="1" MtlFlags="524416" Shader="Illum" GenMask="100000000" Diffuse="1,1,1" Specular="0,0,0">
-			<Textures/>
-		</Material>
-		<Material Name="SonyTower41" Shininess="10" Opacity="1" MtlFlags="524416" Shader="Illum" GenMask="100000000" Diffuse="1,1,1" Specular="0,0,0">
-			<Textures>
-				<Texture Map="Diffuse" File="assets/sonytower1/st1shard4.fbm/sonytower1uv.png"/>
-			</Textures>
-		</Material>
-	</SubMaterials>
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="PhysicsNoDraw" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures />
+  </Material>
+  <Material Name="shatterInteriorS11" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="assets/truck/lambert.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="SonyTower41" MtlFlags="524416" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="assets/sonytower1/st1shard4.fbm/sonytower1uv.png"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
 </Material>
-

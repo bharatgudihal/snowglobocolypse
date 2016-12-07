@@ -6,7 +6,7 @@
   <Node Id="3" Class="Entity:EntityId" pos="-760,120,0" flags="0" EntityGUID="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" EntityGUID_64="4739DEB287A95A92">
    <Inputs />
   </Node>
-  <Node Id="4" Class="Module:Call_Character_Controller_Robot_Completed" pos="-160,-20,0" flags="0">
+  <Node Id="4" Class="Module:Call_Character_Controller_Robot_Completed" pos="-180,-170,0" flags="0">
    <Inputs Instanced="1" InstanceID="-1" Controller_Ref_Box_Pitch="0" Controller_Ref_Box_Move="0" Awesome_Sphere="0" Robot_Head="0" Camera_Rig="0" Robot_Body="0" Head_Tilt_Parent="0"/>
   </Node>
   <Node Id="5" Class="Game:Start" pos="-770,-310,0" flags="0">
@@ -27,37 +27,64 @@
   <Node Id="13" Class="Entity:EntityId" pos="-760,400,0" flags="0" EntityGUID="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" EntityGUID_64="4B0E75A98AF897E0">
    <Inputs />
   </Node>
-  <Node Id="17" Class="Entity:EntityInfo" pos="-170,-230,0" flags="0" EntityGUID="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" EntityGUID_64="4403D38C10498B71">
+  <Node Id="17" Class="Entity:EntityInfo" pos="-220,-390,0" flags="0" EntityGUID="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" EntityGUID_64="4403D38C10498B71">
    <Inputs />
   </Node>
-  <Node Id="18" Class="Mission:GameTokenSet" pos="440,-230,0" flags="0">
+  <Node Id="18" Class="Mission:GameTokenSet" pos="470,-230,0" flags="0">
    <Inputs gametoken_Token="GettingStarted_GT.3P_CameraID" TokenValue=""/>
   </Node>
   <Node Id="21" Class="Module:Call_Explode" pos="220,-20,0" flags="0">
    <Inputs Instanced="1" InstanceID="-1"/>
   </Node>
-  <Node Id="23" Class="UI:Canvas:Load" pos="-580,-470,0" flags="0">
+  <Node Id="25" Class="Game:Start" pos="-770,-310,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="33" Class="Module:Call_Explode" pos="220,-20,0" flags="0">
+   <Inputs Instanced="1" InstanceID="-1"/>
+  </Node>
+  <Node Id="34" Class="UI:Canvas:Load" pos="-610,-530,0" flags="0">
    <Inputs CanvasPathname="ui/canvases/basic.uicanvas" Disabled="0"/>
   </Node>
-  <Node Id="29" Class="UI:Text:SetText" pos="640,-600,0" flags="0">
+  <Node Id="35" Class="UI:Text:SetText" pos="680,-680,0" flags="0">
    <Inputs CanvasID="0" ElementID="2" Value=""/>
   </Node>
-  <Node Id="30" Class="Time:Time" pos="-460,-610,0" flags="0">
+  <Node Id="36" Class="Time:Time" pos="-620,-680,0" flags="0">
    <Inputs paused="0"/>
   </Node>
-  <Node Id="31" Class="Mission:GameTokenGet" pos="-290,-660,0" flags="0">
+  <Node Id="37" Class="Mission:GameTokenGet" pos="-320,-750,0" flags="0">
    <Inputs gametoken_Token="Level.Explode.ExplodePower"/>
   </Node>
-  <Node Id="32" Class="String:Concat" pos="350,-470,0" flags="0">
+  <Node Id="38" Class="String:Concat" pos="530,-530,0" flags="0">
    <Inputs String1="Explode Power: " String2=""/>
   </Node>
-  <Node Id="33" Class="Math:Div" pos="60,-660,0" flags="0">
+  <Node Id="39" Class="Math:Div" pos="60,-830,0" flags="0">
    <Inputs A="0" B="90"/>
   </Node>
-  <Node Id="34" Class="Math:Mul" pos="180,-660,0" flags="0">
+  <Node Id="40" Class="Math:Mul" pos="200,-760,0" flags="0">
    <Inputs A="0" B="100"/>
   </Node>
-  <Node Id="39" Class="String:Split" pos="150,-500,0" flags="0">
+  <Node Id="41" Class="String:Split" pos="320,-440,0" flags="0">
+   <Inputs Input="" separator="."/>
+  </Node>
+  <Node Id="42" Class="Mission:GameTokenGet" pos="-450,-1150,0" flags="0">
+   <Inputs gametoken_Token="Level.Pickup.PickupCount"/>
+  </Node>
+  <Node Id="43" Class="UI:Text:SetText" pos="670,-1160,0" flags="0">
+   <Inputs CanvasID="0" ElementID="3" Value=""/>
+  </Node>
+  <Node Id="44" Class="Mission:GameTokenGet" pos="-390,-970,0" flags="0">
+   <Inputs gametoken_Token="Level.Pickup.MaxPickupCount"/>
+  </Node>
+  <Node Id="45" Class="String:Concat" pos="410,-1160,0" flags="0">
+   <Inputs String1="Pickups: " String2=""/>
+  </Node>
+  <Node Id="46" Class="String:Concat" pos="80,-1130,0" flags="0">
+   <Inputs String1="" String2="/"/>
+  </Node>
+  <Node Id="47" Class="String:Concat" pos="260,-1090,0" flags="0">
+   <Inputs String1="" String2=""/>
+  </Node>
+  <Node Id="48" Class="String:Split" pos="-110,-1150,0" flags="0">
    <Inputs Input="" separator="."/>
   </Node>
  </Nodes>
@@ -68,7 +95,6 @@
   <Edge nodeIn="21" nodeOut="4" portIn="Call" portOut="OnCalled" enabled="1"/>
   <Edge nodeIn="4" nodeOut="5" portIn="Call" portOut="output" enabled="1"/>
   <Edge nodeIn="17" nodeOut="5" portIn="Get" portOut="output" enabled="1"/>
-  <Edge nodeIn="23" nodeOut="5" portIn="Activate" portOut="output" enabled="1"/>
   <Edge nodeIn="4" nodeOut="8" portIn="Robot_Head" portOut="Id" enabled="1"/>
   <Edge nodeIn="4" nodeOut="9" portIn="Camera_Rig" portOut="Id" enabled="1"/>
   <Edge nodeIn="4" nodeOut="10" portIn="Controller_Ref_Box_Move" portOut="Id" enabled="1"/>
@@ -77,18 +103,33 @@
   <Edge nodeIn="4" nodeOut="13" portIn="Head_Tilt_Parent" portOut="Id" enabled="1"/>
   <Edge nodeIn="18" nodeOut="17" portIn="Activate" portOut="Id" enabled="1"/>
   <Edge nodeIn="18" nodeOut="17" portIn="TokenValue" portOut="Id" enabled="1"/>
-  <Edge nodeIn="29" nodeOut="23" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
-  <Edge nodeIn="29" nodeOut="30" portIn="Activate" portOut="tick" enabled="1"/>
-  <Edge nodeIn="31" nodeOut="30" portIn="Activate" portOut="tick" enabled="1"/>
-  <Edge nodeIn="33" nodeOut="31" portIn="A" portOut="OutValue" enabled="1"/>
-  <Edge nodeIn="33" nodeOut="31" portIn="Activate" portOut="OutValue" enabled="1"/>
-  <Edge nodeIn="29" nodeOut="32" portIn="Value" portOut="Out" enabled="1"/>
-  <Edge nodeIn="34" nodeOut="33" portIn="A" portOut="Out" enabled="1"/>
-  <Edge nodeIn="34" nodeOut="33" portIn="Activate" portOut="Out" enabled="1"/>
-  <Edge nodeIn="32" nodeOut="34" portIn="Set" portOut="Out" enabled="1"/>
-  <Edge nodeIn="39" nodeOut="34" portIn="Activate" portOut="Out" enabled="1"/>
-  <Edge nodeIn="39" nodeOut="34" portIn="Input" portOut="Out" enabled="1"/>
-  <Edge nodeIn="32" nodeOut="39" portIn="String2" portOut="Split0" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="25" portIn="Activate" portOut="output" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+  <Edge nodeIn="43" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+  <Edge nodeIn="37" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+  <Edge nodeIn="44" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+  <Edge nodeIn="39" nodeOut="37" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="39" nodeOut="37" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="38" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="40" nodeOut="39" portIn="A" portOut="Out" enabled="1"/>
+  <Edge nodeIn="40" nodeOut="39" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="40" portIn="Set" portOut="Out" enabled="1"/>
+  <Edge nodeIn="41" nodeOut="40" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="41" nodeOut="40" portIn="Input" portOut="Out" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="41" portIn="String2" portOut="Split0" enabled="1"/>
+  <Edge nodeIn="48" nodeOut="42" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="48" nodeOut="42" portIn="Input" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="47" nodeOut="44" portIn="Set" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="47" nodeOut="44" portIn="String2" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="43" nodeOut="45" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="43" nodeOut="45" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="47" nodeOut="46" portIn="String1" portOut="Out" enabled="1"/>
+  <Edge nodeIn="45" nodeOut="47" portIn="Set" portOut="Out" enabled="1"/>
+  <Edge nodeIn="45" nodeOut="47" portIn="String2" portOut="Out" enabled="1"/>
+  <Edge nodeIn="46" nodeOut="48" portIn="Set" portOut="Split0" enabled="1"/>
+  <Edge nodeIn="46" nodeOut="48" portIn="String1" portOut="Split0" enabled="1"/>
  </Edges>
  <HyperGraphId Id="{B7339955-E94B-4B92-9DD5-73D2433F70CA}"/>
  <GraphTokens />
