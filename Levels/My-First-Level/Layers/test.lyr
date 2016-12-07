@@ -9,6 +9,7 @@
      <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
     </Properties>
    </Object>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{6A8D6DB1-A790-4FDF-9DA1-54377C01068F}" Name="Pickup.GluePickup1" HideOrder="0" Pos="44.981949,95.99501,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{AD81826E-2EFD-4ECE-8A0C-93A578966A28}" PrefabName="Level.Pickup.GluePickup"/>
    <Object Type="SequenceObject" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{8DEE30D7-622D-471E-9029-2A4FB5549919}" Name="Test" HideOrder="0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
     <Sequence SequenceVersion="3" Name="Test" Flags="0" StartTime="0" EndTime="10" ID="1">
      <Nodes>

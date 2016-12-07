@@ -1,0 +1,47 @@
+<Graph Description="" Group="Pickup" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="entity:ProximityTrigger" pos="-232,-126,0" flags="0" EntityGUID="{BBE9EC97-0B6F-4777-B5D5-C9F739233601}" EntityGUID_64="47770B6FBBE9EC97">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="3" Class="Game:Start" pos="-470,-110,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="7" Class="Entity:EntityInfo" pos="100,-40,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="9" Class="String:Compare" pos="420,-90,0" flags="0">
+   <Inputs A="" B="Character" IgnoreCase="1"/>
+  </Node>
+  <Node Id="13" Class="entity:ProximityTrigger" pos="650,-90,0" flags="0" EntityGUID="{BBE9EC97-0B6F-4777-B5D5-C9F739233601}" EntityGUID_64="47770B6FBBE9EC97">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="15" Class="entity:BasicEntity" pos="660,90,0" flags="0" EntityGUID="{FCB1EE16-4F80-46AB-A308-4CCFA55D50E2}" EntityGUID_64="46AB4F80FCB1EE16">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+  <Node Id="16" Class="Mission:GameTokenGet" pos="630,-220,0" flags="0">
+   <Inputs gametoken_Token="Level.Pickup.PickupCount"/>
+  </Node>
+  <Node Id="18" Class="Mission:GameTokenSet" pos="1100,-220,0" flags="0">
+   <Inputs gametoken_Token="Level.Pickup.PickupCount" TokenValue=""/>
+  </Node>
+  <Node Id="19" Class="Math:Add" pos="959.01672,-214.77066,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="7" nodeOut="2" portIn="Get" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="2" portIn="entityId" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="3" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="7" portIn="A" portOut="Name" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="7" portIn="Compare" portOut="Name" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="9" portIn="Disable" portOut="True" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="9" portIn="Hide" portOut="True" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="9" portIn="Activate" portOut="True" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="16" portIn="A" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="16" portIn="Activate" portOut="OutValue" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="19" portIn="Activate" portOut="Out" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="19" portIn="TokenValue" portOut="Out" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{021C16B4-9423-45FD-8B84-800209E751CD}"/>
+ <GraphTokens />
+</Graph>
