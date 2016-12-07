@@ -82,15 +82,6 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{5CC9F814-6977-4775-84F8-977A5ED0EB71}" Name="tree_21" HideOrder="0" Pos="135.85558,105.17785,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.13,0.13,0.13" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_05.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Entity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{FCB1EE16-4F80-46AB-A308-4CCFA55D50E2}" Name="Glue" HideOrder="0" Pos="46.613953,97.281685,33" FloorNumber="-1" Rotate="0.99144489,0.13052619,0,0" ColorRGB="65535" Material="assets/glue/glue" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
-    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/glue/glue.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <MultiplayerOptions bNetworked="0"/>
-     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
-      <CollisionFiltering />
-     </Physics>
-    </Properties>
-   </Object>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{B8E2C318-3AE7-4170-AAE0-A1A632AB3058}" Name="tree_39" HideOrder="0" Pos="163.46301,111.82784,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.13,0.13,0.13" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_05.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
