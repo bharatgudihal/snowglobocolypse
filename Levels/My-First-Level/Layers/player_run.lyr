@@ -112,7 +112,7 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{E8831638-DD53-4A3F-BBA9-89BF9D0651C6}" Name="pine_1" HideOrder="0" Pos="124.94753,144.50066,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.35700002,0.35700002,0.35700002" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/pine_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{DCAD4D3B-7D86-45A0-9CB0-588F4F09EE64}" Name="Building.ChryslarBuilding3" HideOrder="0" Pos="158.01096,167.78178,32.242802" FloorNumber="-1" Rotate="0.99904823,0,0,-0.043619383" ColorRGB="16768000" PrefabGUID="{0499D1AE-1C8B-4D7B-BD11-0D889B281D2D}" PrefabName="Level.Building.ChryslarBuilding1"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{DCAD4D3B-7D86-45A0-9CB0-588F4F09EE64}" Name="Building.ChryslarBuilding3" HideOrder="0" Pos="158.01096,167.78178,32.242802" FloorNumber="-1" Rotate="0.99904823,0,0,-0.043619383" ColorRGB="56575" PrefabGUID="{0499D1AE-1C8B-4D7B-BD11-0D889B281D2D}" PrefabName="Level.Building.ChryslarBuilding1"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{67EE643C-FD6B-42CE-B6C8-FE33C6C91777}" Name="pine_14" HideOrder="0" Pos="173.14952,125.45703,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.35700002,0.35700002,0.35700002" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/pine_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
@@ -131,6 +131,15 @@
     <CollisionFiltering />
    </Object>
    <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{5D2B8B4A-3696-40C7-B42C-7C6139B8A947}" Name="Building.Rockefeller8" HideOrder="0" Pos="183.20685,98.032913,31.953423" FloorNumber="-1" Rotate="0.99619472,0,0,-0.087155685" Scale="5,5,5" ColorRGB="56575" PrefabGUID="{FFBAA33E-5591-43CA-B2EB-7FC5625A160A}" PrefabName="Level.Building.Rockefeller2"/>
+   <Object Type="Entity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{4583A74E-A21D-4021-B47B-E63CBF06E343}" Name="BasicEntity1" HideOrder="0" Pos="57.725067,88.892082,36.132915" FloorNumber="-1" Rotate="1,0,0,0" Scale="50,50,50" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/train/train.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{D2CCC44F-5375-442F-969F-2A5C5385CEB0}" Name="tree_47" HideOrder="0" Pos="115.34901,60.903793,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.34000003,0.34000003,0.34000003" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_08.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
@@ -262,19 +271,10 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{218BF8A9-F92B-44F6-996F-AA670EBF0D25}" Name="pine_6" HideOrder="0" Pos="116.96155,128.59496,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.35700002,0.35700002,0.35700002" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/pine_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Entity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{A096CEAA-9EBE-4DCF-93D3-514FD327C83D}" Name="BasicEntity1" HideOrder="0" Pos="54.764309,61.119774,34.844864" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
-    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/test/truckdone.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <MultiplayerOptions bNetworked="0"/>
-     <Physics Density="50000" Mass="500000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
-      <CollisionFiltering />
-     </Physics>
-    </Properties>
-   </Object>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{D51FCEAD-E168-4B77-BA4D-2D136604EB8A}" Name="tree_26" HideOrder="0" Pos="151.83878,114.82789,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.22000003,0.22000003,0.22000003" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_01.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{9AC74AB1-FA00-419D-BE5E-810753F47471}" Name="Building.Rockefeller4" HideOrder="0" Pos="130.66277,210.05008,31.881275" FloorNumber="-1" Rotate="0.64278752,0,0,-0.7660445" Scale="5,5,5" ColorRGB="16768000" PrefabGUID="{FFBAA33E-5591-43CA-B2EB-7FC5625A160A}" PrefabName="Level.Building.Rockefeller2"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{9AC74AB1-FA00-419D-BE5E-810753F47471}" Name="Building.Rockefeller4" HideOrder="0" Pos="130.66277,210.05008,31.881275" FloorNumber="-1" Rotate="0.64278752,0,0,-0.7660445" Scale="5,5,5" ColorRGB="56575" PrefabGUID="{FFBAA33E-5591-43CA-B2EB-7FC5625A160A}" PrefabName="Level.Building.Rockefeller2"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{E4396CB3-D9C0-4653-AC62-428DF25E58E7}" Name="tree_20" HideOrder="0" Pos="130.8293,107.23174,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.34000003,0.34000003,0.34000003" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_08.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
@@ -362,7 +362,7 @@
     <CollisionFiltering />
    </Object>
    <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{3A0A02F0-E20F-46FA-987F-29B5E5E190C8}" Name="Building.Citigroup1" HideOrder="0" Pos="146.51936,175.93791,32.235348" FloorNumber="-1" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="56575" PrefabGUID="{7B48EA9A-E5FD-4D84-BC6B-B095F49B8F1A}" PrefabName="Level.Building.Citigroup"/>
-   <Object Type="TagPoint" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{BFFDF2F9-8743-451C-973A-C2736C3C6CC6}" Name="TagPoint1" HideOrder="0" Pos="78.557785,58.428028,33" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint">
+   <Object Type="TagPoint" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{BFFDF2F9-8743-451C-973A-C2736C3C6CC6}" Name="TagPoint1" HideOrder="0" Pos="78.557785,58.428028,33" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint">
     <FlowGraph Description="" Group="archetypeAI" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
       <Node Id="1" Class="Game:Start" pos="-140,50,0" flags="0">
@@ -371,26 +371,11 @@
       <Node Id="2" Class="Entity:SpawnArchetype" pos="2020,250,0" flags="0">
        <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="0.75,0.75,0.75"/>
       </Node>
-      <Node Id="3" Class="Entity:EntityPos" pos="1150,380,0" flags="0" GraphEntity="0">
-       <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
-      </Node>
       <Node Id="6" Class="String:SetString" pos="40,150,0" flags="0">
        <Inputs In="Level.Enemy.EnemyType_1"/>
       </Node>
-      <Node Id="7" Class="Vec3:FromVec3" pos="1400,310,0" flags="0">
-       <Inputs vec3="0,0,0"/>
-      </Node>
-      <Node Id="8" Class="Vec3:ToVec3" pos="1850,480,0" flags="0">
-       <Inputs x="0" y="0" z="0"/>
-      </Node>
-      <Node Id="9" Class="Math:Add" pos="1650,450,0" flags="0">
-       <Inputs A="0" B="1.5"/>
-      </Node>
       <Node Id="28" Class="String:Concat" pos="1760,70,0" flags="0">
        <Inputs String1="EnemyType_1_" String2=""/>
-      </Node>
-      <Node Id="31" Class="Mission:GameTokenSet" pos="-180,260,0" flags="0">
-       <Inputs gametoken_Token="Enemy1_ctr" TokenValue="0"/>
       </Node>
       <Node Id="32" Class="Mission:GameTokenGet" pos="1060,-10,0" flags="0">
        <Inputs gametoken_Token="Enemy1_ctr"/>
@@ -414,7 +399,7 @@
        <Inputs Name="robot_body"/>
       </Node>
       <Node Id="43" Class="System:Container:Create" pos="-20,-260,0" flags="0">
-       <Inputs Id="1"/>
+       <Inputs Id="0"/>
       </Node>
       <Node Id="44" Class="System:Container:Edit" pos="2810,-300,0" flags="0">
        <Inputs Id="0"/>
@@ -422,53 +407,11 @@
       <Node Id="81" Class="System:Container:Iterate" pos="990,-340,0" flags="0">
        <Inputs Id="0"/>
       </Node>
-      <Node Id="112" Class="Logic:IfCondition" pos="2250,-460,0" flags="0">
-       <Inputs Condition="1"/>
-      </Node>
-      <Node Id="115" Class="Math:Mod" pos="1780,-450,0" flags="0">
-       <Inputs A="0" B="30"/>
-      </Node>
-      <Node Id="116" Class="Mission:GameTokenSet" pos="-300,330,0" flags="0">
-       <Inputs gametoken_Token="Enemy_1_Speed" TokenValue="10"/>
-      </Node>
-      <Node Id="118" Class="Math:Equal" pos="1990,-460,0" flags="0">
-       <Inputs A="0" B="0"/>
-      </Node>
-      <Node Id="119" Class="Mission:GameTokenSet" pos="3000,-470,0" flags="0">
-       <Inputs gametoken_Token="Enemy_1_Speed" TokenValue=""/>
-      </Node>
-      <Node Id="120" Class="Math:Add" pos="2840,-460,0" flags="0">
-       <Inputs A="0" B="3"/>
-      </Node>
-      <Node Id="121" Class="Mission:GameTokenGet" pos="2500,-400,0" flags="0">
-       <Inputs gametoken_Token="Enemy_1_Speed"/>
-      </Node>
       <Node Id="122" Class="Twitch:ChatPlay:Available" pos="540,60,0" flags="0">
        <Inputs />
       </Node>
-      <Node Id="123" Class="Debug:Log" pos="800,-80,0" flags="0">
-       <Inputs message="Stream unavailable"/>
-      </Node>
-      <Node Id="124" Class="Debug:Log" pos="800,-140,0" flags="0">
-       <Inputs message="Stream available"/>
-      </Node>
       <Node Id="127" Class="Twitch:ChatPlay:Channel" pos="230,80,0" flags="0">
        <Inputs Channel="The_Zephyrus"/>
-      </Node>
-      <Node Id="128" Class="Game:Stop" pos="-430,-30,0" flags="0">
-       <Inputs TriggerInGame="1" TriggerInEditor="1"/>
-      </Node>
-      <Node Id="129" Class="Twitch:ChatPlay:DisconnectAll" pos="-230,-20,0" flags="0">
-       <Inputs />
-      </Node>
-      <Node Id="132" Class="Debug:Log" pos="440,-140,0" flags="0">
-       <Inputs message="Connecting to channel..."/>
-      </Node>
-      <Node Id="133" Class="Debug:Log" pos="370,-200,0" flags="0">
-       <Inputs message="Connected to channel"/>
-      </Node>
-      <Node Id="134" Class="Debug:Log" pos="480,-80,0" flags="0">
-       <Inputs message="ERROR in connecting!"/>
       </Node>
       <Node Id="135" Class="Twitch:ChatPlay:Keyword" pos="770,10,0" flags="0">
        <Inputs Channel="" Keyword="truck" Reset="0"/>
@@ -476,17 +419,8 @@
       <Node Id="136" Class="String:SetString" pos="20,0,0" flags="0">
        <Inputs In="The_Zephyrus"/>
       </Node>
-      <Node Id="137" Class="Debug:DisplayMessage" pos="-320,-490,0" flags="0">
-       <Inputs message="say &apos;spawn&apos; to spawn" DisplayTime="0" posX="50" posY="50" fontSize="3" clr_Color="1,1,1" centered="0"/>
-      </Node>
-      <Node Id="139" Class="Debug:InputKey" pos="290,-380,0" flags="0">
-       <Inputs Key="q" NonDevMode="0" KeyboardOnly="0"/>
-      </Node>
       <Node Id="142" Class="Logic:Any" pos="1070,-170,0" flags="0" InHideMask="1008">
        <Inputs />
-      </Node>
-      <Node Id="264" Class="Game:Start" pos="-140,50,0" flags="0">
-       <Inputs InGame="1" InEditor="1"/>
       </Node>
       <Node Id="283" Class="Logic:Once" pos="1380,-480,0" flags="0" InHideMask="240">
        <Inputs />
@@ -494,92 +428,11 @@
       <Node Id="304" Class="Entity:CheckDistance" pos="2800,200,0" flags="0" InHideMask="1048544">
        <Inputs MinDistance="0" MaxDistance="10000"/>
       </Node>
-      <Node Id="307" Class="Physics:ActionImpulse" pos="4350,-50,0" flags="0">
-       <Inputs Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
-      </Node>
       <Node Id="308" Class="Entity:GetPos" pos="3510,-340,0" flags="0">
        <Inputs CoordSys="1"/>
       </Node>
-      <Node Id="311" Class="Vec3:FromVec3" pos="3740,-360,0" flags="0">
-       <Inputs vec3="0,0,0"/>
-      </Node>
-      <Node Id="312" Class="Vec3:ToVec3" pos="4380,-310,0" flags="0">
-       <Inputs x="0" y="0" z="0"/>
-      </Node>
-      <Node Id="313" Class="Math:Add" pos="4110,-420,0" flags="0">
-       <Inputs A="0" B="0"/>
-      </Node>
-      <Node Id="314" Class="Math:Add" pos="4110,-350,0" flags="0">
-       <Inputs A="0" B="0"/>
-      </Node>
-      <Node Id="316" Class="Math:Random" pos="3890,-260,0" flags="0">
-       <Inputs Min="-25" Max="25"/>
-      </Node>
-      <Node Id="317" Class="Math:Random" pos="3890,-180,0" flags="0">
-       <Inputs Min="-25" Max="25"/>
-      </Node>
-      <Node Id="318" Class="Twitch:ChatPlay:Keyword" pos="770,140,0" flags="0">
-       <Inputs Channel="" Keyword="train" Reset="0"/>
-      </Node>
-      <Node Id="319" Class="Debug:InputKey" pos="650,310,0" flags="0">
-       <Inputs Key="e" NonDevMode="0" KeyboardOnly="0"/>
-      </Node>
-      <Node Id="320" Class="Logic:Any" pos="920,460,0" flags="0" InHideMask="1008">
-       <Inputs />
-      </Node>
-      <Node Id="321" Class="System:Container:Create" pos="110,460,0" flags="0">
-       <Inputs Id="2"/>
-      </Node>
-      <Node Id="322" Class="System:Container:Iterate" pos="340,520,0" flags="0">
-       <Inputs Id="0"/>
-      </Node>
-      <Node Id="323" Class="Logic:Once" pos="600,650,0" flags="0" InHideMask="240">
-       <Inputs />
-      </Node>
-      <Node Id="324" Class="String:Concat" pos="1480,680,0" flags="0">
-       <Inputs String1="EnemyType_2_" String2=""/>
-      </Node>
-      <Node Id="325" Class="Mission:GameTokenGet" pos="780,690,0" flags="0">
-       <Inputs gametoken_Token="Enemy2_ctr"/>
-      </Node>
-      <Node Id="326" Class="Math:Add" pos="1050,680,0" flags="0">
-       <Inputs A="0" B="1"/>
-      </Node>
-      <Node Id="327" Class="Mission:GameTokenSet" pos="1200,690,0" flags="0">
-       <Inputs gametoken_Token="Enemy2_ctr" TokenValue=""/>
-      </Node>
-      <Node Id="328" Class="Mission:GameTokenSet" pos="-160,190,0" flags="0">
-       <Inputs gametoken_Token="Enemy2_ctr" TokenValue="0"/>
-      </Node>
-      <Node Id="329" Class="Mission:GameTokenSet" pos="-320,410,0" flags="0">
-       <Inputs gametoken_Token="Enemy_2_speed" TokenValue="8"/>
-      </Node>
-      <Node Id="330" Class="Entity:SpawnArchetype" pos="2000,650,0" flags="0">
-       <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
-      </Node>
-      <Node Id="331" Class="Entity:FindEntityByName" pos="2130,870,0" flags="0">
-       <Inputs Name=""/>
-      </Node>
-      <Node Id="332" Class="System:Container:Edit" pos="2350,960,0" flags="0">
-       <Inputs Id="0"/>
-      </Node>
       <Node Id="333" Class="String:SetString" pos="90,270,0" flags="0">
        <Inputs In="Level.Enemy.EnemyType_2"/>
-      </Node>
-      <Node Id="335" Class="Logic:Any" pos="1130,290,0" flags="0" InHideMask="1016">
-       <Inputs />
-      </Node>
-      <Node Id="336" Class="Logic:Any" pos="2400,400,0" flags="0" InHideMask="1016">
-       <Inputs />
-      </Node>
-      <Node Id="337" Class="Entity:CheckDistance" pos="2690,560,0" flags="0" InHideMask="1048544">
-       <Inputs MinDistance="0" MaxDistance="60"/>
-      </Node>
-      <Node Id="339" Class="Movement:MoveEntityTo" pos="3160,520,0" flags="0">
-       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="15" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
-      </Node>
-      <Node Id="340" Class="Mission:GameTokenGet" pos="2380,830,0" flags="0">
-       <Inputs gametoken_Token="Enemy_2_Speed"/>
       </Node>
       <Node Id="417" Class="Logic:Once" pos="3250,280,0" flags="0" InHideMask="240">
        <Inputs />
@@ -587,10 +440,10 @@
       <Node Id="419" Class="Vec3:FromVec3" pos="3470,290,0" flags="0">
        <Inputs vec3="0,0,0"/>
       </Node>
-      <Node Id="420" Class="Vec3:FromVec3" pos="3500,-70,0" flags="0">
+      <Node Id="420" Class="Vec3:FromVec3" pos="3710,-150,0" flags="0">
        <Inputs vec3="0,0,0"/>
       </Node>
-      <Node Id="421" Class="Math:Less" pos="3820,10,0" flags="0">
+      <Node Id="421" Class="Math:Less" pos="4100,-50,0" flags="0">
        <Inputs A="0" B="0"/>
       </Node>
       <Node Id="422" Class="Logic:Any" pos="3320,140,0" flags="0" InHideMask="1016">
@@ -602,29 +455,154 @@
       <Node Id="424" Class="Logic:Blocker" pos="2920,80,0" flags="0">
        <Inputs Block="0"/>
       </Node>
+      <Node Id="425" Class="Debug:DisplayMessage" pos="3330,-720,0" flags="0">
+       <Inputs message="You died." DisplayTime="0" posX="500" posY="400" fontSize="10" clr_Color="1,0,0" centered="0"/>
+      </Node>
+      <Node Id="426" Class="Image:ColorCorrection" pos="3330,-540,0" flags="0">
+       <Inputs Enable="0" Disable="1" Global_User_ColorC="0" Global_User_ColorM="3" Global_User_ColorY="0" Global_User_ColorK="0" Global_User_Brightness="2" Global_User_Contrast="1" Global_User_Saturation="1" Global_User_ColorHue="60"/>
+      </Node>
+      <Node Id="429" Class="Time:Time" pos="-300,1200,0" flags="0">
+       <Inputs paused="0"/>
+      </Node>
+      <Node Id="430" Class="Mission:GameTokenGet" pos="-110,1210,0" flags="0">
+       <Inputs gametoken_Token="Level.Twitch.isAvailable"/>
+      </Node>
+      <Node Id="433" Class="Logic:AND" pos="210,1210,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="434" Class="Game:Start" pos="-340,1340,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="435" Class="Twitch:ChatPlay:Keyword" pos="380,1200,0" flags="0">
+       <Inputs Channel="The_Zephyrus" Keyword="truck" Reset="0"/>
+      </Node>
+      <Node Id="436" Class="Mission:GameTokenSet" pos="370,1100,0" flags="0">
+       <Inputs gametoken_Token="Level.Twitch.isAvailable" TokenValue="false"/>
+      </Node>
+      <Node Id="437" Class="Mission:GameTokenSet" pos="-130,1720,0" flags="0">
+       <Inputs gametoken_Token="Enemy1_ctr" TokenValue="0"/>
+      </Node>
+      <Node Id="438" Class="System:Container:Create" pos="-30,1390,0" flags="0">
+       <Inputs Id="1"/>
+      </Node>
+      <Node Id="439" Class="Entity:FindEntityByName" pos="2280,1910,0" flags="0">
+       <Inputs Name="robot_body"/>
+      </Node>
+      <Node Id="440" Class="System:Container:Iterate" pos="810,1300,0" flags="0">
+       <Inputs Id="0"/>
+      </Node>
+      <Node Id="441" Class="Logic:Once" pos="1260,1180,0" flags="0" InHideMask="240">
+       <Inputs />
+      </Node>
+      <Node Id="442" Class="String:Concat" pos="1440,1500,0" flags="0">
+       <Inputs String1="EnemyType_1_" String2=""/>
+      </Node>
+      <Node Id="443" Class="Mission:GameTokenGet" pos="730,1460,0" flags="0">
+       <Inputs gametoken_Token="Enemy1_ctr"/>
+      </Node>
+      <Node Id="444" Class="Math:Add" pos="1000,1460,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="445" Class="Mission:GameTokenSet" pos="1150,1440,0" flags="0">
+       <Inputs gametoken_Token="Enemy1_ctr" TokenValue=""/>
+      </Node>
+      <Node Id="448" Class="Math:Random" pos="620,1610,0" flags="0">
+       <Inputs Min="0.5" Max="3.5"/>
+      </Node>
+      <Node Id="459" Class="Entity:GetPos" pos="880,1650,0" flags="0" OutHideMask="56" EntityGUID="{B3AD4623-411E-4E23-B64C-4270537752A9}" EntityGUID_64="4E23411EB3AD4623">
+       <Inputs CoordSys="1"/>
+      </Node>
+      <Node Id="460" Class="Entity:GetPos" pos="880,1540,0" flags="0" OutHideMask="56" EntityGUID="{CE129457-4DA0-4BA8-8070-D0704252DA08}" EntityGUID_64="4BA84DA0CE129457">
+       <Inputs CoordSys="1"/>
+      </Node>
+      <Node Id="461" Class="Entity:GetPos" pos="880,1760,0" flags="0" OutHideMask="56" EntityGUID="{878C6651-50EF-440E-9409-EA81AD991613}" EntityGUID_64="440E50EF878C6651">
+       <Inputs CoordSys="1"/>
+      </Node>
+      <Node Id="462" Class="Entity:SpawnArchetype" pos="1890,1850,0" flags="0">
+       <Inputs Archetype="" Name="" Pos="0,0,0" Rot="0,0,0" Scale="0.75,0.75,0.75"/>
+      </Node>
+      <Node Id="463" Class="Entity:FindEntityByName" pos="2280,1480,0" flags="0">
+       <Inputs Name=""/>
+      </Node>
+      <Node Id="464" Class="System:Container:Edit" pos="2610,1380,0" flags="0">
+       <Inputs Id="0"/>
+      </Node>
+      <Node Id="467" Class="String:SetString" pos="-150,1810,0" flags="0">
+       <Inputs In="Level.Enemy.EnemyType_1"/>
+      </Node>
+      <Node Id="468" Class="Logic:Any" pos="790,1070,0" flags="0" InHideMask="1016">
+       <Inputs />
+      </Node>
+      <Node Id="469" Class="Debug:InputKey" pos="-30,940,0" flags="0">
+       <Inputs Key="q" NonDevMode="0" KeyboardOnly="0"/>
+      </Node>
+      <Node Id="474" Class="Math:Mod" pos="160,1310,0" flags="0">
+       <Inputs A="0" B="30"/>
+      </Node>
+      <Node Id="476" Class="Math:Equal" pos="410,1310,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="482" Class="Debug:Log" pos="2090,2070,0" flags="0">
+       <Inputs message="SPAWN"/>
+      </Node>
+      <Node Id="488" Class="Logic:Multiplexer" pos="1130,1610,0" flags="0" InHideMask="964">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="489" Class="Math:Round" pos="-100,1290,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+      <Node Id="491" Class="Logic:Once" pos="650,1270,0" flags="0" InHideMask="254">
+       <Inputs />
+      </Node>
+      <Node Id="492" Class="Movement:MoveEntityTo" pos="2820,1600,0" flags="0">
+       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="8" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="493" Class="Entity:GetPos" pos="2550,1630,0" flags="0">
+       <Inputs CoordSys="1"/>
+      </Node>
+      <Node Id="494" Class="Vec3:FromVec3" pos="1500,1610,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="495" Class="Vec3:ToVec3" pos="1670,1800,0" flags="0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="496" Class="Math:Add" pos="1430,1780,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+      <Node Id="497" Class="Debug:Log" pos="2820,1320,0" flags="0">
+       <Inputs message="error adding to container"/>
+      </Node>
+      <Node Id="498" Class="Debug:Log" pos="2810,1410,0" flags="0">
+       <Inputs message="added to container"/>
+      </Node>
+      <Node Id="501" Class="Debug:Log" pos="3246.353,1632.7177,0" flags="0">
+       <Inputs message="start"/>
+      </Node>
+      <Node Id="502" Class="Debug:Log" pos="3270,1730,0" flags="0">
+       <Inputs message="done"/>
+      </Node>
+      <Node Id="503" Class="Debug:Log" pos="308.79688,1559.7488,0" flags="0">
+       <Inputs message="container created"/>
+      </Node>
+      <Node Id="504" Class="Debug:Log" pos="312.50613,1485.5634,0" flags="0">
+       <Inputs message="error creating container"/>
+      </Node>
+      <Node Id="506" Class="Debug:InputKey" pos="580,-420,0" flags="0">
+       <Inputs Key="q" NonDevMode="0" KeyboardOnly="0"/>
+      </Node>
+      <Node Id="507" Class="Entity:Spawn" pos="-110,1510,0" flags="0">
+       <Inputs Class="Prefab" Name="Metlife" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+      </Node>
+      <Node Id="508" Class="Debug:Log" pos="152.49266,1644.4172,0" flags="0">
+       <Inputs message="failed"/>
+      </Node>
+      <Node Id="509" Class="Debug:Log" pos="120,1520,0" flags="0">
+       <Inputs message="succeeded"/>
+      </Node>
      </Nodes>
      <Edges>
-      <Edge nodeIn="6" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
-      <Edge nodeIn="31" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
-      <Edge nodeIn="43" nodeOut="1" portIn="Create" portOut="output" enabled="1"/>
-      <Edge nodeIn="116" nodeOut="1" portIn="Activate" portOut="output" enabled="1"/>
-      <Edge nodeIn="127" nodeOut="1" portIn="Connect" portOut="output" enabled="1"/>
-      <Edge nodeIn="136" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
       <Edge nodeIn="34" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
-      <Edge nodeIn="336" nodeOut="2" portIn="In0" portOut="Succeeded" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="3" portIn="Rot" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="7" nodeOut="3" portIn="vec3" portOut="pos" enabled="1"/>
-      <Edge nodeIn="330" nodeOut="3" portIn="Rot" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="330" nodeOut="3" portIn="Scale" portOut="scale" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="6" portIn="Archetype" portOut="Out" enabled="1"/>
-      <Edge nodeIn="8" nodeOut="7" portIn="x" portOut="x" enabled="1"/>
-      <Edge nodeIn="8" nodeOut="7" portIn="y" portOut="y" enabled="1"/>
-      <Edge nodeIn="9" nodeOut="7" portIn="A" portOut="z" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="8" portIn="Pos" portOut="Result" enabled="1"/>
-      <Edge nodeIn="330" nodeOut="8" portIn="Pos" portOut="Result" enabled="1"/>
-      <Edge nodeIn="8" nodeOut="9" portIn="z" portOut="Out" enabled="1"/>
-      <Edge nodeIn="2" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
-      <Edge nodeIn="34" nodeOut="28" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="40" nodeOut="2" portIn="Set" portOut="Succeeded" enabled="1"/>
       <Edge nodeIn="33" nodeOut="32" portIn="A" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="33" nodeOut="32" portIn="Activate" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="35" nodeOut="33" portIn="Activate" portOut="Out" enabled="1"/>
@@ -632,14 +610,12 @@
       <Edge nodeIn="44" nodeOut="34" portIn="AddUnique" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="28" nodeOut="35" portIn="Set" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="28" nodeOut="35" portIn="String2" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="115" nodeOut="35" portIn="A" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="314" nodeOut="38" portIn="Activate" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="425" nodeOut="38" portIn="Show" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="426" nodeOut="38" portIn="Enable" portOut="Finish" enabled="1"/>
       <Edge nodeIn="38" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
-      <Edge nodeIn="339" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
       <Edge nodeIn="419" nodeOut="39" portIn="vec3" portOut="pos" enabled="1"/>
       <Edge nodeIn="39" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="304" nodeOut="40" portIn="Entity1" portOut="EntityId" enabled="1"/>
-      <Edge nodeIn="337" nodeOut="40" portIn="Entity1" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="44" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
       <Edge nodeIn="81" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
       <Edge nodeIn="38" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
@@ -647,86 +623,18 @@
       <Edge nodeIn="283" nodeOut="81" portIn="Reset" portOut="Out" enabled="1"/>
       <Edge nodeIn="304" nodeOut="81" portIn="Check" portOut="Out" enabled="1"/>
       <Edge nodeIn="304" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
-      <Edge nodeIn="307" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
       <Edge nodeIn="308" nodeOut="81" portIn="entityId" portOut="Out" enabled="1"/>
-      <Edge nodeIn="120" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
-      <Edge nodeIn="121" nodeOut="112" portIn="Activate" portOut="OnTrue" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="118" portIn="Activate" portOut="OnTrue" enabled="1"/>
-      <Edge nodeIn="119" nodeOut="120" portIn="Activate" portOut="Out" enabled="1"/>
-      <Edge nodeIn="119" nodeOut="120" portIn="TokenValue" portOut="Out" enabled="1"/>
-      <Edge nodeIn="120" nodeOut="121" portIn="A" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="123" nodeOut="122" portIn="input" portOut="Unavailable" enabled="1"/>
-      <Edge nodeIn="124" nodeOut="122" portIn="input" portOut="Available" enabled="1"/>
-      <Edge nodeIn="135" nodeOut="122" portIn="Start" portOut="Available" enabled="1"/>
-      <Edge nodeIn="318" nodeOut="122" portIn="Start" portOut="Available" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="127" portIn="Activate" portOut="Connected" enabled="1"/>
-      <Edge nodeIn="132" nodeOut="127" portIn="input" portOut="Connecting" enabled="1"/>
-      <Edge nodeIn="133" nodeOut="127" portIn="input" portOut="Connected" enabled="1"/>
-      <Edge nodeIn="134" nodeOut="127" portIn="input" portOut="Error" enabled="1"/>
-      <Edge nodeIn="129" nodeOut="128" portIn="DisconnectAll" portOut="Output" enabled="1"/>
       <Edge nodeIn="142" nodeOut="135" portIn="In1" portOut="Signal" enabled="1"/>
-      <Edge nodeIn="127" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
-      <Edge nodeIn="135" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
-      <Edge nodeIn="318" nodeOut="136" portIn="Channel" portOut="Out" enabled="1"/>
-      <Edge nodeIn="142" nodeOut="139" portIn="In0" portOut="Pressed" enabled="1"/>
       <Edge nodeIn="2" nodeOut="142" portIn="Spawn" portOut="Out" enabled="1"/>
       <Edge nodeIn="32" nodeOut="142" portIn="Activate" portOut="Out" enabled="1"/>
       <Edge nodeIn="283" nodeOut="142" portIn="In1" portOut="Out" enabled="1"/>
-      <Edge nodeIn="335" nodeOut="142" portIn="In0" portOut="Out" enabled="1"/>
-      <Edge nodeIn="139" nodeOut="264" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="319" nodeOut="264" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="321" nodeOut="264" portIn="Create" portOut="output" enabled="1"/>
-      <Edge nodeIn="328" nodeOut="264" portIn="Activate" portOut="output" enabled="1"/>
-      <Edge nodeIn="329" nodeOut="264" portIn="Activate" portOut="output" enabled="1"/>
-      <Edge nodeIn="333" nodeOut="264" portIn="Set" portOut="output" enabled="1"/>
       <Edge nodeIn="81" nodeOut="283" portIn="Start" portOut="Out" enabled="1"/>
       <Edge nodeIn="417" nodeOut="304" portIn="Reset" portOut="NearEntity" enabled="1"/>
       <Edge nodeIn="417" nodeOut="304" portIn="In0" portOut="NoEntInRange" enabled="1"/>
       <Edge nodeIn="422" nodeOut="304" portIn="In1" portOut="NearEntity" enabled="1"/>
       <Edge nodeIn="422" nodeOut="304" portIn="In0" portOut="NoEntInRange" enabled="1"/>
       <Edge nodeIn="424" nodeOut="304" portIn="In" portOut="NearEntity" enabled="1"/>
-      <Edge nodeIn="311" nodeOut="308" portIn="vec3" portOut="Pos" enabled="1"/>
       <Edge nodeIn="420" nodeOut="308" portIn="vec3" portOut="Pos" enabled="1"/>
-      <Edge nodeIn="312" nodeOut="311" portIn="z" portOut="z" enabled="1"/>
-      <Edge nodeIn="313" nodeOut="311" portIn="A" portOut="x" enabled="1"/>
-      <Edge nodeIn="314" nodeOut="311" portIn="A" portOut="y" enabled="1"/>
-      <Edge nodeIn="307" nodeOut="312" portIn="Impulse" portOut="Result" enabled="1"/>
-      <Edge nodeIn="312" nodeOut="313" portIn="x" portOut="Out" enabled="1"/>
-      <Edge nodeIn="312" nodeOut="314" portIn="y" portOut="Out" enabled="1"/>
-      <Edge nodeIn="313" nodeOut="316" portIn="B" portOut="Out" enabled="1"/>
-      <Edge nodeIn="314" nodeOut="317" portIn="B" portOut="Out" enabled="1"/>
-      <Edge nodeIn="320" nodeOut="318" portIn="In0" portOut="Signal" enabled="1"/>
-      <Edge nodeIn="320" nodeOut="319" portIn="In1" portOut="Pressed" enabled="1"/>
-      <Edge nodeIn="323" nodeOut="320" portIn="In0" portOut="Out" enabled="1"/>
-      <Edge nodeIn="325" nodeOut="320" portIn="Activate" portOut="Out" enabled="1"/>
-      <Edge nodeIn="330" nodeOut="320" portIn="Spawn" portOut="Out" enabled="1"/>
-      <Edge nodeIn="335" nodeOut="320" portIn="In1" portOut="Out" enabled="1"/>
-      <Edge nodeIn="322" nodeOut="321" portIn="Id" portOut="Id" enabled="1"/>
-      <Edge nodeIn="332" nodeOut="321" portIn="Id" portOut="Id" enabled="1"/>
-      <Edge nodeIn="323" nodeOut="322" portIn="In1" portOut="Done" enabled="1"/>
-      <Edge nodeIn="323" nodeOut="322" portIn="Reset" portOut="Out" enabled="1"/>
-      <Edge nodeIn="337" nodeOut="322" portIn="Check" portOut="Out" enabled="1"/>
-      <Edge nodeIn="337" nodeOut="322" portIn="entityId" portOut="Out" enabled="1"/>
-      <Edge nodeIn="339" nodeOut="322" portIn="entityId" portOut="Out" enabled="1"/>
-      <Edge nodeIn="322" nodeOut="323" portIn="Start" portOut="Out" enabled="1"/>
-      <Edge nodeIn="330" nodeOut="324" portIn="Name" portOut="Out" enabled="1"/>
-      <Edge nodeIn="331" nodeOut="324" portIn="Name" portOut="Out" enabled="1"/>
-      <Edge nodeIn="326" nodeOut="325" portIn="A" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="326" nodeOut="325" portIn="Activate" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="327" nodeOut="326" portIn="Activate" portOut="Out" enabled="1"/>
-      <Edge nodeIn="327" nodeOut="326" portIn="TokenValue" portOut="Out" enabled="1"/>
-      <Edge nodeIn="324" nodeOut="327" portIn="Set" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="324" nodeOut="327" portIn="String2" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="331" nodeOut="330" portIn="Set" portOut="Succeeded" enabled="1"/>
-      <Edge nodeIn="336" nodeOut="330" portIn="In1" portOut="Succeeded" enabled="1"/>
-      <Edge nodeIn="340" nodeOut="330" portIn="Activate" portOut="Succeeded" enabled="1"/>
-      <Edge nodeIn="332" nodeOut="331" portIn="AddUnique" portOut="EntityId" enabled="1"/>
-      <Edge nodeIn="330" nodeOut="333" portIn="Archetype" portOut="Out" enabled="1"/>
-      <Edge nodeIn="9" nodeOut="335" portIn="Activate" portOut="Out" enabled="1"/>
-      <Edge nodeIn="40" nodeOut="336" portIn="Set" portOut="Out" enabled="1"/>
-      <Edge nodeIn="339" nodeOut="337" portIn="Start" portOut="NearEntity" enabled="1"/>
-      <Edge nodeIn="339" nodeOut="337" portIn="Stop" portOut="NoEntInRange" enabled="1"/>
-      <Edge nodeIn="339" nodeOut="340" portIn="Value" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="38" nodeOut="417" portIn="Stop" portOut="Out" enabled="1"/>
       <Edge nodeIn="423" nodeOut="419" portIn="A" portOut="z" enabled="1"/>
       <Edge nodeIn="421" nodeOut="420" portIn="B" portOut="z" enabled="1"/>
@@ -737,6 +645,80 @@
       <Edge nodeIn="423" nodeOut="422" portIn="Activate" portOut="Out" enabled="1"/>
       <Edge nodeIn="421" nodeOut="423" portIn="A" portOut="Out" enabled="1"/>
       <Edge nodeIn="38" nodeOut="424" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="430" nodeOut="429" portIn="Activate" portOut="tick" enabled="1"/>
+      <Edge nodeIn="489" nodeOut="429" portIn="In" portOut="seconds" enabled="1"/>
+      <Edge nodeIn="489" nodeOut="429" portIn="Activate" portOut="tick" enabled="1"/>
+      <Edge nodeIn="433" nodeOut="430" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="433" nodeOut="430" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="435" nodeOut="433" portIn="Start" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="436" nodeOut="433" portIn="Activate" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="434" portIn="Create" portOut="output" enabled="1"/>
+      <Edge nodeIn="437" nodeOut="434" portIn="Activate" portOut="output" enabled="1"/>
+      <Edge nodeIn="438" nodeOut="434" portIn="Create" portOut="output" enabled="1"/>
+      <Edge nodeIn="467" nodeOut="434" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="469" nodeOut="434" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="507" nodeOut="434" portIn="Spawn" portOut="output" enabled="1"/>
+      <Edge nodeIn="468" nodeOut="435" portIn="In1" portOut="Signal" enabled="1"/>
+      <Edge nodeIn="440" nodeOut="438" portIn="Id" portOut="Id" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="438" portIn="Id" portOut="Id" enabled="1"/>
+      <Edge nodeIn="503" nodeOut="438" portIn="input" portOut="Success" enabled="1"/>
+      <Edge nodeIn="504" nodeOut="438" portIn="input" portOut="Error" enabled="1"/>
+      <Edge nodeIn="493" nodeOut="439" portIn="entityId" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="441" nodeOut="440" portIn="In0" portOut="Done" enabled="1"/>
+      <Edge nodeIn="441" nodeOut="440" portIn="Reset" portOut="Out" enabled="1"/>
+      <Edge nodeIn="492" nodeOut="440" portIn="entityId" portOut="Out" enabled="1"/>
+      <Edge nodeIn="440" nodeOut="441" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="442" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="34" nodeOut="442" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="462" nodeOut="442" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="463" nodeOut="442" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="444" nodeOut="443" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="444" nodeOut="443" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="445" nodeOut="444" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="445" nodeOut="444" portIn="TokenValue" portOut="Out" enabled="1"/>
+      <Edge nodeIn="442" nodeOut="445" portIn="Set" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="442" nodeOut="445" portIn="String2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="459" nodeOut="448" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="460" nodeOut="448" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="461" nodeOut="448" portIn="Get" portOut="Out" enabled="1"/>
+      <Edge nodeIn="488" nodeOut="448" portIn="Index" portOut="OutRounded" enabled="1"/>
+      <Edge nodeIn="488" nodeOut="459" portIn="In2" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="488" nodeOut="460" portIn="In1" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="488" nodeOut="461" portIn="In3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="439" nodeOut="462" portIn="Set" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="463" nodeOut="462" portIn="Set" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="482" nodeOut="462" portIn="input" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="492" nodeOut="462" portIn="Start" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="493" nodeOut="462" portIn="Get" portOut="Succeeded" enabled="1"/>
+      <Edge nodeIn="464" nodeOut="463" portIn="Add" portOut="EntityId" enabled="1"/>
+      <Edge nodeIn="497" nodeOut="464" portIn="input" portOut="Error" enabled="1"/>
+      <Edge nodeIn="498" nodeOut="464" portIn="input" portOut="Success" enabled="1"/>
+      <Edge nodeIn="462" nodeOut="467" portIn="Archetype" portOut="Out" enabled="1"/>
+      <Edge nodeIn="441" nodeOut="468" portIn="In1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="443" nodeOut="468" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="448" nodeOut="468" portIn="Generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="468" nodeOut="469" portIn="In0" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="476" nodeOut="474" portIn="A" portOut="Result" enabled="1"/>
+      <Edge nodeIn="476" nodeOut="474" portIn="Activate" portOut="Result" enabled="1"/>
+      <Edge nodeIn="491" nodeOut="476" portIn="Reset" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="491" nodeOut="476" portIn="In0" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="494" nodeOut="488" portIn="vec3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="474" nodeOut="489" portIn="A" portOut="OutRounded" enabled="1"/>
+      <Edge nodeIn="474" nodeOut="489" portIn="Activate" portOut="OutRounded" enabled="1"/>
+      <Edge nodeIn="468" nodeOut="491" portIn="In2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="501" nodeOut="492" portIn="input" portOut="OnStart" enabled="1"/>
+      <Edge nodeIn="502" nodeOut="492" portIn="input" portOut="DoneTrigger" enabled="1"/>
+      <Edge nodeIn="492" nodeOut="493" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="495" nodeOut="494" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="495" nodeOut="494" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="496" nodeOut="494" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="496" nodeOut="494" portIn="Activate" portOut="z" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="495" portIn="Pos" portOut="Result" enabled="1"/>
+      <Edge nodeIn="462" nodeOut="495" portIn="Pos" portOut="Result" enabled="1"/>
+      <Edge nodeIn="495" nodeOut="496" portIn="z" portOut="Out" enabled="1"/>
+      <Edge nodeIn="142" nodeOut="506" portIn="In0" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="508" nodeOut="507" portIn="input" portOut="Failed" enabled="1"/>
+      <Edge nodeIn="509" nodeOut="507" portIn="input" portOut="Succeeded" enabled="1"/>
      </Edges>
      <HyperGraphId Id="{468DBCEC-45BE-4BF8-A998-12D0ED58EBCB}"/>
      <GraphTokens>
