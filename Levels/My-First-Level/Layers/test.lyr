@@ -1,7 +1,35 @@
 <ObjectLayer>
  <Layer Name="Test" GUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{61EC971F-240A-4B43-BD0A-99107B180C10}" Name="Hydrant" HideOrder="0" Pos="67.840759,102.08055,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{1EA3860B-40A1-4E84-8099-6989ADB63013}" Name="BasicEntity9" HideOrder="0" Pos="137.46423,114.1208,32.799278" FloorNumber="-1" Rotate="0.70710677,0,0,-0.70710677" Scale="39.999996,39.999996,40" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{F47E360C-A279-4F09-8C52-F656190B553C}" Name="Bench4" HideOrder="0" Pos="167.63095,187.9314,32.00779" FloorNumber="-1" Rotate="0.93969262,0,0,-0.34202018" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="1000" Mass="1000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{83B93813-8355-4C9C-B2F2-62D25C308C12}" Name="Lamp5" HideOrder="0" Pos="111.53136,111.21181,33.09404" FloorNumber="-1" Rotate="1,0,0,0" Scale="30,30,30" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/lamp/lamp.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{931E4219-5320-4A50-BDA0-C631166607F0}" Name="Pickup.Pickup4" HideOrder="0" Pos="148.00194,158.3437,48.918816" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{61EC971F-240A-4B43-BD0A-99107B180C10}" Name="Hydrant" HideOrder="0" Pos="72.788452,83.711563,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <MultiplayerOptions bNetworked="0"/>
@@ -10,11 +38,38 @@
      </Physics>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{39D4502B-CAE2-4896-A94D-1C78631D4BB7}" Name="BasicEntity5" HideOrder="0" Pos="70.643105,97.769028,55.673492" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
-    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{C6EF3C26-2533-42AE-9350-D96A1E11BA83}" Name="Lamp2" HideOrder="0" Pos="128.43144,103.97385,33.09404" FloorNumber="-1" Rotate="0.087155774,0,0,0.99619472" Scale="30,30,30" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/lamp/lamp.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <MultiplayerOptions bNetworked="0"/>
-     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{D56E0F29-B048-435A-BC01-CDD2419A8BA0}" Name="Bench5" HideOrder="0" Pos="213.5574,143.88922,32.00779" FloorNumber="-1" Rotate="0.73727733,0,0,-0.67559028" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="1000" Mass="1000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{39D4502B-CAE2-4896-A94D-1C78631D4BB7}" Name="BasicEntity5" HideOrder="0" Pos="144.76649,118.27302,32.644791" FloorNumber="-1" Rotate="1,0,0,0" Scale="40,40,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{64F6653E-5A75-4BA1-8730-42EE2B7F2F04}" Name="Bench2" HideOrder="0" Pos="65.720215,162.61035,32.00779" FloorNumber="-1" Rotate="0.88701081,0,0,0.46174857" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="1000" Mass="1000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
       <CollisionFiltering />
      </Physics>
     </Properties>
@@ -27,10 +82,135 @@
      <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
     </Properties>
    </Object>
-   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{50E3C049-4736-4F9C-B627-1AFA330BB6F3}" Name="Pickup.Pickup7" HideOrder="0" Pos="71.834244,140.61919,49.621044" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
-   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{D7D1EC93-7530-497D-9F3A-02C1E0812C3F}" Name="Pickup.Pickup9" HideOrder="0" Pos="71.280304,87.867432,49.591682" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
-   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{BC39A4CB-410C-408E-9532-E4CD7250BA28}" Name="Pickup.Pickup6" HideOrder="0" Pos="135.93135,83.751617,48.822342" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
-   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{730D2DD5-F6DB-4DBB-A116-AB760BD187E2}" Name="Lamp" HideOrder="0" Pos="68.539536,100.27695,33" FloorNumber="-1" Rotate="1,0,0,0" Scale="30,30,30" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{88B4B341-C738-4E34-9EE7-54B1DF18461F}" Name="Bench3" HideOrder="0" Pos="110.23697,190.6956,32.00779" FloorNumber="-1" Rotate="0.99144489,0,0,0.13052613" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="1000" Mass="1000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{D7EC8E4F-7FA4-4EA8-B7E1-8CD1E4A18FAB}" Name="BasicEntity2" HideOrder="0" Pos="144.76649,125.04016,32.697445" FloorNumber="-1" Rotate="1,0,0,0" Scale="40,40,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{1C86CB50-6BB9-488F-A532-7F5A6187C56E}" Name="Hydrant8" HideOrder="0" Pos="115.0627,134.81091,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{19CE7F61-B2D2-482F-B46A-CC2ECAAB17EB}" Name="Pickup.Pickup3" HideOrder="0" Pos="196.4003,126.5923,50.073456" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{30E30D62-1DF8-40F0-92A2-03069A57FA55}" Name="BasicEntity3" HideOrder="0" Pos="138.95331,130.35269,32.799278" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" Scale="40,40,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{9206927D-C72E-4FBF-8A46-83F8237E374C}" Name="Hydrant3" HideOrder="0" Pos="147.16481,101.23927,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{C37FAA7F-AC20-4C79-AC62-A011ACC98510}" Name="Lamp4" HideOrder="0" Pos="115.97759,142.78915,33.09404" FloorNumber="-1" Rotate="1,0,0,0" Scale="30,30,30" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/lamp/lamp.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{57FE5D81-ADF5-48D5-89CB-9C736A8FA89E}" Name="Hydrant2" HideOrder="0" Pos="93.248505,87.134567,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{FC43C281-690D-47E6-B785-708241381D35}" Name="Hydrant7" HideOrder="0" Pos="94.170952,134.81091,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{8ADD5D83-1DDD-43C4-8500-E0790E465C46}" Name="Pickup.Pickup5" HideOrder="0" Pos="164.84599,103.27668,41.377022" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{5B7A2A91-2DEB-4077-BCD4-1994E4E8AAE5}" Name="Bench6" HideOrder="0" Pos="200.59035,85.252144,32.00779" FloorNumber="-1" Rotate="-0.38268334,0,0,0.92387956" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="1000" Mass="1000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{EE40DFA9-470D-4860-AC61-0B9668CE4C53}" Name="BasicEntity4" HideOrder="0" Pos="131.27406,130.35269,32.799278" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" Scale="40,40,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{310714B2-729E-42A3-BBBC-7FA7413CCFEF}" Name="BasicEntity7" HideOrder="0" Pos="124.91632,117.06985,32.697445" FloorNumber="-1" Rotate="-4.3711388e-008,-0,0,1" Scale="40,40,40" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{603A9CC2-54FA-4808-8A53-D7F5F4983687}" Name="BasicEntity6" HideOrder="0" Pos="124.91632,125.15779,32.697445" FloorNumber="-1" Rotate="-4.3711388e-008,-0,0,1" Scale="40,40,40" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{9A86D1C4-898B-428C-BA05-9E2468F25838}" Name="BasicEntity8" HideOrder="0" Pos="131.29422,114.1208,32.799278" FloorNumber="-1" Rotate="0.70710677,0,0,-0.70710677" Scale="39.999996,39.999996,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{A5568DC9-32BC-4ADC-A80F-4548668387A1}" Name="Lamp3" HideOrder="0" Pos="151.94058,142.78915,33.09404" FloorNumber="-1" Rotate="1,0,0,0" Scale="30,30,30" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/lamp/lamp.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{730D2DD5-F6DB-4DBB-A116-AB760BD187E2}" Name="Lamp" HideOrder="0" Pos="151.94058,102.22704,33.09404" FloorNumber="-1" Rotate="1,0,0,0" Scale="30,30,30" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/lamp/lamp.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <MultiplayerOptions bNetworked="0"/>
@@ -61,7 +241,26 @@
     <ZoomScrollSettings dopeSheetZoom="100" dopeSheetHScroll="0" nodesListVScroll="0" curveEditorZoom="200,100" curveEditorScroll="0,0"/>
     <ID value="1"/>
    </Object>
-   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{72701DF4-BCA9-45E3-9A98-74287EFE60FE}" Name="Bench" HideOrder="0" Pos="68.233917,95.707764,32.00779" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{111F3BDC-235C-4B85-A6F9-1A147DCBA2C1}" Name="Hydrant10" HideOrder="0" Pos="152.65544,113.45105,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{B0E9F5ED-6D01-4629-AF0F-490DE49B2116}" Name="Pickup.Pickup2" HideOrder="0" Pos="72.35321,120.70996,33.572262" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{A523C9F3-422F-4606-9422-B88D511769D2}" Name="Hydrant9" HideOrder="0" Pos="156.76161,136.5555,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{72701DF4-BCA9-45E3-9A98-74287EFE60FE}" Name="Bench" HideOrder="0" Pos="66.679321,104.5243,32.00779" FloorNumber="-1" Rotate="0.64278758,0,0,0.76604444" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <MultiplayerOptions bNetworked="0"/>
@@ -70,8 +269,16 @@
      </Physics>
     </Properties>
    </Object>
-   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{A5BD0FFA-D7B8-48EA-AE8B-08C98ED0F1D5}" Name="Pickup.Pickup8" HideOrder="0" Pos="125.59877,159.72519,43.869312" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
-   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{5BAFB3FE-BAF5-470C-B56C-FA90259F07DE}" Name="Pickup.Pickup1" HideOrder="0" Pos="196.50624,126.41655,45.030998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{8D1136FA-2156-4F06-8E55-BCB73B3FD9C8}" Name="Hydrant6" HideOrder="0" Pos="90.333748,85.08316,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="100" Mass="100" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
+      <CollisionFiltering />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{5BAFB3FE-BAF5-470C-B56C-FA90259F07DE}" Name="Pickup.Pickup1" HideOrder="0" Pos="78.183731,70.268112,41.377022" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
   </LayerObjects>
  </Layer>
 </ObjectLayer>
