@@ -10,7 +10,7 @@
      </Physics>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{39D4502B-CAE2-4896-A94D-1C78631D4BB7}" Name="BasicEntity5" HideOrder="0" Pos="70.643105,97.769028,33" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{39D4502B-CAE2-4896-A94D-1C78631D4BB7}" Name="BasicEntity5" HideOrder="0" Pos="70.643105,97.769028,55.673492" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <MultiplayerOptions bNetworked="0"/>
@@ -61,8 +61,8 @@
     <ZoomScrollSettings dopeSheetZoom="100" dopeSheetHScroll="0" nodesListVScroll="0" curveEditorZoom="200,100" curveEditorScroll="0,0"/>
     <ID value="1"/>
    </Object>
-   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{72701DF4-BCA9-45E3-9A98-74287EFE60FE}" Name="Bench" HideOrder="0" Pos="68.233917,105.31076,32.712734" FloorNumber="-1" Rotate="1,0,0,0" Scale="40,40,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
-    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+   <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{72701DF4-BCA9-45E3-9A98-74287EFE60FE}" Name="Bench" HideOrder="0" Pos="68.233917,95.707764,32.00779" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
      <MultiplayerOptions bNetworked="0"/>
      <Physics Density="1000" Mass="1000" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
