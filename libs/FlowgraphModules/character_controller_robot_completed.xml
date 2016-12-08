@@ -381,7 +381,7 @@
    <Inputs />
   </Node>
   <Node Id="1082" Class="Math:SetNumber" pos="1610,970,0" flags="0">
-   <Inputs In="160"/>
+   <Inputs In="500"/>
   </Node>
   <Node Id="1083" Class="Math:Less" pos="1660,1360,0" flags="0">
    <Inputs A="0.01" B="0"/>
@@ -396,10 +396,10 @@
    <Inputs />
   </Node>
   <Node Id="1087" Class="Math:SetNumber" pos="2040,1700,0" flags="0">
-   <Inputs In="100"/>
+   <Inputs In="500"/>
   </Node>
   <Node Id="1089" Class="Math:SetNumber" pos="1610,1160,0" flags="0">
-   <Inputs In="-100"/>
+   <Inputs In="-450"/>
   </Node>
   <Node Id="1090" Name="Xbox Forward / Backward" Class="_comment" pos="1100,1250,0" flags="0"/>
   <Node Id="1091" Name="Don&apos;t send activations events if its 0. " Class="_comment" pos="1480,1450,0" flags="0"/>
@@ -417,7 +417,7 @@
    <Inputs />
   </Node>
   <Node Id="1097" Class="Math:SetNumber" pos="2050,1870,0" flags="0">
-   <Inputs In="-100"/>
+   <Inputs In="-500"/>
   </Node>
   <Node Id="1098" Class="Input:ActionHandler" pos="1100,2520,0" flags="0">
    <Inputs ActionMapName="player" ActionName="xi_rotatepitch"/>
@@ -543,7 +543,7 @@
   <Node Id="1147" Class="Logic:Any" pos="1410,2470,0" flags="0" InHideMask="1021">
    <Inputs />
   </Node>
-  <Node Id="1148" Class="Input:Gestures:ClickOrTap" pos="1100,2950,0" flags="1">
+  <Node Id="1148" Class="Input:Gestures:ClickOrTap" pos="1100,2950,0" flags="0">
    <Inputs PointerIndex="0" MinClicksOrTaps="2" MaxSecondsHeld="0.5" MaxPixelsMoved="20" MaxSecondsBetweenClicksOrTaps="0.5" MaxPixelsBetweenClicksOrTaps="20"/>
   </Node>
   <Node Id="1149" Class="Logic:Any" pos="1480,2940,0" flags="0" InHideMask="1023" OutHideMask="1">

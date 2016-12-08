@@ -115,7 +115,25 @@
      <RenderProxyOptions bAnimateOffScreenShadow="0"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{5B39CD6A-8C08-454A-8388-7FE6C2D6FE1B}" Name="Controller_Prefab_Logic" HideOrder="0" Pos="0.99987793,3,0.99999237" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
+   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" Name="Awesome_Sphere" HideOrder="0" Pos="2.0239868,3.8677979,1.8925247" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="16776960" Material="objects/charactermodels/r0-b/robot" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="RigidBodyEx">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="1"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="5000" Mass="600" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0.8" water_density="2000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering />
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="1" bFixedDamping="0" max_time_step="0.01" sleep_speed="0.01" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{5B39CD6A-8C08-454A-8388-7FE6C2D6FE1B}" Name="Controller_Prefab_Logic" HideOrder="0" Pos="0.99987793,3,0.99999237" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
       <Node Id="2" Class="Entity:EntityId" pos="-760,-20,0" flags="0" EntityGUID="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" EntityGUID_64="40F529B5EA1129AB">
@@ -124,7 +142,7 @@
       <Node Id="3" Class="Entity:EntityId" pos="-760,120,0" flags="0" EntityGUID="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" EntityGUID_64="4739DEB287A95A92">
        <Inputs />
       </Node>
-      <Node Id="4" Class="Module:Call_Character_Controller_Robot_Completed" pos="-180,-170,0" flags="0">
+      <Node Id="4" Class="Module:Call_Character_Controller_Robot_Completed" pos="-180,-170,0" flags="1">
        <Inputs Instanced="1" InstanceID="-1" Controller_Ref_Box_Pitch="0" Controller_Ref_Box_Move="0" Awesome_Sphere="0" Robot_Head="0" Camera_Rig="0" Robot_Body="0" Head_Tilt_Parent="0"/>
       </Node>
       <Node Id="5" Class="Game:Start" pos="-770,-310,0" flags="0">
@@ -202,7 +220,22 @@
       <Node Id="47" Class="String:Concat" pos="34.446857,-1006.3403,0" flags="0">
        <Inputs String1="" String2=""/>
       </Node>
-      <Node Id="48" Class="String:Split" pos="-150,-1250,0" flags="1">
+      <Node Id="48" Class="String:Split" pos="-150,-1250,0" flags="0">
+       <Inputs Input="" separator="."/>
+      </Node>
+      <Node Id="49" Class="Mission:GameTokenGet" pos="-600,-1390,0" flags="0">
+       <Inputs gametoken_Token="Level.Spawn.TrainVotes"/>
+      </Node>
+      <Node Id="50" Class="UI:Text:SetText" pos="400,-1350,0" flags="0">
+       <Inputs CanvasID="0" ElementID="4" Value=""/>
+      </Node>
+      <Node Id="51" Class="String:Concat" pos="-90,-1360,0" flags="0">
+       <Inputs String1="Train Spawning in: " String2="/"/>
+      </Node>
+      <Node Id="52" Class="String:Concat" pos="160,-1350,0" flags="0">
+       <Inputs String1="Train Spawning in: " String2=" votes"/>
+      </Node>
+      <Node Id="53" Class="String:Split" pos="-270,-1400,0" flags="0">
        <Inputs Input="" separator="."/>
       </Node>
      </Nodes>
@@ -224,10 +257,12 @@
       <Edge nodeIn="34" nodeOut="25" portIn="Activate" portOut="output" enabled="1"/>
       <Edge nodeIn="35" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
       <Edge nodeIn="43" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
       <Edge nodeIn="35" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
       <Edge nodeIn="37" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
       <Edge nodeIn="42" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
       <Edge nodeIn="44" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+      <Edge nodeIn="49" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
       <Edge nodeIn="39" nodeOut="37" portIn="A" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="39" nodeOut="37" portIn="Activate" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="35" nodeOut="38" portIn="Value" portOut="Out" enabled="1"/>
@@ -248,28 +283,18 @@
       <Edge nodeIn="45" nodeOut="47" portIn="String2" portOut="Out" enabled="1"/>
       <Edge nodeIn="46" nodeOut="48" portIn="Set" portOut="Split0" enabled="1"/>
       <Edge nodeIn="46" nodeOut="48" portIn="String1" portOut="Split0" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="49" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="49" portIn="Input" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="51" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="51" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="52" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="52" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="51" nodeOut="53" portIn="Set" portOut="Split0" enabled="1"/>
+      <Edge nodeIn="51" nodeOut="53" portIn="String2" portOut="Split0" enabled="1"/>
      </Edges>
      <HyperGraphId Id="{B7339955-E94B-4B92-9DD5-73D2433F70CA}"/>
      <GraphTokens />
     </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" Name="Awesome_Sphere" HideOrder="0" Pos="2.0239868,3.8677979,1.8925247" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="16776960" Material="objects/charactermodels/r0-b/robot" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="RigidBodyEx">
-    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
-     <AI bUsedAsDynamicObstacle="1"/>
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <MultiplayerOptions bNetworked="1"/>
-     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="5000" Mass="600" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
-      <Buoyancy water_damping="0.8" water_density="2000" water_resistance="1000"/>
-      <CGFPropsOverride player_can_break="">
-       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
-       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
-       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
-      </CGFPropsOverride>
-      <CollisionFiltering />
-      <ForeignData bMovingPlatform="0"/>
-      <Simulation damping="1" bFixedDamping="0" max_time_step="0.01" sleep_speed="0.01" bUseSimpleSolver="0"/>
-     </Physics>
-    </Properties>
    </Object>
   </Objects>
  </Prefab>

@@ -1,6 +1,6 @@
-<Material MtlFlags="524288" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Opacity="0.99000001" Shininess="10" AlphaTest="0.050000001" CloakAmount="0" vertModifType="0" LayerAct="1">
+<Material MtlFlags="524288" Shader="Illum" GenMask="40000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" AlphaTest="0.34" CloakAmount="0" vertModifType="0" LayerAct="1">
  <Textures>
-  <Texture Map="Diffuse" File="assets/flooruv.dds"/>
+  <Texture Map="Diffuse" File="assets/floor/flooruv.dds"/>
  </Textures>
  <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
 </Material>

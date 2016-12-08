@@ -1,6 +1,7 @@
 <ObjectLayer>
  <Layer Name="Test" GUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{1A1FB906-4F60-478D-8DCE-C9EDB18E90E2}" Name="TrainSpawn" HideOrder="0" Pos="134.78429,122.89471,32.740688" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
    <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{1EA3860B-40A1-4E84-8099-6989ADB63013}" Name="BasicEntity9" HideOrder="0" Pos="137.46423,114.1208,32.799278" FloorNumber="-1" Rotate="0.70710677,0,0,-0.70710677" Scale="39.999996,39.999996,40" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -65,6 +66,8 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{84CB3A2E-1687-42E3-B217-D0F13CADC00F}" Name="TruckSpawn_1" HideOrder="0" Pos="63.200928,176.6503,32.740688" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{D3308F3B-FCD8-46D8-A01F-7CD87FB861D3}" Name="TagPoint3" HideOrder="0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
    <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{64F6653E-5A75-4BA1-8730-42EE2B7F2F04}" Name="Bench2" HideOrder="0" Pos="65.720215,162.61035,32.00779" FloorNumber="-1" Rotate="0.88701081,0,0,0.46174857" Scale="0.60000002,0.60000002,0.60000002" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/billboard/billboard.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -100,6 +103,7 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{5175C84F-02E9-42F4-A103-C2555CA3D075}" Name="TagPoint12" HideOrder="0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
    <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{1C86CB50-6BB9-488F-A532-7F5A6187C56E}" Name="Hydrant8" HideOrder="0" Pos="115.0627,134.81091,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -109,6 +113,7 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{CCA8ED5B-28EF-4763-91CF-8F16A2BFC4A4}" Name="TruckSpawn_2" HideOrder="0" Pos="159.66862,46.129776,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
    <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{19CE7F61-B2D2-482F-B46A-CC2ECAAB17EB}" Name="Pickup.Pickup3" HideOrder="0" Pos="196.4003,126.5923,50.073456" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
    <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{30E30D62-1DF8-40F0-92A2-03069A57FA55}" Name="BasicEntity3" HideOrder="0" Pos="138.95331,130.35269,32.799278" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" Scale="40,40,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
@@ -165,6 +170,7 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{81CFBD95-2EEE-41EC-89DD-3AD7E77215DA}" Name="TruckSpawn_3" HideOrder="0" Pos="206.14844,174.39143,34.931278" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
    <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{EE40DFA9-470D-4860-AC61-0B9668CE4C53}" Name="BasicEntity4" HideOrder="0" Pos="131.27406,130.35269,32.799278" FloorNumber="-1" Rotate="0.70710677,0,0,0.70710677" Scale="40,40,40" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -183,6 +189,7 @@
      </Physics>
     </Properties>
    </Object>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{2187D7B3-9DC8-4DE5-B92B-FE9A03C6DA00}" Name="TagPoint4" HideOrder="0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
    <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{603A9CC2-54FA-4808-8A53-D7F5F4983687}" Name="BasicEntity6" HideOrder="0" Pos="124.91632,125.15779,32.697445" FloorNumber="-1" Rotate="-4.3711388e-008,-0,0,1" Scale="40,40,40" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/bench/bench.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
