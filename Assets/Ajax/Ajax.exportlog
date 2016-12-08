@@ -1,0 +1,112 @@
+   Checking resource compiler.
+   Resource compiler check passed.
+   Exporter build created on Nov  1 2016
+   Using Microsoft (tm) C++ Standard Library implementation
+   Release build.
+   Bit count == 64.
+   Application path: C:\Program Files\Autodesk\Maya2016\bin\maya.exe
+   Exporter path: C:\Amazon\Lumberyard\1.6.0.0\dev\Tools\maya\plugins\MayaCryExport22016_64.mll
+   ExportCompressedCOLLADA key: 1
+   Export begun at 15:37:29 on Wed, 07/12/2016
+   Exporting to file 'C:/Amazon/Lumberyard/1.6.0.0/dev/snowglobocolypse/Assets/Ajax\Ajax.dae.zip'
+   Calling RC to generate raw asset file: C:/Amazon/Lumberyard/1.6.0.0/dev/snowglobocolypse/Assets/Ajax\Ajax.dae.zip
+   ResourceCompiler  64-bit
+   Platform support: PC, PowerVR
+   Version 1.1.8.6  Nov 22 2016 10:27:14
+   
+   Portions of this file Copyright (c) Amazon.com, Inc. or its affiliates. All Rights Reserved. Original file Copyright (c) Crytek GMBH. Used under license by Amazon.com, Inc. and its affiliates.
+   
+   Exe directory:
+     "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\"
+   Temp directory:
+     "C:\Users\u1056033\AppData\Local\Temp\"
+   Current directory:
+     "C:\Program Files\Autodesk\Maya2016\"
+   
+   
+   Command line:
+     "C:\Amazon\Lumberyard\1.6.0.0\dev//Bin64/rc/rc.exe"
+     "/nosourcecontrol"
+     "C:/Amazon/Lumberyard/1.6.0.0/dev/snowglobocolypse/Assets/Ajax\Ajax.dae.zip"
+     "/userdialog=1"
+     "/refresh"
+   
+   Platforms specified in rc.ini:
+   
+   Started at: Wed Dec 07 15:37:29 2016
+   Memory: working set 7.7Mb (peak 7.8Mb), pagefile 2.8Mb (peak 2.8Mb)
+   
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\rc.ini"
+   Loaded "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\rc.ini"
+   
+   Platform (/p) not specified, defaulting to 'pc'.
+   
+   Initializing pak management
+   
+   Loading source control module
+   
+   Initializing System
+   
+   Loading compiler plug-ins (ResourceCompiler*.dll)
+   Searching for C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompiler*.dll
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompilerABC.dll"
+   Loaded "ResourceCompilerABC.dll"
+   Registered AlembicCompiler ("abc")
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompilerFBX.dll"
+   Loaded "ResourceCompilerFBX.dll"
+   Registered FbxConverter ("cryfbx")
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompilerImage.dll"
+   Loaded "ResourceCompilerImage.dll"
+   Registered ImageConvertor ("tif", "hdr", "bmp", "gif", "jpg", "jpeg", "jpe", "tga", "png")
+   Registered TextureSplitter ("dds")
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompilerPC.dll"
+   Loaded "ResourceCompilerPC.dll"
+   Registered StatCGFCompiler ("cga", "cgf", "i_cgf")
+   Registered ChunkCompiler ("chunk")
+   Registered LuaCompiler ("lua")
+   Registered CharacterCompiler ("chr", "cdf", "skin")
+   Registered AnimationConvertor ("caf", "i_caf", "cba")
+   Registered ColladaCompiler ("dae", "dae.zip")
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompilerScene.dll"
+   Loaded "ResourceCompilerScene.dll"
+   Registered SceneConverter ("fbx", "assetinfo")
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompilerSlice.dll"
+   Loaded "ResourceCompilerSlice.dll"
+   Registered SliceCompiler ("slice")
+   Loading "C:\Amazon\Lumberyard\1.6.0.0\dev\Bin64\rc\ResourceCompilerXML.dll"
+   Loaded "ResourceCompilerXML.dll"
+   Registered XMLConverter ("xml")
+   
+   Loading zip & pak compiler module
+   Registered zip & pak compiler ("pak", "zip")
+   
+   Memory: working set 20.1Mb (peak 20.1Mb), pagefile 26.0Mb (peak 26.0Mb)
+   
+   CPU cores: 4 available (4 in system).
+   Logical processors: 8 available (8 in system).
+   /threads was not specified. Using up to 1 thread.
+   
+   Memory: working set 20.2Mb (peak 20.2Mb), pagefile 26.0Mb (peak 26.0Mb)
+   Spawning 1 thread
+   
+   ---------------------------------
+   File='Ajax.dae.zip'
+   Loading XML...
+   Finished loading XML.
+   
+   
+   
+   Processing 'group2_Extract9'
+E: Unable to load any nodes from the scene.
+   
+   Finished loading 'C:\Amazon\Lumberyard\1.6.0.0\dev\snowglobocolypse\Assets\Ajax\Ajax.dae.zip'
+   
+   
+   1 file processed in 0.0 sec.
+   
+   Memory: working set 16.9Mb (peak 21.4Mb), pagefile 22.1Mb (peak 27.8Mb)
+   
+   Finished at: Wed Dec 07 15:37:29 2016
+   
+   1 errors, 0 warnings.
+E: ResourceCompiler exited with an error.

@@ -1,8 +1,8 @@
-<Material MtlFlags="526336" Shader="Watervolume" GenMask="80000000" StringGenMask="" SurfaceType="mat_obstruct" Diffuse="1,1,1" Specular="0.03189604,0.03189604,0.03189604" Opacity="1" Shininess="155" vertModifType="0" LayerAct="1">
+<Material MtlFlags="524288" Shader="Illum" GenMask="40000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_glass" Diffuse="1,1,1" Specular="0.03189604,0.03189604,0.03189604" Emittance="0.0091340598,0.93011099,0.80695242,0" Opacity="0.46000001" Shininess="155" vertModifType="0" LayerAct="1">
  <Textures>
-  <Texture Map="Diffuse" File="textures/defaults/grey.dds">
-   <TexMod TexMod_RotateType="2" TexMod_TexGenType="0" TexMod_bTexGenProjected="0"/>
+  <Texture Map="Diffuse" File="assets/train/s14sg1.dds">
+   <TexMod TexMod_RotateType="3" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TexMod_URotateCenter="42" TexMod_VRotateCenter="32.200001" TexMod_WRotateRate="20.895996" TexMod_WRotatePhase="57.996826" TexMod_WRotateAmplitude="30.097046"/>
   </Texture>
  </Textures>
- <PublicParams NormalsScale="0.25" SoftIntersectionFactor="1" Tilling="0.1" DetailNormalsScale="0.5" EnvCubeReflMul="1" VertexWaveScale="0.125" DetailTilling="2.5" EnvCubeScale="20" RealtimeReflMul="1" RainTilling="1"/>
+ <PublicParams EmittanceMapGamma="1" DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
 </Material>

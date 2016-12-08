@@ -17,58 +17,6 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{2108170B-1E0C-483B-9722-4400F8D087DF}" Name="tree_9" HideOrder="0" Pos="128.46196,143.74174,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.14000005,0.14000005,0.14000005" ColorRGB="16777215" FlattenArea="0.02" Prefab="Objects/styletown/natural/vegetation/tree_06.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="GeomEntity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{B887A20D-A61D-466A-AF0C-7F97AE72D169}" Name="PlayerModel" HideOrder="0" Pos="50.797569,67.120468,34.334972" FloorNumber="-1" Rotate="0.90630776,0,0,-0.4226183" Scale="50,50,50" ColorRGB="65535" Geometry="ishun.cdf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
-    <Properties esFaction="">
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
-    </Properties>
-    <FlowGraph Description="" Group="ishun" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="Animations:PlayAnimation" pos="949,50,0" flags="1" GraphEntity="0">
-       <Inputs anim_Animation="run_player" BlendInTime="0.2" Layer="0" Loop="1" ForceUpdate="0" PauseAnimGraph="0" ControlMovement="0"/>
-      </Node>
-      <Node Id="6" Class="Input:ActionHandler" pos="109,20,0" flags="0">
-       <Inputs ActionMapName="player" ActionName="moveforward"/>
-      </Node>
-      <Node Id="7" Class="Game:Start" pos="-121,30,0" flags="0">
-       <Inputs InGame="1" InEditor="1"/>
-      </Node>
-      <Node Id="8" Class="Input:ActionHandler" pos="109,130,0" flags="0">
-       <Inputs ActionMapName="player" ActionName="moveback"/>
-      </Node>
-      <Node Id="9" Class="Input:ActionHandler" pos="109,240,0" flags="0">
-       <Inputs ActionMapName="player" ActionName="moveleft"/>
-      </Node>
-      <Node Id="10" Class="Input:ActionHandler" pos="109,340,0" flags="0">
-       <Inputs ActionMapName="player" ActionName="moveright"/>
-      </Node>
-      <Node Id="18" Class="Logic:Any" pos="579,10,0" flags="0" InHideMask="1008">
-       <Inputs />
-      </Node>
-      <Node Id="23" Class="Logic:Any" pos="620.36365,199.69551,0" flags="0" InHideMask="1008">
-       <Inputs />
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="18" nodeOut="6" portIn="In0" portOut="ActionHeld" enabled="1"/>
-      <Edge nodeIn="23" nodeOut="6" portIn="In0" portOut="ActionReleased" enabled="1"/>
-      <Edge nodeIn="6" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="8" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="9" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="10" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
-      <Edge nodeIn="18" nodeOut="8" portIn="In1" portOut="ActionHeld" enabled="1"/>
-      <Edge nodeIn="23" nodeOut="8" portIn="In1" portOut="ActionReleased" enabled="1"/>
-      <Edge nodeIn="18" nodeOut="9" portIn="In2" portOut="ActionHeld" enabled="1"/>
-      <Edge nodeIn="23" nodeOut="9" portIn="In2" portOut="ActionReleased" enabled="1"/>
-      <Edge nodeIn="18" nodeOut="10" portIn="In3" portOut="ActionHeld" enabled="1"/>
-      <Edge nodeIn="23" nodeOut="10" portIn="In3" portOut="ActionReleased" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="18" portIn="Start" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="23" portIn="Stop" portOut="Out" enabled="1"/>
-     </Edges>
-     <HyperGraphId Id="{14576E1C-2AD5-44EE-8B70-83D0CD42784A}"/>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
    <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{8E91F310-DE9E-48E4-BB60-841FCF9CE996}" Name="Building.SonyTower8" HideOrder="0" Pos="203.2594,97.402229,31.890186" FloorNumber="-1" Rotate="0.76604444,0,0,0.64278764" ColorRGB="56575" PrefabGUID="{C5F3C557-98B4-4158-A4EF-DF940A321BD8}" PrefabName="Level.Building.SonyTower2"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{AE440911-5809-443E-9E82-F58729FAACE4}" Name="groundshrub2" HideOrder="0" Pos="127.59969,124.21881,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/groundshrub.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
@@ -130,16 +78,7 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{71722A49-9519-486F-9E30-C5B6A4837E15}" Name="tree_24" HideOrder="0" Pos="153.42577,126.98985,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.13,0.13,0.13" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_05.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{5D2B8B4A-3696-40C7-B42C-7C6139B8A947}" Name="Building.Rockefeller8" HideOrder="0" Pos="183.20685,98.032913,31.953423" FloorNumber="-1" Rotate="0.99619472,0,0,-0.087155685" Scale="5,5,5" ColorRGB="56575" PrefabGUID="{FFBAA33E-5591-43CA-B2EB-7FC5625A160A}" PrefabName="Level.Building.Rockefeller2"/>
-   <Object Type="Entity" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{4583A74E-A21D-4021-B47B-E63CBF06E343}" Name="BasicEntity1" HideOrder="0" Pos="57.725067,88.892082,36.132915" FloorNumber="-1" Rotate="1,0,0,0" Scale="50,50,50" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
-    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/train/train.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <MultiplayerOptions bNetworked="0"/>
-     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1">
-      <CollisionFiltering />
-     </Physics>
-    </Properties>
-   </Object>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{5D2B8B4A-3696-40C7-B42C-7C6139B8A947}" Name="Building.Rockefeller8" HideOrder="0" Pos="183.20685,98.032913,32.019279" FloorNumber="-1" Rotate="0.99619472,0,0,-0.087155685" Scale="5,5,5" ColorRGB="16768000" PrefabGUID="{FFBAA33E-5591-43CA-B2EB-7FC5625A160A}" PrefabName="Level.Building.Rockefeller2"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{D2CCC44F-5375-442F-969F-2A5C5385CEB0}" Name="tree_47" HideOrder="0" Pos="115.34901,60.903793,32" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.34000003,0.34000003,0.34000003" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_08.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
@@ -316,7 +255,7 @@
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{5B3A78D6-C85E-4FBF-A3E7-355086D4207D}" Name="tree_60" HideOrder="0" Pos="205.46901,120.68896,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.13,0.13,0.13" ColorRGB="16777215" Prefab="Objects/styletown/natural/vegetation/tree_05.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
-   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{0E43C3D6-7857-4285-8D0F-5E94FD407657}" Name="Building.SonyTower7" HideOrder="0" Pos="75.723801,71.430855,32.009151" FloorNumber="-1" Rotate="0.88701081,0,0,-0.46174863" ColorRGB="16768000" PrefabGUID="{C5F3C557-98B4-4158-A4EF-DF940A321BD8}" PrefabName="Level.Building.SonyTower2"/>
+   <Object Type="Prefab" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{0E43C3D6-7857-4285-8D0F-5E94FD407657}" Name="Building.SonyTower7" HideOrder="0" Pos="75.723801,71.430855,32.009151" FloorNumber="-1" Rotate="0.88701081,0,0,-0.46174863" ColorRGB="56575" PrefabGUID="{C5F3C557-98B4-4158-A4EF-DF940A321BD8}" PrefabName="Level.Building.SonyTower2"/>
    <Object Type="Brush" Layer="Player_run" LayerGUID="{C0921E93-C3F0-4668-A109-4D0E4CB76203}" Id="{FA5088DA-21FB-41AC-B6A8-9828032A1629}" Name="tree_22" HideOrder="0" Pos="145.27495,103.67997,32" FloorNumber="-1" Rotate="0.67559022,0,0,-0.73727739" Scale="0.14000005,0.14000005,0.14000005" ColorRGB="16777215" FlattenArea="0.02" Prefab="Objects/styletown/natural/vegetation/tree_06.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
     <CollisionFiltering />
    </Object>
