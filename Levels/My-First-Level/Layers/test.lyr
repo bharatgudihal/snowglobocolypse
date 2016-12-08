@@ -1,6 +1,7 @@
 <ObjectLayer>
  <Layer Name="Test" GUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{E79C7D0A-299C-4F7E-97D6-5BDDD67D8873}" Name="TruckSpawn_1" HideOrder="0" Pos="146.42952,219.27676,33" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
    <Object Type="EnvironmentProbe" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{BFAF4541-9926-4948-A085-092288AFD5CD}" Name="EnvironmentProbe1" HideOrder="0" Pos="127.77054,126.80277,28.643936" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" cubemap_resolution="256" preview_cubemap="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="EnvironmentLight">
     <Properties bActive="1" BoxSizeX="500" BoxSizeY="500" BoxSizeZ="500" _nVersion="0">
      <Color clrDiffuse="1,1,1" fDiffuseMultiplier="1" fSpecularMultiplier="1"/>
@@ -14,6 +15,8 @@
      <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
     </Properties>
    </Object>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{B86907AE-BA29-49E8-9082-B00B66712FC6}" Name="TruckSpawn_2" HideOrder="0" Pos="181.8056,44.159985,32.989998" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{9157F2CE-20AB-405C-B23E-3A5FE89DB4B7}" Name="TrainSpawn" HideOrder="0" Pos="135.06461,122.9761,33" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
    <Object Type="SequenceObject" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{8DEE30D7-622D-471E-9029-2A4FB5549919}" Name="Test" HideOrder="0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16744319">
     <Sequence SequenceVersion="3" Name="Test" Flags="0" StartTime="0" EndTime="10" ID="1">
      <Nodes>
@@ -47,6 +50,7 @@
     </Properties>
    </Object>
    <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{5BAFB3FE-BAF5-470C-B56C-FA90259F07DE}" Name="Pickup.Pickup1" HideOrder="0" Pos="45.578323,95.525803,31.990002" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="TagPoint" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{7076D5FE-1DEB-4BE6-897A-1D4B8EE3207B}" Name="TruckSpawn_3" HideOrder="0" Pos="34.145489,116.39745,33.068546" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="255" EntityClass="TagPoint"/>
   </LayerObjects>
  </Layer>
 </ObjectLayer>
