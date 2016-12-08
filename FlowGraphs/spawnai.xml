@@ -133,28 +133,22 @@
    <Inputs x="0" y="0" z="0"/>
   </Node>
   <Node Id="333" Class="Math:Add" pos="670,1320,0" flags="0">
-   <Inputs A="0" B="500"/>
+   <Inputs A="0" B="400"/>
   </Node>
   <Node Id="334" Class="Entity:SpawnArchetype" pos="1160,1120,0" flags="0">
    <Inputs Archetype="" Name="DeathTrain" Pos="0,0,0" Rot="0,0,0" Scale="100,100,100"/>
   </Node>
   <Node Id="336" Class="Movement:MoveEntityTo" pos="2110,930,0" flags="0">
-   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="9" EaseInDistance="0" EaseOutDistance="0" CoordSys="1"/>
+   <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="10" EaseInDistance="0" EaseOutDistance="0" CoordSys="1"/>
   </Node>
   <Node Id="337" Class="Entity:EntityPos" pos="1810,1040,0" flags="0">
    <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
   </Node>
-  <Node Id="338" Class="Entity:FindEntityByName" pos="1510,1140,0" flags="0">
+  <Node Id="338" Class="Entity:FindEntityByName" pos="1560,1140,0" flags="0">
    <Inputs Name="robot_body"/>
   </Node>
   <Node Id="339" Class="Entity:FindEntityByName" pos="1510,910,0" flags="0">
    <Inputs Name="DeathTrain"/>
-  </Node>
-  <Node Id="342" Class="Logic:Once" pos="-250,1260,0" flags="0" InHideMask="240">
-   <Inputs />
-  </Node>
-  <Node Id="343" Class="Logic:Once" pos="770,1020,0" flags="0" InHideMask="240">
-   <Inputs />
   </Node>
   <Node Id="346" Class="Time:Time" pos="-430,460,0" flags="0">
    <Inputs paused="0"/>
@@ -189,20 +183,11 @@
   <Node Id="375" Class="Debug:DisplayMessage" pos="3500,10,0" flags="0">
    <Inputs message="YOU DIED!" DisplayTime="0" posX="525" posY="400" fontSize="12" clr_Color="1,1,1" centered="0"/>
   </Node>
-  <Node Id="378" Class="Image:ColorCorrection" pos="2620,830,0" flags="0">
-   <Inputs Enable="1" Disable="1" Global_User_ColorC="0" Global_User_ColorM="2" Global_User_ColorY="2" Global_User_ColorK="0" Global_User_Brightness="3" Global_User_Contrast="1" Global_User_Saturation="1" Global_User_ColorHue="60"/>
-  </Node>
-  <Node Id="379" Class="Debug:DisplayMessage" pos="2570,1140,0" flags="0">
-   <Inputs message="YOU DIED!" DisplayTime="0" posX="525" posY="400" fontSize="12" clr_Color="1,1,1" centered="0"/>
-  </Node>
   <Node Id="380" Class="Twitch:ChatPlay:Keyword" pos="-790,780,0" flags="0">
    <Inputs Channel="" Keyword="train" Reset="0"/>
   </Node>
-  <Node Id="382" Class="Logic:Once" pos="-100,870,0" flags="0" InHideMask="254">
-   <Inputs />
-  </Node>
   <Node Id="383" Class="Math:Equal" pos="-320,870,0" flags="0">
-   <Inputs A="0" B="5"/>
+   <Inputs A="0" B="0"/>
   </Node>
   <Node Id="384" Class="Math:Equal" pos="1020,-140,0" flags="0">
    <Inputs A="0" B="3"/>
@@ -210,14 +195,23 @@
   <Node Id="392" Class="Mission:GameTokenGet" pos="-1080,1020,0" flags="0">
    <Inputs gametoken_Token="Level.Spawn.TrainVotes"/>
   </Node>
-  <Node Id="393" Class="Math:Sub" pos="-760,1020,0" flags="0">
+  <Node Id="393" Class="Math:Sub" pos="-780,1020,0" flags="0">
    <Inputs A="0" B="1"/>
   </Node>
-  <Node Id="394" Class="Math:Clamp" pos="-630,1020,0" flags="0">
+  <Node Id="394" Class="Math:Clamp" pos="-660,1020,0" flags="0">
    <Inputs In="0" Min="0" Max="5"/>
   </Node>
   <Node Id="395" Class="Mission:GameTokenSet" pos="-510,1020,0" flags="0">
    <Inputs gametoken_Token="Level.Spawn.TrainVotes" TokenValue=""/>
+  </Node>
+  <Node Id="397" Class="Time:TimedCounter" pos="1610,1290,0" flags="0">
+   <Inputs period="1" limit="90"/>
+  </Node>
+  <Node Id="401" Class="Entity:RemoveEntity" pos="1860,1250,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="403" Class="Mission:GameTokenSet" pos="1860,1350,0" flags="0">
+   <Inputs gametoken_Token="Level.Spawn.TrainVotes" TokenValue="6"/>
   </Node>
  </Nodes>
  <Edges>
@@ -285,9 +279,9 @@
   <Edge nodeIn="319" nodeOut="321" portIn="In1" portOut="Pos" enabled="1"/>
   <Edge nodeIn="319" nodeOut="323" portIn="In2" portOut="Pos" enabled="1"/>
   <Edge nodeIn="319" nodeOut="324" portIn="In3" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="330" nodeOut="328" portIn="Get" portOut="Out" enabled="1"/>
   <Edge nodeIn="334" nodeOut="328" portIn="Archetype" portOut="Out" enabled="1"/>
-  <Edge nodeIn="342" nodeOut="328" portIn="In0" portOut="Out" enabled="1"/>
-  <Edge nodeIn="343" nodeOut="328" portIn="In0" portOut="Out" enabled="1"/>
+  <Edge nodeIn="334" nodeOut="328" portIn="Spawn" portOut="Out" enabled="1"/>
   <Edge nodeIn="331" nodeOut="330" portIn="vec3" portOut="Pos" enabled="1"/>
   <Edge nodeIn="332" nodeOut="331" portIn="x" portOut="x" enabled="1"/>
   <Edge nodeIn="332" nodeOut="331" portIn="y" portOut="y" enabled="1"/>
@@ -297,12 +291,12 @@
   <Edge nodeIn="332" nodeOut="333" portIn="z" portOut="Out" enabled="1"/>
   <Edge nodeIn="338" nodeOut="334" portIn="Set" portOut="Succeeded" enabled="1"/>
   <Edge nodeIn="339" nodeOut="334" portIn="Set" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="397" nodeOut="334" portIn="start" portOut="Succeeded" enabled="1"/>
   <Edge nodeIn="336" nodeOut="337" portIn="Destination" portOut="pos" enabled="1"/>
   <Edge nodeIn="337" nodeOut="338" portIn="entityId" portOut="EntityId" enabled="1"/>
   <Edge nodeIn="336" nodeOut="339" portIn="Start" portOut="EntityId" enabled="1"/>
   <Edge nodeIn="336" nodeOut="339" portIn="entityId" portOut="EntityId" enabled="1"/>
-  <Edge nodeIn="330" nodeOut="342" portIn="Get" portOut="Out" enabled="1"/>
-  <Edge nodeIn="334" nodeOut="343" portIn="Spawn" portOut="Out" enabled="1"/>
+  <Edge nodeIn="401" nodeOut="339" portIn="Entity" portOut="EntityId" enabled="1"/>
   <Edge nodeIn="347" nodeOut="346" portIn="A" portOut="seconds" enabled="1"/>
   <Edge nodeIn="347" nodeOut="346" portIn="Activate" portOut="tick" enabled="1"/>
   <Edge nodeIn="349" nodeOut="347" portIn="Activate" portOut="Result" enabled="1"/>
@@ -318,18 +312,20 @@
   <Edge nodeIn="373" nodeOut="372" portIn="A" portOut="Count" enabled="1"/>
   <Edge nodeIn="373" nodeOut="372" portIn="Activate" portOut="Count" enabled="1"/>
   <Edge nodeIn="368" nodeOut="373" portIn="Reset" portOut="OnTrue" enabled="1"/>
-  <Edge nodeIn="383" nodeOut="380" portIn="A" portOut="Signal" enabled="1"/>
-  <Edge nodeIn="383" nodeOut="380" portIn="Activate" portOut="Signal" enabled="1"/>
   <Edge nodeIn="392" nodeOut="380" portIn="Activate" portOut="Signal" enabled="1"/>
-  <Edge nodeIn="328" nodeOut="382" portIn="Set" portOut="Out" enabled="1"/>
-  <Edge nodeIn="382" nodeOut="383" portIn="In0" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="328" nodeOut="383" portIn="Set" portOut="OnTrue" enabled="1"/>
   <Edge nodeIn="135" nodeOut="384" portIn="Reset" portOut="OnTrue" enabled="1"/>
   <Edge nodeIn="142" nodeOut="384" portIn="In1" portOut="OnTrue" enabled="1"/>
   <Edge nodeIn="393" nodeOut="392" portIn="A" portOut="OutValue" enabled="1"/>
   <Edge nodeIn="393" nodeOut="392" portIn="Activate" portOut="OutValue" enabled="1"/>
   <Edge nodeIn="394" nodeOut="393" portIn="In" portOut="Out" enabled="1"/>
+  <Edge nodeIn="383" nodeOut="394" portIn="A" portOut="Out" enabled="1"/>
+  <Edge nodeIn="383" nodeOut="394" portIn="Activate" portOut="Out" enabled="1"/>
   <Edge nodeIn="395" nodeOut="394" portIn="Activate" portOut="Out" enabled="1"/>
   <Edge nodeIn="395" nodeOut="394" portIn="TokenValue" portOut="Out" enabled="1"/>
+  <Edge nodeIn="380" nodeOut="397" portIn="Reset" portOut="finished" enabled="1"/>
+  <Edge nodeIn="401" nodeOut="397" portIn="Activate" portOut="finished" enabled="1"/>
+  <Edge nodeIn="403" nodeOut="397" portIn="Activate" portOut="finished" enabled="1"/>
  </Edges>
  <HyperGraphId Id="{468DBCEC-45BE-4BF8-A998-12D0ED58EBCB}"/>
  <GraphTokens>

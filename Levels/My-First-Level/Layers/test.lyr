@@ -257,7 +257,7 @@
      </Physics>
     </Properties>
    </Object>
-   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{B0E9F5ED-6D01-4629-AF0F-490DE49B2116}" Name="Pickup.Pickup2" HideOrder="0" Pos="72.35321,120.70996,33.572262" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{B0E9F5ED-6D01-4629-AF0F-490DE49B2116}" Name="Pickup.Pickup2" HideOrder="0" Pos="72.35321,120.70996,33.572262" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
    <Object Type="Entity" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{A523C9F3-422F-4606-9422-B88D511769D2}" Name="Hydrant9" HideOrder="0" Pos="156.76161,136.5555,32.656845" FloorNumber="-1" Rotate="1,0,0,0" Scale="25,25,25" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="BasicEntity">
     <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="assets/hydrant/hydrant.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
      <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
@@ -285,7 +285,7 @@
      </Physics>
     </Properties>
    </Object>
-   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{5BAFB3FE-BAF5-470C-B56C-FA90259F07DE}" Name="Pickup.Pickup1" HideOrder="0" Pos="78.183731,70.268112,41.377022" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="56575" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
+   <Object Type="Prefab" Layer="Test" LayerGUID="{34F2132B-72A8-44AC-8367-CA21FF34B1D0}" Id="{5BAFB3FE-BAF5-470C-B56C-FA90259F07DE}" Name="Pickup.Pickup1" HideOrder="0" Pos="78.183731,70.268112,41.377022" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16768000" PrefabGUID="{5C13A203-EAE3-49B9-ABA5-F139E9FBD422}" PrefabName="Level.Pickup.Pickup"/>
   </LayerObjects>
  </Layer>
 </ObjectLayer>
