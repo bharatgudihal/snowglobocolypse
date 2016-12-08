@@ -938,7 +938,7 @@
        <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
       </Node>
       <Node Id="40" Class="Entity:FindEntityByName" pos="2450,90,0" flags="0">
-       <Inputs Name="robot_head1"/>
+       <Inputs Name="robot_body"/>
       </Node>
       <Node Id="43" Class="System:Container:Create" pos="-40,-280,0" flags="0">
        <Inputs Id="1"/>
@@ -1031,10 +1031,10 @@
        <Inputs A="0" B="500"/>
       </Node>
       <Node Id="334" Class="Entity:SpawnArchetype" pos="1160,1120,0" flags="0">
-       <Inputs Archetype="" Name="DeathTrain" Pos="0,0,0" Rot="0,0,0" Scale="150,150,150"/>
+       <Inputs Archetype="" Name="DeathTrain" Pos="0,0,0" Rot="0,0,0" Scale="100,100,100"/>
       </Node>
       <Node Id="336" Class="Movement:MoveEntityTo" pos="2110,930,0" flags="0">
-       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="9" EaseInDistance="0" EaseOutDistance="0" CoordSys="0"/>
+       <Inputs Destination="0,0,0" DynamicDestination="1" ValueType="0" Value="9" EaseInDistance="0" EaseOutDistance="0" CoordSys="1"/>
       </Node>
       <Node Id="337" Class="Entity:EntityPos" pos="1810,1040,0" flags="0">
        <Inputs pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
@@ -1139,8 +1139,6 @@
       <Edge nodeIn="44" nodeOut="34" portIn="AddUnique" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="28" nodeOut="35" portIn="Set" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="28" nodeOut="35" portIn="String2" portOut="OutValue" enabled="1"/>
-      <Edge nodeIn="374" nodeOut="38" portIn="Enable" portOut="DoneTrigger" enabled="1"/>
-      <Edge nodeIn="375" nodeOut="38" portIn="Show" portOut="DoneTrigger" enabled="1"/>
       <Edge nodeIn="38" nodeOut="39" portIn="Destination" portOut="pos" enabled="1"/>
       <Edge nodeIn="39" nodeOut="40" portIn="entityId" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="44" nodeOut="43" portIn="Id" portOut="Id" enabled="1"/>
@@ -1194,8 +1192,6 @@
       <Edge nodeIn="332" nodeOut="333" portIn="z" portOut="Out" enabled="1"/>
       <Edge nodeIn="338" nodeOut="334" portIn="Set" portOut="Succeeded" enabled="1"/>
       <Edge nodeIn="339" nodeOut="334" portIn="Set" portOut="Succeeded" enabled="1"/>
-      <Edge nodeIn="378" nodeOut="336" portIn="Enable" portOut="DoneTrigger" enabled="1"/>
-      <Edge nodeIn="379" nodeOut="336" portIn="Show" portOut="DoneTrigger" enabled="1"/>
       <Edge nodeIn="336" nodeOut="337" portIn="Destination" portOut="pos" enabled="1"/>
       <Edge nodeIn="337" nodeOut="338" portIn="entityId" portOut="EntityId" enabled="1"/>
       <Edge nodeIn="336" nodeOut="339" portIn="Start" portOut="EntityId" enabled="1"/>
