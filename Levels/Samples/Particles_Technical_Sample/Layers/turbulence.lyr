@@ -1,0 +1,17 @@
+<ObjectLayer>
+ <Layer Name="Turbulence" GUID="{3F603957-2AC3-4DA0-ADBE-A5B6B61B6DC8}" Exportable="1" ExportLayerPak="1" DefaultLoaded="1" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="ParticleEntity" Layer="Turbulence" LayerGUID="{3F603957-2AC3-4DA0-ADBE-A5B6B61B6DC8}" Id="{9CF8DF5A-E216-47C2-AD75-78C107FF3B48}" Name="ParticleEffect_Turbulence" HideOrder="0" Parent="{062BDA7C-3AE5-4ED5-B32A-37AD7FC6B744}" Pos="0,0.19300461,0" FloorNumber="-1" Rotate="0.50000006,-0.5,-0.5,-0.5" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles_turbulence.turbulence_001" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
+    </Properties>
+   </Object>
+   <Object Type="Brush" Layer="Turbulence" LayerGUID="{3F603957-2AC3-4DA0-ADBE-A5B6B61B6DC8}" Id="{062BDA7C-3AE5-4ED5-B32A-37AD7FC6B744}" Name="particle_geo_emitter_002" HideOrder="0" Pos="1047.5,1036,32.380001" FloorNumber="-1" Rotate="0.49999997,0.49999997,0.49999997,0.49999997" ColorRGB="16777215" Prefab="Objects/particleassets/showroom/particle_geo_emitter_002.cgf" OutdoorOnly="0" CastShadowMaps="1" RainOccluder="1" SupportSecondVisarea="0" DynamicDistanceShadows="0" Hideable="0" LodRatio="100" ViewDistanceMultiplier="1" NotTriangulate="0" NoDynamicWater="0" AIRadius="-1" NoStaticDecals="0" NoAmnbShadowCaster="0" RecvWind="0" Occluder="0" DrawLast="0" ShadowLodBias="0" RndFlags="1610612744">
+    <CollisionFiltering>
+     <Type Ship="0" Shield="0" Asteroid="0"/>
+     <Ignore Ship="0" Shield="0" Asteroid="0"/>
+    </CollisionFiltering>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

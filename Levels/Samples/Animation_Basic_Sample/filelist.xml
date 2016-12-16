@@ -1,0 +1,6 @@
+<download name="animation_basic_sample" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="19954" md5="12a413ff8253f876a561768989d52d05"/>
+ </files>
+</download>

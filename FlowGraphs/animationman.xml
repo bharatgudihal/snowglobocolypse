@@ -1,0 +1,46 @@
+<Graph Description="" Group="PLayer_run" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="4" Class="Animations:PlayAnimation" pos="430,10,0" flags="0" GraphEntity="0">
+   <Inputs anim_Animation="run" BlendInTime="0.2" Layer="0" Loop="1" ForceUpdate="0" PauseAnimGraph="0" ControlMovement="0"/>
+  </Node>
+  <Node Id="6" Class="Input:ActionHandler" pos="-410,-20,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveforward"/>
+  </Node>
+  <Node Id="7" Class="Game:Start" pos="-640,-10,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="8" Class="Input:ActionHandler" pos="-410,90,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveback"/>
+  </Node>
+  <Node Id="9" Class="Input:ActionHandler" pos="-410,200,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveleft"/>
+  </Node>
+  <Node Id="10" Class="Input:ActionHandler" pos="-410,300,0" flags="0">
+   <Inputs ActionMapName="player" ActionName="moveright"/>
+  </Node>
+  <Node Id="18" Class="Logic:Any" pos="60,-30,0" flags="0" InHideMask="1008">
+   <Inputs />
+  </Node>
+  <Node Id="23" Class="Logic:Any" pos="101.36362,159.69551,0" flags="0" InHideMask="1008">
+   <Inputs />
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="18" nodeOut="6" portIn="In0" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="6" portIn="In0" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="8" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="7" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="8" portIn="In1" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="8" portIn="In1" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="9" portIn="In2" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="9" portIn="In2" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="10" portIn="In3" portOut="ActionHeld" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="10" portIn="In3" portOut="ActionReleased" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="18" portIn="Start" portOut="Out" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="23" portIn="Stop" portOut="Out" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{068870F7-67E1-43C8-A238-43F7D8735708}"/>
+ <GraphTokens />
+</Graph>

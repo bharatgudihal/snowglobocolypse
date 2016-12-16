@@ -1,0 +1,7 @@
+<Material MtlFlags="524326" Shader="Illum" GenMask="80000001" StringGenMask="%ALLOW_SILHOUETTE_POM%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emittance="0.17788844,0.1470273,0.87962252,200" Opacity="0.99000001" Shininess="10" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="objects/particleassets/lightning/lightning_bolts_001_diff.dds"/>
+  <Texture Map="Emittance" File="objects/particleassets/lightning/lightning_bolts_001_diff.dds"/>
+ </Textures>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

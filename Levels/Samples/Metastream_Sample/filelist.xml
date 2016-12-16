@@ -1,0 +1,6 @@
+<download name="Metastream_Sample" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="20053" md5="4bc280b23b57fc9b5a4e08373e4cbba3"/>
+ </files>
+</download>

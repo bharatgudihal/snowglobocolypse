@@ -1,0 +1,36 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level">
+   <GameToken Name="Username" Type="String" Value="" LocalOnly="1"/>
+   <GameToken Name="GameState" Type="String" Value="" LocalOnly="1"/>
+   <GameToken Name="FadeCanvas" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="MessageOfTheDay.Message" Type="String" Value="" LocalOnly="1"/>
+   <GameToken Name="MessageOfTheDay.Color" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="ShipControls.Enable" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="SpaceDebris.Enable" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="GameClock.Enable" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="GameClock.Stop" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="SpaceDebris.Destroy" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Logo.Show" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="AWS.LambdaError" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="ScreenFX.EnableBlur" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="ScreenFX.Desaturate" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="ScreenFX.FadeUpDesaturation" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="ScreenFX.BlurTime" Type="Float" Value="0.100000" LocalOnly="1"/>
+   <GameToken Name="Inventory.CreateShield" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Inventory.Process" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Inventory.ShowShip" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Inventory.HideShip" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Inventory.HasFancyShip" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Inventory.DestroyShield" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Inventory.ShowShieldUI" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="ScreenFX.Death" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="MessageOfTheDay.Enable" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Camera.GoToLobbyCamera" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="Camera.TransitionToGameCamera" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="AWS.LambdaUpdate" Type="String" Value="" LocalOnly="1"/>
+  </LevelLibrary>
+  <Library Name="AWS"/>
+  <Library Name="Dont_Die_Game"/>
+ </GameTokensLibrary>
+</GameTokens>

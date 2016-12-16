@@ -1,0 +1,21 @@
+<ObjectLayer>
+ <Layer Name="Tiling_Texture" GUID="{A2275BE7-C7CA-41A8-8FC1-F5ECAE4EDE05}" Exportable="1" ExportLayerPak="1" DefaultLoaded="1" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="ParticleEntity" Layer="Tiling_Texture" LayerGUID="{A2275BE7-C7CA-41A8-8FC1-F5ECAE4EDE05}" Id="{A69A960E-AD31-43CB-8911-7CBF7696F36B}" Name="ParticleEffect8" HideOrder="0" Pos="1033.5,1012.07,32.27" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="ParticleEffect">
+    <Properties bActive="1" esAttachForm="" esAttachType="" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles_tiling_texture.tiling_ripple_001" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="0" audioRTPCRtpc="particlefx"/>
+    </Properties>
+   </Object>
+   <Object VolumeDepth="0" StreamSpeed="0" FogDensity="5" FogColor="0.351533,0.48515,0.693872" FogColorMultiplier="0" FogColorAffectedBySun="0" FogShadowing="0.5" UScale="4" VScale="4" CapFogAtVolumeDepth="0" Caustics="1" CausticIntensity="1" CausticTiling="1" CausticHeight="0.5" Type="WaterVolume" Layer="Tiling_Texture" LayerGUID="{A2275BE7-C7CA-41A8-8FC1-F5ECAE4EDE05}" Id="{C5641CAB-4D0A-4C3B-ABFE-A6CF9F37AC5F}" Name="WaterVolume3" HideOrder="0" Pos="1035.4999,1014,32.261799" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="52479" Material="objects/particleassets/showroom/particle_showroom_watervolume_001_mg" Width="0" Height="0" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="0" DisplaySoundInfo="0" Agent_height="0" Agent_width="0" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" ViewDistancemMultiplier="1" EntityClass="AreaShape">
+    <Advanced Volume="0" VolumeAcc="0.001" BorderPad="0" BorderConvex="0" ObjVolThresh="0.001" SimCell="0" WaveSpeed="140" WaveDamping="0.2" WaveTimestep="0.02" MinWaveVel="0.01" DepthCells="8" HeightLimit="7" Resistance="1" SimAreaGrowth="0"/>
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="0,-4,0"/>
+     <Point Pos="-4,-4,0"/>
+     <Point Pos="-4,0,0"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

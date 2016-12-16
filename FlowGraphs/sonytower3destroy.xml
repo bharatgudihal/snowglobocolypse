@@ -1,0 +1,19 @@
+<Graph Description="" Group="SonyTower3Destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-172,-150,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="3" Class="entity:ProximityTrigger" pos="30,-190,0" flags="0" EntityGUID="{0E09EEAA-5079-4306-9A05-2B5CF4668A65}" EntityGUID_64="430650790E09EEAA">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="5" Class="entity:BasicEntity" pos="270,-220,0" flags="0" EntityGUID="{62AD6691-66DB-42B3-AD39-F996CE18DE45}" EntityGUID_64="42B366DB62AD6691">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="3" portIn="Remove" portOut="Enter" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{D61FE084-C7A5-4C92-91FC-A92E9F597759}"/>
+ <GraphTokens />
+</Graph>

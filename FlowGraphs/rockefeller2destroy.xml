@@ -1,0 +1,19 @@
+<Graph Description="" Group="rockefeller2destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-83,-149,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="3" Class="entity:ProximityTrigger" pos="80,-180,0" flags="0" EntityGUID="{13C4AEA5-874A-47E6-99EE-53276AFA355F}" EntityGUID_64="47E6874A13C4AEA5">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="5" Class="entity:BasicEntity" pos="340,-220,0" flags="0" EntityGUID="{FAE0D423-55AE-4551-81BF-C6C7EF8FE4B7}" EntityGUID_64="455155AEFAE0D423">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="3" portIn="Remove" portOut="Enter" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{EEA2B4FC-F396-4CC1-A540-7294028CA088}"/>
+ <GraphTokens />
+</Graph>

@@ -1,0 +1,13 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level">
+<<<<<<< HEAD
+   <GameToken Name="Explode.ExplodePower" Type="Int" Value="90" LocalOnly="0"/>
+=======
+   <GameToken Name="Explode.ExplodePower" Type="Int" Value="90" LocalOnly="1"/>
+   <GameToken Name="Pickup.PickupCount" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="Pickup.MaxPickupCount" Type="Int" Value="5" LocalOnly="1"/>
+   <GameToken Name="Spawn.TrainVotes" Type="Int" Value="5" LocalOnly="1"/>
+  </LevelLibrary>
+ </GameTokensLibrary>
+</GameTokens>

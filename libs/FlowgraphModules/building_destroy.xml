@@ -1,0 +1,26 @@
+<Graph isModule="1" moduleName="building_destroy" Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="Whole" Type="3" Input="1"/>
+  <Port Name="Proxy" Type="3" Input="1"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_building_destroy" pos="80,10,0" flags="0"/>
+  <Node Id="2" Class="Module:End_building_destroy" pos="80,-70,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="4" Class="entity:ProximityTrigger" pos="370,80,0" flags="1">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="6" Class="entity:BasicEntity" pos="650,-50,0" flags="1" EntityGUID="{42F7DBDB-BEBA-46BB-9F42-0EAA4755BE96}" EntityGUID_64="46BBBEBA42F7DBDB">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="4" nodeOut="1" portIn="entityId" portOut="Proxy" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="1" portIn="entityId" portOut="Whole" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="4" portIn="Remove" portOut="Enter" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{C29A0086-3E77-4E08-83F5-1B7C80D91823}"/>
+ <GraphTokens />
+</Graph>

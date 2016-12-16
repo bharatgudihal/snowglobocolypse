@@ -1,0 +1,19 @@
+<Graph Description="" Group="citigroup3destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="entity:ProximityTrigger" pos="-20,-260,0" flags="0" EntityGUID="{43093F8C-98F0-43A0-82B5-64B32F5F61E0}" EntityGUID_64="43A098F043093F8C">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="3" Class="Game:Start" pos="-237.35207,-217.77664,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="5" Class="entity:BasicEntity" pos="260,-280,0" flags="0" EntityGUID="{1E8B3ED0-5D4D-48D2-9964-2A8509CF798F}" EntityGUID_64="48D25D4D1E8B3ED0">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="5" nodeOut="2" portIn="Remove" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="3" portIn="Enable" portOut="output" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{BCCA0491-F4F9-4D96-A133-10AE4BA6E2E7}"/>
+ <GraphTokens />
+</Graph>

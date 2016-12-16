@@ -1,0 +1,596 @@
+<ObjectStream version="1">
+	<Class name="AZ::Entity" version="2" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+		<Class name="EntityId" field="Id" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+			<Class name="AZ::u64" field="id" value="15931826103810745898" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+		</Class>
+		<Class name="AZStd::string" field="Name" value="15931826103810745898" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+		<Class name="bool" field="IsDependencyReady" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+		<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+			<Class name="PrefabComponent" field="element" version="1" type="{AFD304E4-1773-47C8-855A-8B622398934F}">
+				<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+					<Class name="AZ::u64" field="Id" value="7767460014998131980" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+				</Class>
+				<Class name="AZStd::vector" field="Entities" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+					<Class name="AZ::Entity" field="element" version="2" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+						<Class name="EntityId" field="Id" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+							<Class name="AZ::u64" field="id" value="15249014015568864810" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+						</Class>
+						<Class name="AZStd::string" field="Name" value="Camera" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+						<Class name="bool" field="IsDependencyReady" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+						<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+							<Class name="TransformComponent" field="element" version="5" type="{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="6029578587896990299" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="EntityId" field="Parent Entity" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+									<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+								<Class name="EditorTransform" field="Transform Data" version="1" type="{B02B7063-D238-4F40-A724-405F7A6D68CB}">
+									<Class name="Vector3" field="Translate" value="0.0000000 0.0000000 0.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+									<Class name="Vector3" field="Rotate" value="0.0000000 0.0000000 0.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+									<Class name="Vector3" field="Scale" value="1.0000000 1.0000000 1.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+								</Class>
+								<Class name="Transform" field="Slice Transform" value="1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000" type="{5D9958E9-9F1E-4985-B532-FFFDE75FEDFD}"/>
+								<Class name="EntityId" field="Slice Root" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+									<Class name="AZ::u64" field="id" value="15249014015568864810" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+								<Class name="Transform" field="Cached World Transform" value="1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000" type="{5D9958E9-9F1E-4985-B532-FFFDE75FEDFD}"/>
+								<Class name="bool" field="Sync Enabled" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+							</Class>
+							<Class name="GenericComponentWrapper" field="element" type="{68D358CA-89B9-4730-8BA6-E181DEA28FDE}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="14217515372753372322" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="CameraComponent" field="m_template" version="1" type="{A0C21E18-F759-4E72-AF26-7A36FC59E477}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="0" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+									<Class name="float" field="Field of View" value="75.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+									<Class name="float" field="Near Clip Plane Distance" value="0.2000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+									<Class name="float" field="Far Clip Plane Distance" value="1024.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								</Class>
+							</Class>
+							<Class name="GenericComponentWrapper" field="element" type="{68D358CA-89B9-4730-8BA6-E181DEA28FDE}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="12742931384696007722" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+							</Class>
+							<Class name="SelectionComponent" field="element" type="{73B724FC-43D1-4C75-ACF5-79AA8A3BF89D}">
+								<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+									<Class name="AZ::u64" field="Id" value="2543845126701372319" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+							</Class>
+						</Class>
+					</Class>
+					<Class name="AZ::Entity" field="element" version="2" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+						<Class name="EntityId" field="Id" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+							<Class name="AZ::u64" field="id" value="15367857594600220202" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+						</Class>
+						<Class name="AZStd::string" field="Name" value="Entity1" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+						<Class name="bool" field="IsDependencyReady" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+						<Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+							<Class name="EditorFlowGraphComponent" field="element" version="2" type="{400972DE-DD1F-4407-8F53-7E514C5767CA}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="1186101874272827582" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="AZStd::list" field="FlowGraphs" type="{B845AD64-B5A0-4CCD-A86B-3477A36779BE}">
+									<Class name="FlowGraphWrapper" field="element" version="2" type="{C0943E3C-0009-4BF0-9A92-821E471CFB0C}">
+										<Class name="SerializedFlowGraph" field="SerializedFlowGraph" version="1" type="{AA89EAA2-52F1-4C10-8168-013362D3DB52}">
+											<Class name="AZStd::string" field="Name" value="Default" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+											<Class name="AZStd::string" field="Description" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+											<Class name="AZStd::string" field="Group" value="Entity1" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+											<Class name="bool" field="IsEnabled" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="int" field="NetworkType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+											<Class name="AZStd::vector" field="Nodes" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+												<Class name="Node" field="element" version="1" type="{53364A50-91A4-4136-82FE-AD9BB057E540}">
+													<Class name="unsigned short" field="Id" value="1" type="{ECA0B403-C4F8-4B86-95FC-81688D046E40}"/>
+													<Class name="AZStd::string" field="Name" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="AZStd::string" field="Class" value="Game:Start" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="EntityId" field="EntityId" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+														<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													</Class>
+													<Class name="bool" field="IsGraphEntity" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<Class name="Vector2" field="Position" value="-40.0000000 40.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="Size" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="BorderRect" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="unsigned int" field="Flags" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="InputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="OutputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="AZStd::vector" field="Inputs" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="InGame" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="InGame" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="2" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueBool" field="element" version="1" type="{68F4CD6A-86F5-4517-8361-57B007678123}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																	<Class name="bool" field="Value" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="3126122637" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="InEditor" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="InEditor" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="2" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueBool" field="element" version="1" type="{68F4CD6A-86F5-4517-8361-57B007678123}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																	<Class name="bool" field="Value" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="205259608" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+													</Class>
+												</Class>
+												<Class name="Node" field="element" version="1" type="{53364A50-91A4-4136-82FE-AD9BB057E540}">
+													<Class name="unsigned short" field="Id" value="2" type="{ECA0B403-C4F8-4B86-95FC-81688D046E40}"/>
+													<Class name="AZStd::string" field="Name" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="AZStd::string" field="Class" value="Actor:PlayMannequinFragment" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="EntityId" field="EntityId" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+														<Class name="AZ::u64" field="id" value="15367857594600220202" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													</Class>
+													<Class name="bool" field="IsGraphEntity" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<Class name="Vector2" field="Position" value="150.0000000 -70.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="Size" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="BorderRect" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="unsigned int" field="Flags" value="519" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="InputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="OutputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="AZStd::vector" field="Inputs" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="entityId" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="entityId" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueVoid" field="element" version="1" type="{D5177B67-9A77-4C15-868D-671DE1F90A4F}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="1672219998" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="Play" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="Play" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueVoid" field="element" version="1" type="{D5177B67-9A77-4C15-868D-671DE1F90A4F}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="1586093754" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="Fragment" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="Fragment" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="8" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueString" field="element" version="1" type="{10013016-AA56-4EBD-8C34-9F407D70ADFD}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																	<Class name="AZStd::string" field="Value" value="Idle" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="3417118188" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="Tags" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="Tags" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="8" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueString" field="element" version="1" type="{10013016-AA56-4EBD-8C34-9F407D70ADFD}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																	<Class name="AZStd::string" field="Value" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="1874629670" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="Priority" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="Priority" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="1" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueInt" field="element" version="1" type="{40795690-E857-44A9-8455-222B7120FA47}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																	<Class name="int" field="Value" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="1655102503" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="Pause" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="Pause" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueVoid" field="element" version="1" type="{D5177B67-9A77-4C15-868D-671DE1F90A4F}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="3617231597" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="Resume" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="Resume" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueVoid" field="element" version="1" type="{D5177B67-9A77-4C15-868D-671DE1F90A4F}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="1623314592" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="ForceFinishLastQueued" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="ForceFinishLastQueued" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueVoid" field="element" version="1" type="{D5177B67-9A77-4C15-868D-671DE1F90A4F}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="1869122566" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+													</Class>
+												</Class>
+												<Class name="Node" field="element" version="1" type="{53364A50-91A4-4136-82FE-AD9BB057E540}">
+													<Class name="unsigned short" field="Id" value="3" type="{ECA0B403-C4F8-4B86-95FC-81688D046E40}"/>
+													<Class name="AZStd::string" field="Name" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="AZStd::string" field="Class" value="Debug:Log" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="EntityId" field="EntityId" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+														<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													</Class>
+													<Class name="bool" field="IsGraphEntity" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<Class name="Vector2" field="Position" value="390.0000000 -130.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="Size" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="BorderRect" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="unsigned int" field="Flags" value="512" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="InputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="OutputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="AZStd::vector" field="Inputs" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="input" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="input" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueVoid" field="element" version="1" type="{D5177B67-9A77-4C15-868D-671DE1F90A4F}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="3626513111" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="message" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="message" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="8" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueString" field="element" version="1" type="{10013016-AA56-4EBD-8C34-9F407D70ADFD}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																	<Class name="AZStd::string" field="Value" value="Played anim" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="3065852031" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+													</Class>
+												</Class>
+												<Class name="Node" field="element" version="1" type="{53364A50-91A4-4136-82FE-AD9BB057E540}">
+													<Class name="unsigned short" field="Id" value="4" type="{ECA0B403-C4F8-4B86-95FC-81688D046E40}"/>
+													<Class name="AZStd::string" field="Name" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="AZStd::string" field="Class" value="Debug:Log" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="EntityId" field="EntityId" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+														<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													</Class>
+													<Class name="bool" field="IsGraphEntity" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<Class name="Vector2" field="Position" value="390.0000000 -10.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="Size" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="Vector2" field="BorderRect" value="0.0000000 0.0000000" type="{3D80F623-C85C-4741-90D0-E4E66164E6BF}"/>
+													<Class name="unsigned int" field="Flags" value="512" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="InputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="OutputHideMask" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="AZStd::vector" field="Inputs" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="input" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="input" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueVoid" field="element" version="1" type="{D5177B67-9A77-4C15-868D-671DE1F90A4F}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="3626513111" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+														<Class name="Input" field="element" version="2" type="{8C035D27-86D8-423A-9FA5-16B227F272D1}">
+															<Class name="AZStd::string" field="Name" value="message" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="AZStd::string" field="HumanName" value="message" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+															<Class name="int" field="DataType" value="8" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+															<Class name="AZStd::intrusive_ptr" field="Value" type="{C4B5400B-5CDC-4B14-932E-BFA30BC1DE35}">
+																<Class name="InputValueString" field="element" version="1" type="{10013016-AA56-4EBD-8C34-9F407D70ADFD}">
+																	<Class name="InputValueBase" field="BaseClass1" version="1" type="{383C81D7-4505-48E7-8938-A9694B82F728}"/>
+																	<Class name="AZStd::string" field="Value" value="Failed to play anim" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+																</Class>
+															</Class>
+															<Class name="unsigned int" field="PersistentId" value="3065852031" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+														</Class>
+													</Class>
+												</Class>
+											</Class>
+											<Class name="AZStd::vector" field="Edges" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+												<Class name="Edge" field="element" version="1" type="{A8573DBB-D986-43BC-95D0-085333DF36CE}">
+													<Class name="unsigned int" field="NodeIn" value="2" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="NodeOut" value="1" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="AZStd::string" field="PortIn" value="Play" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="AZStd::string" field="PortOut" value="output" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="bool" field="IsEnabled" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<Class name="unsigned int" field="PersistentId" value="2876453488" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+												</Class>
+												<Class name="Edge" field="element" version="1" type="{A8573DBB-D986-43BC-95D0-085333DF36CE}">
+													<Class name="unsigned int" field="NodeIn" value="3" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="NodeOut" value="2" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="AZStd::string" field="PortIn" value="input" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="AZStd::string" field="PortOut" value="Success" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="bool" field="IsEnabled" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<Class name="unsigned int" field="PersistentId" value="110003239" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+												</Class>
+												<Class name="Edge" field="element" version="1" type="{A8573DBB-D986-43BC-95D0-085333DF36CE}">
+													<Class name="unsigned int" field="NodeIn" value="4" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="unsigned int" field="NodeOut" value="2" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+													<Class name="AZStd::string" field="PortIn" value="input" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="AZStd::string" field="PortOut" value="Failed" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+													<Class name="bool" field="IsEnabled" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+													<Class name="unsigned int" field="PersistentId" value="1546404783" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+												</Class>
+											</Class>
+											<Class name="AZStd::vector" field="GraphTokens" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}"/>
+											<Class name="unsigned int" field="PersistentId" value="3814588639" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+											<Class name="Uuid" field="HyperGraphId" value="{55346B2F-466E-6353-3762-45785A715A7A}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+										</Class>
+									</Class>
+								</Class>
+							</Class>
+							<Class name="SelectionComponent" field="element" type="{73B724FC-43D1-4C75-ACF5-79AA8A3BF89D}">
+								<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+									<Class name="AZ::u64" field="Id" value="9652580410902888497" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+							</Class>
+							<Class name="TransformComponent" field="element" version="5" type="{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="4465934297025543855" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="EntityId" field="Parent Entity" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+									<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+								<Class name="EditorTransform" field="Transform Data" version="1" type="{B02B7063-D238-4F40-A724-405F7A6D68CB}">
+									<Class name="Vector3" field="Translate" value="0.2252197 3.8823853 -0.7648239" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+									<Class name="Vector3" field="Rotate" value="0.0000000 0.0000000 0.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+									<Class name="Vector3" field="Scale" value="1.0000000 1.0000000 1.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+								</Class>
+								<Class name="Transform" field="Slice Transform" value="1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.2252197 3.8823853 -0.7648239" type="{5D9958E9-9F1E-4985-B532-FFFDE75FEDFD}"/>
+								<Class name="EntityId" field="Slice Root" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+									<Class name="AZ::u64" field="id" value="15249014015568864810" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+								<Class name="Transform" field="Cached World Transform" value="1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.2252197 3.8823853 -0.7648239" type="{5D9958E9-9F1E-4985-B532-FFFDE75FEDFD}"/>
+								<Class name="bool" field="Sync Enabled" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+							</Class>
+							<Class name="EditorSkinnedMeshComponent" field="element" version="1" type="{D3E1A9FC-56C9-4997-B56B-DA186EE2D62A}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="7574260327288070921" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="SkinnedMeshComponentRenderNode" field="Skinned Mesh Render Node" version="1" type="{AE5CFE2B-6CFF-4B66-9B9C-C514BFDB8A88}">
+									<Class name="bool" field="Visible" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									<Class name="Asset" field="Skinned Mesh" value="id={865AEE12-5519-5665-820E-BBA47E771899}:0,type={DF036C63-9AE6-4AC3-A6AC-8A1D76126C01}" type="{77A19D40-8731-4D3C-9041-1B43047366A4}"/>
+									<Class name="AzFramework::SimpleAssetReference&lt;LmbrCentral::MaterialAsset&gt;" field="Material Override" version="1" type="{B7B8ECC7-FF89-4A76-A50E-4C6CA2B6E6B4}">
+										<Class name="SimpleAssetReferenceBase" field="BaseClass1" version="1" type="{E16CA6C5-5C78-4AD9-8E9B-F8C1FB4D1DB8}">
+											<Class name="AZStd::string" field="AssetPath" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										</Class>
+									</Class>
+									<Class name="SkinnedRenderOptions" field="Render Options" version="1" type="{33E69F1C-518F-4DD2-88D1-DF6D12ECA54E}">
+										<Class name="float" field="Opacity" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+										<Class name="float" field="MaxViewDistance" value="8000.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+										<Class name="float" field="ViewDistanceMultiplier" value="1.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+										<Class name="unsigned int" field="LODRatio" value="100" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+										<Class name="bool" field="CastDynamicShadows" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="CastLightmapShadows" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="IndoorOnly" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="Bloom" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="MotionBlur" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="RainOccluder" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="AffectDynamicWater" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="ReceiveWind" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="AcceptDecals" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="AffectNavmesh" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="VisibilityOccluder" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										<Class name="bool" field="DepthTest" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									</Class>
+								</Class>
+							</Class>
+							<Class name="EditorMannequinComponent" field="element" version="1" type="{C5E08FE6-E1FC-4080-A053-2C65A667FE82}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="5882836856168134048" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="AzFramework::SimpleAssetReference&lt;LmbrCentral::MannequinControllerDefinitionAsset&gt;" field="Controller Definition" version="1" type="{17A70E99-A282-4FFE-9921-3EC4884A2F70}">
+									<Class name="SimpleAssetReferenceBase" field="BaseClass1" version="1" type="{E16CA6C5-5C78-4AD9-8E9B-F8C1FB4D1DB8}">
+										<Class name="AZStd::string" field="AssetPath" value="animations/mannequin/chicken/chickencontrollerdefs.xml" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+									</Class>
+								</Class>
+							</Class>
+							<Class name="EditorMannequinScopeComponent" field="element" version="1" type="{A5E58207-3272-4848-B1A5-F739450D9D21}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="15885881501007095363" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="AzFramework::SimpleAssetReference&lt;LmbrCentral::MannequinAnimationDatabaseAsset&gt;" field="Animation Database" version="1" type="{171F78A0-CAEB-4665-8439-F954EDCF29AE}">
+									<Class name="SimpleAssetReferenceBase" field="BaseClass1" version="1" type="{E16CA6C5-5C78-4AD9-8E9B-F8C1FB4D1DB8}">
+										<Class name="AZStd::string" field="AssetPath" value="animations/mannequin/adb/chickenanims.adb" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+									</Class>
+								</Class>
+								<Class name="AZStd::string" field="Scope name" value="Char3P" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+								<Class name="EntityId" field="Target Entity" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+									<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+							</Class>
+							<Class name="GenericComponentWrapper" field="element" type="{68D358CA-89B9-4730-8BA6-E181DEA28FDE}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="427540334027916006" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="InputConfigurationComponent" field="m_template" version="1" type="{3106EE2A-4816-433E-B855-D17A6484D5EC}">
+									<Class name="Asset" field="Input Event Bindings" value="id={68192143-6BCD-5C89-B02A-BB63BDD23BE5}:0,type={25971C7A-26E2-4D08-A146-2EFCC1C36B0C}" type="{77A19D40-8731-4D3C-9041-1B43047366A4}"/>
+									<Class name="EntityId" field="Source EntityId" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+										<Class name="AZ::u64" field="id" value="4294967295" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+							</Class>
+							<Class name="ScriptEditorComponent" field="element" type="{B5FC8679-FA2A-4C7C-AC42-DCC279EA613A}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="16000758817478739767" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="AZ::ScriptComponent" field="ScriptComponent" version="2" type="{8D1BC97E-C55D-4D34-A460-E63C57CD0D4B}">
+									<Class name="AZStd::string" field="SourceScriptName" value="chickenmannequincontrollersm" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+									<Class name="unsigned int" field="ContextID" value="0" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+									<Class name="ScriptPropertyGroup" field="Properties" type="{79682522-2F81-4B36-9FC2-A091C7504F7F}">
+										<Class name="AZStd::string" field="Name" value="Properties" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::vector" field="Properties" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+											<Class name="AZ::ScriptPropertyString" field="element" version="1" type="{A0229C6D-B010-47E7-8985-EE220FC7BFAF}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="3033761453" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="InitialState" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="AZStd::string" field="value" value="Idle" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+											</Class>
+											<Class name="AZ::ScriptPropertyEntityRef" field="element" version="1" type="{68EDE6C3-0A89-4C50-A86E-06C058C9F862}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="991751685" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="Camera" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="EntityId" field="value" version="1" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+													<Class name="AZ::u64" field="id" value="15249014015568864810" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+												</Class>
+											</Class>
+											<Class name="AZ::ScriptPropertyNumber" field="element" version="1" type="{5BCDFDEB-A75D-4E83-BB74-C45299CB9826}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="1550561881" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="MoveSpeed" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="double" field="value" value="3.0000000" type="{110C4B14-11A8-4E9D-8638-5051013A56AC}"/>
+											</Class>
+											<Class name="AZ::ScriptPropertyNumber" field="element" version="1" type="{5BCDFDEB-A75D-4E83-BB74-C45299CB9826}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="455819407" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="RotationSpeed" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="double" field="value" value="360.0000000" type="{110C4B14-11A8-4E9D-8638-5051013A56AC}"/>
+											</Class>
+											<Class name="AZ::ScriptPropertyNumber" field="element" version="1" type="{5BCDFDEB-A75D-4E83-BB74-C45299CB9826}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="377955313" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="CameraFollowHeight" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="double" field="value" value="1.0000000" type="{110C4B14-11A8-4E9D-8638-5051013A56AC}"/>
+											</Class>
+											<Class name="AZ::ScriptPropertyBoolean" field="element" version="1" type="{EA7335F8-5B9F-4744-B805-FEF9240451BD}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="3821602166" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="DebugStateMachine" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="bool" field="value" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											</Class>
+											<Class name="AZ::ScriptPropertyNumber" field="element" version="1" type="{5BCDFDEB-A75D-4E83-BB74-C45299CB9826}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="1871347233" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="CameraLerpSpeed" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="double" field="value" value="5.0000000" type="{110C4B14-11A8-4E9D-8638-5051013A56AC}"/>
+											</Class>
+											<Class name="AZ::ScriptPropertyNumber" field="element" version="1" type="{5BCDFDEB-A75D-4E83-BB74-C45299CB9826}">
+												<Class name="AZ::ScriptProperty" field="BaseClass1" version="2" type="{D227D737-F1ED-4FB3-A1FB-38E4985D2E7A}">
+													<Class name="AZ::u64" field="id" value="3836400381" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+													<Class name="AZStd::string" field="name" value="CameraFollowDistance" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+												</Class>
+												<Class name="double" field="value" value="5.0000000" type="{110C4B14-11A8-4E9D-8638-5051013A56AC}"/>
+											</Class>
+										</Class>
+										<Class name="AZStd::vector" field="Groups" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}"/>
+									</Class>
+									<Class name="Asset" field="Script" value="id={05CF878F-B244-5B18-822C-DCEE02E9975B}:0,type={82557326-4AE3-416C-95D6-C70635AB7588}" type="{77A19D40-8731-4D3C-9041-1B43047366A4}"/>
+								</Class>
+								<Class name="Asset" field="ScriptAsset" value="id={05CF878F-B244-5B18-822C-DCEE02E9975B}:0,type={82557326-4AE3-416C-95D6-C70635AB7588}" type="{77A19D40-8731-4D3C-9041-1B43047366A4}"/>
+							</Class>
+							<Class name="GenericComponentWrapper" field="element" type="{68D358CA-89B9-4730-8BA6-E181DEA28FDE}">
+								<Class name="EditorComponentBase" field="BaseClass1" version="1" type="{D5346BD4-7F20-444E-B370-327ACD03D4A0}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="15571288104695544760" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+								</Class>
+								<Class name="CharacterPhysicsComponent" field="m_template" version="1" type="{D707D6C5-3EFA-4275-82EB-A954F845D324}">
+									<Class name="AZ::Component" field="BaseClass1" type="{EDFCB2CF-F75D-43BE-B26B-F35821B29247}">
+										<Class name="AZ::u64" field="Id" value="0" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+									</Class>
+									<Class name="CryPlayerPhysicsConfiguration" field="Configuration" version="1" type="{97A1C07E-0444-4FAC-A394-8317AFE5696B}">
+										<Class name="PlayerDimensions" field="Player Dimensions" version="1" type="{64B9DBDA-90D4-4D3D-88EA-36810AF2C98F}">
+											<Class name="bool" field="Use Capsule" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="float" field="Collider Radius" value="0.4000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Collider Half-Height" value="0.6000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Height Collider" value="1.1000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Height Pivot" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Height Eye" value="1.7000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Height Head" value="1.9000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Head Radius" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="Vector3" field="Unprojection Direction" value="0.0000000 0.0000000 1.0000000" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+											<Class name="float" field="Max Unprojection" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Ground Contact Epsilon" value="0.0060000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+										</Class>
+										<Class name="PlayerDynamics" field="Player Dynamics" version="1" type="{B1237004-14E1-4327-8774-D2C5796230E7}">
+											<Class name="float" field="Mass" value="80.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Inertia" value="8.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Inertia Acceleration" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Time Impulse Recover" value="5.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Air Control" value="0.1000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Air Resistance" value="0.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="bool" field="Use Custom Gravity" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="Vector3" field="Gravity" value="0.0000000 0.0000000 -9.8000002" type="{8379EB7D-01FA-4538-B64B-A6543B4BE73D}"/>
+											<Class name="float" field="Nod Speed" value="60.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="bool" field="Is Active" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Release Ground Collider When Not Active" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Is Swimming" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="int" field="Surface Index" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+											<Class name="float" field="Min Fall Angle" value="70.1999969" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Min Slide Angle" value="36.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Max Climb Angle" value="54.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Max Jump Angle" value="54.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="float" field="Max Velocity Ground" value="10.0000000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+											<Class name="bool" field="Collide With Terrain" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Collide With Static" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Collide With Rigid" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Collide With Sleeping Rigid" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Collide With Living" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+											<Class name="bool" field="Collide With Independent" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+										</Class>
+									</Class>
+								</Class>
+							</Class>
+						</Class>
+					</Class>
+				</Class>
+				<Class name="AZStd::list" field="Prefabs" type="{B845AD64-B5A0-4CCD-A86B-3477A36779BE}"/>
+				<Class name="bool" field="IsDynamic" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+			</Class>
+		</Class>
+	</Class>
+</ObjectStream>
+

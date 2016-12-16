@@ -1,0 +1,19 @@
+<Graph Description="" Group="parkavenue1destroy" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="-207,-146,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="3" Class="entity:ProximityTrigger" pos="-50,-140,0" flags="0" EntityGUID="{5CCEA6B4-24D3-4FB4-9CB7-458E6D895791}" EntityGUID_64="4FB424D35CCEA6B4">
+   <Inputs Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="5" Class="entity:BasicEntity" pos="210,-170,0" flags="0" EntityGUID="{15B75D3D-088E-4BC5-9DD6-B2A0C0D6C5F2}" EntityGUID_64="4BC5088E15B75D3D">
+   <Inputs Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="3" portIn="Remove" portOut="Enter" enabled="1"/>
+ </Edges>
+ <HyperGraphId Id="{6D1C57D4-0965-46C5-A1EA-A3C0EEDA05CB}"/>
+ <GraphTokens />
+</Graph>
