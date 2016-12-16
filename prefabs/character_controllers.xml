@@ -143,6 +143,33 @@
 =======
 >>>>>>> refs/remotes/origin/abhinandan
    </Object>
+   <Object Type="Camera" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" Name="Camera Controller Rig" HideOrder="0" Parent="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" Pos="0.00012207031,-5.6223145,1.3168983" FloorNumber="-1" Rotate="0.99619472,-0.087155759,8.5359e-009,-3.0013602e-008" ColorRGB="16776960" FOV="1.0472" NearZ="0.2" FarZ="1024" EntityClass="CameraSource">
+    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
+   </Object>
+   <Object Type="GeomEntity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{18626F3D-2830-4758-B220-15E385BDFFE0}" Name="robot_head1" HideOrder="0" Parent="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" Pos="0,0,1.5" FloorNumber="-1" Rotate="2.9802322e-008,0,0,1" ColorRGB="16776960" Geometry="Objects/CharacterModels/R0-B/robot_head.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
+    <Properties esFaction="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" Name="Awesome_Sphere" HideOrder="0" Pos="2.0239868,3.8677979,1.8925247" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="16776960" Material="objects/charactermodels/r0-b/robot" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="RigidBodyEx">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="1"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="5000" Mass="600" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0.8" water_density="2000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering />
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="1" bFixedDamping="0" max_time_step="0.01" sleep_speed="0.01" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{5B39CD6A-8C08-454A-8388-7FE6C2D6FE1B}" Name="Controller_Prefab_Logic" HideOrder="0" Pos="0.99987793,3,0.99999237" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="FlowgraphEntity">
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -152,7 +179,7 @@
       <Node Id="3" Class="Entity:EntityId" pos="-760,120,0" flags="0" EntityGUID="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" EntityGUID_64="4739DEB287A95A92">
        <Inputs />
       </Node>
-      <Node Id="4" Class="Module:Call_Character_Controller_Robot_Completed" pos="-180,-170,0" flags="0">
+      <Node Id="4" Class="Module:Call_Character_Controller_Robot_Completed" pos="-180,-170,0" flags="1">
        <Inputs Instanced="1" InstanceID="-1" Controller_Ref_Box_Pitch="0" Controller_Ref_Box_Move="0" Awesome_Sphere="0" Robot_Head="0" Camera_Rig="0" Robot_Body="0" Head_Tilt_Parent="0"/>
       </Node>
       <Node Id="5" Class="Game:Start" pos="-770,-310,0" flags="0">
@@ -210,7 +237,7 @@
       <Node Id="25" Class="Game:Start" pos="-770,-310,0" flags="0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
-      <Node Id="33" Class="Module:Call_Explode" pos="220,-20,0" flags="1">
+      <Node Id="33" Class="Module:Call_Explode" pos="220,-20,0" flags="0">
        <Inputs Instanced="1" InstanceID="-1"/>
       </Node>
       <Node Id="34" Class="UI:Canvas:Load" pos="-610,-530,0" flags="0">
@@ -237,7 +264,42 @@
       <Node Id="41" Class="String:Split" pos="320,-440,0" flags="0">
        <Inputs Input="" separator="."/>
       </Node>
->>>>>>> refs/remotes/origin/abhinandan
+      <Node Id="42" Class="Mission:GameTokenGet" pos="-450,-1150,0" flags="0">
+       <Inputs gametoken_Token="Level.Pickup.PickupCount"/>
+      </Node>
+      <Node Id="43" Class="UI:Text:SetText" pos="440,-1080,0" flags="0">
+       <Inputs CanvasID="0" ElementID="3" Value=""/>
+      </Node>
+      <Node Id="44" Class="Mission:GameTokenGet" pos="-390,-970,0" flags="0">
+       <Inputs gametoken_Token="Level.Pickup.MaxPickupCount"/>
+      </Node>
+      <Node Id="45" Class="String:Concat" pos="180,-1080,0" flags="0">
+       <Inputs String1="Pickups: " String2=""/>
+      </Node>
+      <Node Id="46" Class="String:Concat" pos="20,-1140,0" flags="0">
+       <Inputs String1="" String2="/"/>
+      </Node>
+      <Node Id="47" Class="String:Concat" pos="34.446857,-1006.3403,0" flags="0">
+       <Inputs String1="" String2=""/>
+      </Node>
+      <Node Id="48" Class="String:Split" pos="-150,-1250,0" flags="0">
+       <Inputs Input="" separator="."/>
+      </Node>
+      <Node Id="49" Class="Mission:GameTokenGet" pos="-600,-1390,0" flags="0">
+       <Inputs gametoken_Token="Level.Spawn.TrainVotes"/>
+      </Node>
+      <Node Id="50" Class="UI:Text:SetText" pos="400,-1350,0" flags="0">
+       <Inputs CanvasID="0" ElementID="4" Value=""/>
+      </Node>
+      <Node Id="51" Class="String:Concat" pos="-90,-1360,0" flags="0">
+       <Inputs String1="Train Spawning in: " String2="/"/>
+      </Node>
+      <Node Id="52" Class="String:Concat" pos="160,-1350,0" flags="0">
+       <Inputs String1="Train Spawning in: " String2=" votes"/>
+      </Node>
+      <Node Id="53" Class="String:Split" pos="-270,-1400,0" flags="0">
+       <Inputs Input="" separator="."/>
+      </Node>
      </Nodes>
      <Edges>
       <Edge nodeIn="4" nodeOut="2" portIn="Controller_Ref_Box_Pitch" portOut="Id" enabled="1"/>
@@ -269,8 +331,13 @@
 =======
       <Edge nodeIn="34" nodeOut="25" portIn="Activate" portOut="output" enabled="1"/>
       <Edge nodeIn="35" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="34" portIn="CanvasID" portOut="CanvasID" enabled="1"/>
       <Edge nodeIn="35" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
       <Edge nodeIn="37" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+      <Edge nodeIn="42" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+      <Edge nodeIn="44" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
+      <Edge nodeIn="49" nodeOut="36" portIn="Activate" portOut="tick" enabled="1"/>
       <Edge nodeIn="39" nodeOut="37" portIn="A" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="39" nodeOut="37" portIn="Activate" portOut="OutValue" enabled="1"/>
       <Edge nodeIn="35" nodeOut="38" portIn="Value" portOut="Out" enabled="1"/>
@@ -280,42 +347,30 @@
       <Edge nodeIn="41" nodeOut="40" portIn="Activate" portOut="Out" enabled="1"/>
       <Edge nodeIn="41" nodeOut="40" portIn="Input" portOut="Out" enabled="1"/>
       <Edge nodeIn="38" nodeOut="41" portIn="String2" portOut="Split0" enabled="1"/>
->>>>>>> refs/remotes/origin/abhinandan
+      <Edge nodeIn="48" nodeOut="42" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="48" nodeOut="42" portIn="Input" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="47" nodeOut="44" portIn="Set" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="47" nodeOut="44" portIn="String2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="45" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="45" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="47" nodeOut="46" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="45" nodeOut="47" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="45" nodeOut="47" portIn="String2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="46" nodeOut="48" portIn="Set" portOut="Split0" enabled="1"/>
+      <Edge nodeIn="46" nodeOut="48" portIn="String1" portOut="Split0" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="49" portIn="Activate" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="53" nodeOut="49" portIn="Input" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="51" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="52" nodeOut="51" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="52" portIn="Activate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="50" nodeOut="52" portIn="Value" portOut="Out" enabled="1"/>
+      <Edge nodeIn="51" nodeOut="53" portIn="Set" portOut="Split0" enabled="1"/>
+      <Edge nodeIn="51" nodeOut="53" portIn="String2" portOut="Split0" enabled="1"/>
      </Edges>
      <HyperGraphId Id="{B7339955-E94B-4B92-9DD5-73D2433F70CA}"/>
      <GraphTokens />
     </FlowGraph>
    </Object>
-<<<<<<< HEAD
-=======
-   <Object Type="Camera" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{10498B71-D38C-4403-9415-95A4A7DE9D7D}" Name="Camera Controller Rig" HideOrder="0" Parent="{EA1129AB-29B5-40F5-AD52-E608DF832A3B}" Pos="0.00012207031,-5.6223145,1.3168983" FloorNumber="-1" Rotate="0.99619472,-0.087155759,8.5359e-009,-3.0013602e-008" ColorRGB="16776960" FOV="1.0472" NearZ="0.2" FarZ="1024" EntityClass="CameraSource">
-    <ShakeParams AmplitudeA="1,1,1" AmplitudeAMult="0" FrequencyA="1,1,1" FrequencyAMult="0" NoiseAAmpMult="0" NoiseAFreqMult="0" TimeOffsetA="0" AmplitudeB="1,1,1" AmplitudeBMult="0" FrequencyB="1,1,1" FrequencyBMult="0" NoiseBAmpMult="0" NoiseBFreqMult="0" TimeOffsetB="0" CameraShakeSeed="0"/>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{87A95A92-DEB2-4739-AB31-1C238F1AF5ED}" Name="Awesome_Sphere" HideOrder="0" Pos="2.0239868,3.8677979,1.8925247" FloorNumber="-1" Rotate="1,0,0,0" Scale="0.38,0.38,0.38" ColorRGB="16776960" Material="objects/charactermodels/r0-b/robot" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="RigidBodyEx">
-    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/default/primitive_sphere.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
-     <AI bUsedAsDynamicObstacle="1"/>
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <MultiplayerOptions bNetworked="1"/>
-     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="5000" Mass="600" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
-      <Buoyancy water_damping="0.8" water_density="2000" water_resistance="1000"/>
-      <CGFPropsOverride player_can_break="">
-       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
-       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
-       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
-      </CGFPropsOverride>
-      <CollisionFiltering />
-      <ForeignData bMovingPlatform="0"/>
-      <Simulation damping="1" bFixedDamping="0" max_time_step="0.01" sleep_speed="0.01" bUseSimpleSolver="0"/>
-     </Physics>
-    </Properties>
-   </Object>
-   <Object Type="GeomEntity" Layer="Main" LayerGUID="{120B7086-A8E5-4262-A80C-F0E1383FBB09}" Id="{18626F3D-2830-4758-B220-15E385BDFFE0}" Name="robot_head1" HideOrder="0" Parent="{8AF897E0-75A9-4B0E-85FC-41CDF7287F17}" Pos="0,0,1.5" FloorNumber="-1" Rotate="2.9802322e-008,0,0,1" ColorRGB="16776960" Geometry="Objects/CharacterModels/R0-B/robot_head.cgf" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" LodRatio="100" ViewDistanceMultiplier="1" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" ObstructionMultiplier="1" EntityClass="GeomEntity">
-    <Properties esFaction="">
-     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
-     <RenderProxyOptions bAnimateOffScreenShadow="0"/>
-    </Properties>
-   </Object>
->>>>>>> refs/remotes/origin/abhinandan
   </Objects>
  </Prefab>
  <Prefab Name="VR_Sphere_Controller" Id="{88C5E5CF-D14E-4810-AC08-D56219689084}" Library="Character_Controllers">

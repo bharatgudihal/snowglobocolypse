@@ -5,7 +5,7 @@
  </ModuleInputsOutputs>
  <Nodes>
   <Node Id="1" Class="Module:Start_Explode" pos="-140,40,0" flags="0"/>
-  <Node Id="2" Class="Module:End_Explode" pos="-140,-20,0" flags="1">
+  <Node Id="2" Class="Module:End_Explode" pos="-140,-20,0" flags="0">
    <Inputs />
   </Node>
   <Node Id="9" Class="Entity:GetPos" pos="820,-160,0" flags="0">
@@ -18,13 +18,13 @@
    <Inputs paused="0"/>
   </Node>
   <Node Id="53" Class="Vec3:ScaleVec3" pos="1190,-150,0" flags="0">
-   <Inputs vector="0,0,0" scale="8000"/>
+   <Inputs vector="0,0,0" scale="500"/>
   </Node>
   <Node Id="58" Class="Physics:ActionImpulse" pos="1590,-100,0" flags="0">
    <Inputs Impulse="0,0,0" AngularImpulse="0,0,0" Point="0,0,0" PartIndex="0" CoordSystem="1"/>
   </Node>
   <Node Id="59" Class="Vec3:ScaleVec3" pos="1190,-90,0" flags="0">
-   <Inputs vector="0,0,0" scale="8000"/>
+   <Inputs vector="0,0,0" scale="6000"/>
   </Node>
   <Node Id="60" Class="Vec3:AddVec3" pos="1410,-130,0" flags="0">
    <Inputs A="0,0,0" B="0,0,0"/>
@@ -88,7 +88,6 @@
   <Edge nodeIn="59" nodeOut="9" portIn="vector" portOut="UpDir" enabled="1"/>
   <Edge nodeIn="61" nodeOut="33" portIn="In" portOut="Recognized" enabled="1"/>
   <Edge nodeIn="9" nodeOut="34" portIn="Get" portOut="tick" enabled="1"/>
-  <Edge nodeIn="60" nodeOut="53" portIn="A" portOut="out" enabled="1"/>
   <Edge nodeIn="60" nodeOut="59" portIn="B" portOut="out" enabled="1"/>
   <Edge nodeIn="58" nodeOut="60" portIn="Impulse" portOut="Out" enabled="1"/>
   <Edge nodeIn="58" nodeOut="61" portIn="Activate" portOut="Out" enabled="1"/>

@@ -1,7 +1,7 @@
-<Material MtlFlags="524288" Shader="Illum" GenMask="40000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_rock" Diffuse="1,1,1" Specular="0.03189604,0.03189604,0.03189604" Opacity="1" Shininess="155" vertModifType="0" LayerAct="1">
+<Material MtlFlags="524288" Shader="Illum" GenMask="40000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_glass" Diffuse="1,1,1" Specular="0.03189604,0.03189604,0.03189604" Emittance="0.0091340598,0.93011099,0.80695242,0" Opacity="0.46000001" Shininess="155" vertModifType="0" LayerAct="1">
  <Textures>
-  <Texture Map="Diffuse" File="textures/defaults/grey.dds">
-   <TexMod TexMod_RotateType="2" TexMod_TexGenType="0" TexMod_bTexGenProjected="0"/>
+  <Texture Map="Diffuse" File="assets/train/s14sg1.dds">
+   <TexMod TexMod_RotateType="3" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TexMod_URotateCenter="42" TexMod_VRotateCenter="32.200001" TexMod_WRotateRate="20.895996" TexMod_WRotatePhase="57.996826" TexMod_WRotateAmplitude="30.097046"/>
   </Texture>
  </Textures>
  <PublicParams EmittanceMapGamma="1" DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
